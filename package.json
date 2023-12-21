@@ -10,10 +10,11 @@
     "format:fix": "prettier --write .",
     "format:style": "stylelint '**/*.scss' --formatter",
     "lint": "eslint . --ext ts,tsx,js,jsx",
-		"lint:fix": "eslint . --ext ts,tsx,js,jsx --fix",
+    "lint:fix": "eslint . --ext ts,tsx,js,jsx --fix",
     "preview": "vite preview",
     "prepare": "husky install",
-		"test": "echo \"Error: no test specified\""
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -22,24 +23,31 @@
     "react-router-dom": "^6.21.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.1.0",
+    "@vitest/ui": "^1.1.0",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "husky": "^8.0.0",
+    "jsdom": "^23.0.1",
+    "lint-staged": "^15.2.0",
     "postcss-safe-parser": "^7.0.0",
     "prettier": "^3.1.1",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
     "stylelint": "^16.0.2",
     "stylelint-config-standard": "^35.0.0",
-    "husky": "^8.0.0",
-    "lint-staged": "^15.2.0",
     "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "vitest": "^1.1.0"
   }
 }
