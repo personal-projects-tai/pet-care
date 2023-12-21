@@ -6,7 +6,7 @@ export default {
     const hasStyleFiles = filenames.some(filename => filename.endsWith('.scss'))
 
     if (hasStyleFiles) {
-      commands.push(`stylelint '${filenames}.scss' --formatter`)
+      commands.push(`stylelint '${filenames}' --formatter`)
     }
 
     // Check if there are any test files before adding the npm test command
