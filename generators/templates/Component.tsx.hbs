@@ -1,0 +1,15 @@
+import './styles.scss'
+
+export type Props = {
+	{{snakeCase name}}?: string
+}
+
+export function {{pascalCase name}}({
+	{{snakeCase name}} = "{{ snakeCase name }}"
+}: Props) {
+	return (
+		<>
+    	<h1>{ {{snakeCase name}} }</h1>
+  	</>
+	)
+}
