@@ -1,13 +1,6 @@
 export default {
-  '*.{js,ts,tsx,jsx,scss,css}': filenames => {
+  '*.{js,ts,tsx,jsx}': filenames => {
     const commands = [`prettier --write "${filenames.join('" "')}"`, `eslint --fix . "${filenames.join('" "')}"`]
-
-    // Check if there are any style files
-    const hasStyleFiles = filenames.some(filename => filename.endsWith('.scss'))
-
-    if (hasStyleFiles) {
-      commands.push(`stylelint '${filenames}' --formatter`)
-    }
 
     // Check if there are any test files before adding the npm test command
     const hasTestFiles = filenames.some(filename => filename.endsWith('.spec.jsx') || filename.endsWith('.spec.tsx'))
@@ -15,6 +8,11 @@ export default {
     if (hasTestFiles) {
       commands.push(`npm test --findRelatedTests "${filenames.join('" "')}"`)
     }
+
+    return commands
+  },
+  '*.{css,scss}': filenames => {
+    const commands = [`stylelint "${filenames.join('" "')}" --formatter`]
 
     return commands
   }
