@@ -13,7 +13,7 @@ export default plop => {
 			{
 				type: "add",
 				path: "../src/components/{{pascalCase name}}/index.tsx",
-				templateFile: "templates/Component.tsx.hbs",
+				templateFile: "templates/Template.tsx.hbs",
 			},
 			{
 				type: "add",
@@ -23,13 +23,45 @@ export default plop => {
 			{
 				type: "add",
 				path: "../src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx",
-				templateFile: "templates/Component.stories.tsx.hbs",
+				templateFile: "templates/Story.stories.tsx.hbs",
 			},
 			{
 				type: "add",
 				path: "../src/components/{{pascalCase name}}/{{pascalCase name}}.spec.tsx",
-				templateFile: "templates/Component.spec.tsx.hbs",
+				templateFile: "templates/Test.spec.tsx.hbs",
 			},
 		],
 	});
+
+	plop.setGenerator("page", {
+		description:	"Create a page",
+		prompts: [
+			{
+				type: "input",
+				name: "name",
+				message: "What is your page name?"
+			}
+		],
+		actions: [
+			{
+				type: "add",
+				path: "../src/pages/{{pascalCase name}}/index.tsx",
+				templateFile: "templates/Template.tsx.hbs",
+			},
+			{
+				type: "add",
+				path: "../src/pages/{{pascalCase name}}/styles.scss"
+			},
+			{
+				type: "add",
+				path: "../src/pages/{{pascalCase name}}/{{pascalCase name}}.stories.tsx",
+				templateFile: "templates/Story.stories.tsx.hbs",
+			},
+			{
+				type: "add",
+				path: "../src/pages/{{pascalCase name}}/{{pascalCase name}}.spec.tsx",
+				templateFile: "templates/Test.spec.tsx.hbs",
+			},
+		]
+	})
 };
