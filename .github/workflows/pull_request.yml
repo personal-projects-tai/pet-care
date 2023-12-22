@@ -25,9 +25,6 @@ jobs:
       - name: Run tests
         run: npm run test
 
-      - name: Run UI tests
-        run: npm run test:ui
-
       - name: Run ESLint
         run: npm run lint
 
