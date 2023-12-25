@@ -20,7 +20,12 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "allowJs": true
+    "allowJs": true,
+
+		/* Dynamic path */
+		"paths": {
+			"@/*": ["./src/*"]
+		}
   },
   "include": ["src", ".src/test/setup.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
