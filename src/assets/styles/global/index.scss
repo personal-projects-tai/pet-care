@@ -1,0 +1,540 @@
+@use '../variables/fonts';
+
+@use '../variables/spaces';
+
+@use '../variables/colors';
+
+@use '../themes/index' as themes;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialised;
+  background: themes.$bg-login-dark;
+}
+
+body,
+input,
+textarea,
+button {
+  font-size: fonts.$text-16;
+  font-weight: fonts.$regular-400;
+  font-family: fonts.$font-family;
+}
+
+.btn {
+  border: 0;
+  gap: spaces.$space-3;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__sm {
+    padding: spaces.$space-4;
+    border-radius: spaces.$space-7;
+  }
+
+  &__md {
+    padding: spaces.$space-7;
+    border-radius: spaces.$space-7;
+  }
+
+  &__lg {
+    padding: spaces.$space-8;
+    border-radius: spaces.$space-7;
+  }
+
+  &__primary {
+    &__light {
+      background: colors.$blue-500;
+      color: colors.$grey-0;
+      border: 0.188rem solid transparent;
+
+      &:disabled {
+        background: colors.$blue-100;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        background: colors.$blue-700;
+        border: 0.188rem solid colors.$blue-100;
+      }
+
+      &:not(:disabled):active {
+        background: colors.$blue-900;
+        border: 0.188rem solid colors.$blue-100;
+      }
+
+      &:not(:disabled):hover {
+        background: colors.$blue-700;
+      }
+    }
+
+    &__dark {
+      background: colors.$blue-500;
+      color: colors.$grey-0;
+      border: 0.188rem solid transparent;
+
+      &:disabled {
+        background: colors.$blue-900;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        background: colors.$blue-700;
+        border: 0.188rem solid colors.$blue-500;
+      }
+
+      &:not(:disabled):active {
+        background: colors.$blue-900;
+        border: 0.188rem solid colors.$blue-700;
+      }
+
+      &:not(:disabled):hover {
+        background: colors.$blue-700;
+      }
+    }
+  }
+
+  &__secondary {
+    &__light {
+      background: colors.$grey-100;
+      color: colors.$blue-700;
+      border: 0.188rem solid transparent;
+
+      &:disabled {
+        background: colors.$grey-0;
+        color: colors.$blue-300;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        border: 0.188rem solid colors.$blue-100;
+      }
+
+      &:not(:disabled):active {
+        border: 0.188rem solid colors.$blue-300;
+      }
+
+      &:not(:disabled):hover {
+        border: 0.188rem solid colors.$blue-100;
+      }
+    }
+
+    &__dark {
+      background: colors.$grey-0;
+      color: colors.$blue-500;
+      border: 0.188rem solid transparent;
+
+      &:disabled {
+        color: colors.$blue-300;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        background: colors.$grey-100;
+        color: colors.$blue-700;
+        border: 0.188rem solid colors.$blue-100;
+      }
+
+      &:not(:disabled):active {
+        color: colors.$blue-700;
+        border: 0.188rem solid colors.$blue-300;
+      }
+
+      &:not(:disabled):hover {
+        background: colors.$grey-100;
+        color: colors.$blue-700;
+      }
+    }
+  }
+
+  &__outlined {
+    &__light {
+      background: colors.$grey-0;
+      color: colors.$blue-500;
+      border: 0.063rem solid colors.$blue-500;
+
+      &:disabled {
+        color: colors.$blue-300;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        border: 0.188rem solid colors.$blue-300;
+      }
+
+      &:not(:disabled):active {
+        color: colors.$blue-900;
+        border: 0.188rem solid colors.$blue-300;
+      }
+
+      &:not(:disabled):hover {
+        color: colors.$blue-700;
+      }
+    }
+
+    &__dark {
+      background: colors.$grey-1000;
+      color: colors.$grey-0;
+      border: 0.063rem solid colors.$grey-0;
+
+      &:disabled {
+        color: colors.$blue-900;
+        border: 0.063rem solid colors.$blue-900;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        color: colors.$blue-300;
+        border: 0.188rem solid colors.$blue-700;
+      }
+
+      &:not(:disabled):active {
+        color: colors.$blue-100;
+        border: 0.188rem solid colors.$blue-300;
+      }
+
+      &:not(:disabled):hover {
+        color: colors.$blue-300;
+        border: 0.063rem solid colors.$blue-300;
+      }
+    }
+  }
+
+  &__planed {
+    &__light {
+      background: colors.$grey-0;
+      color: colors.$blue-500;
+
+      &:disabled {
+        color: colors.$blue-300;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        color: colors.$blue-700;
+      }
+
+      &:not(:disabled):active {
+        color: colors.$blue-900;
+      }
+
+      &:not(:disabled):hover {
+        color: colors.$blue-700;
+      }
+    }
+
+    &__dark {
+      background: colors.$grey-1000;
+      color: colors.$blue-500;
+
+      &:disabled {
+        color: colors.$blue-900;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        color: colors.$blue-300;
+      }
+
+      &:not(:disabled):active {
+        color: colors.$blue-100;
+      }
+
+      &:not(:disabled):hover {
+        color: colors.$blue-300;
+      }
+    }
+  }
+
+  &__destructive {
+    &__light {
+      background: colors.$red-500;
+      color: colors.$grey-0;
+      border: 0.188rem solid transparent;
+
+      &:disabled {
+        background: colors.$red-100;
+        color: colors.$grey-0;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        background: colors.$red-700;
+        border: 0.188rem solid colors.$red-100;
+      }
+
+      &:not(:disabled):active {
+        background: colors.$red-900;
+      }
+
+      &:not(:disabled):hover {
+        background: colors.$red-700;
+      }
+    }
+
+    &__dark {
+      background: colors.$red-500;
+      color: colors.$grey-0;
+      border: 0.188rem solid transparent;
+
+      &:disabled {
+        background: colors.$red-100;
+        color: colors.$grey-0;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        background: colors.$red-700;
+        border: 0.188rem solid colors.$red-100;
+      }
+
+      &:not(:disabled):active {
+        background: colors.$red-900;
+      }
+
+      &:not(:disabled):hover {
+        background: colors.$red-700;
+      }
+    }
+  }
+
+  &__ghost {
+    &__light {
+      background: colors.$grey-150;
+      color: colors.$grey-600;
+      border: 0.188rem solid transparent;
+
+      &:disabled {
+        background: colors.$grey-150;
+        color: colors.$grey-300;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        border: 0.188rem solid colors.$grey-150;
+        background: colors.$grey-200;
+      }
+
+      &:not(:disabled):active {
+        background: colors.$grey-300;
+        color: colors.$grey-700;
+        border: colors.$grey-150;
+      }
+
+      &:not(:disabled):hover {
+        background: colors.$grey-200;
+      }
+    }
+
+    &__dark {
+      background: #fff3;
+      color: colors.$grey-100;
+      border: 0.188rem solid transparent;
+
+      &:disabled {
+        background: colors.$grey-800;
+        color: colors.$grey-500;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        background: #6c737d;
+        border: 0.188rem solid colors.$grey-600;
+      }
+
+      &:not(:disabled):active {
+        background: #868c95;
+        color: colors.$grey-0;
+        border: 0.188rem solid colors.$grey-600;
+      }
+
+      &:not(:disabled):hover {
+        background: #6c737d;
+      }
+    }
+  }
+
+  &__plained-ghost {
+    &__light {
+      background: colors.$grey-0;
+      color: colors.$grey-500;
+      border: 0.188rem solid transparent;
+
+      &:disabled {
+        color: colors.$grey-300;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        color: colors.$grey-700;
+      }
+
+      &:not(:disabled):active {
+        color: colors.$grey-800;
+      }
+
+      &:not(:disabled):hover {
+        color: colors.$grey-700;
+      }
+    }
+
+    &__dark {
+      background: colors.$grey-1000;
+      color: colors.$grey-200;
+      border: 0.188rem solid transparent;
+
+      &:disabled {
+        color: colors.$grey-500;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        color: colors.$grey-100;
+      }
+
+      &:not(:disabled):active {
+        color: colors.$grey-0;
+      }
+
+      &:not(:disabled):hover {
+        color: colors.$grey-100;
+      }
+    }
+  }
+
+  &__dashed {
+    &__light {
+      background: colors.$grey-0;
+      color: colors.$blue-500;
+      border: 0.063rem dashed colors.$blue-500;
+
+      &:disabled {
+        color: colors.$blue-300;
+        border: 0.063rem dashed colors.$blue-300;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        background: colors.$grey-0;
+        color: colors.$blue-700;
+        border: 0.188rem dashed colors.$blue-300;
+      }
+
+      &:not(:disabled):active {
+        color: colors.$blue-900;
+        border: 0.188rem dashed colors.$blue-300;
+      }
+
+      &:not(:disabled):hover {
+        color: colors.$blue-700;
+        border: 0.063rem dashed colors.$blue-700;
+      }
+    }
+
+    &__dark {
+      background: colors.$background;
+      color: colors.$blue-500;
+      border: 0.063rem dashed colors.$blue-500;
+
+      &:disabled {
+        color: colors.$blue-300;
+        border: 0.063rem dashed colors.$blue-300;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):focus {
+        color: colors.$blue-300;
+        border: 0.188rem dashed colors.$blue-300;
+      }
+
+      &:not(:disabled):active {
+        color: colors.$blue-500;
+        border: 0.188rem dashed colors.$blue-500;
+      }
+
+      &:not(:disabled):hover {
+        color: colors.$blue-700;
+        border: 0.063rem dashed colors.$blue-700;
+      }
+    }
+  }
+}
+
+.inpt {
+  &__light {
+    border: 0.063rem solid colors.$grey-300;
+    padding: 0.75rem 1rem;
+    border-radius: 0.875rem;
+    color: colors.$grey-600;
+    outline: none;
+
+    &::placeholder {
+      color: colors.$grey-200;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      background: colors.$grey-100;
+      color: colors.$grey-300;
+      border: 0.063rem solid colors.$grey-150;
+
+      &::placeholder {
+        color: colors.$grey-300;
+      }
+    }
+
+    &:not(:disabled):focus {
+      border: 0.125rem solid colors.$blue-100;
+    }
+
+    &__error {
+      border: 0.063rem solid colors.$red-500;
+
+      &:not(:disabled):focus {
+        border: 0.125rem solid colors.$red-500;
+      }
+    }
+  }
+
+  &__dark {
+    border: 0.063rem solid colors.$grey-700;
+    padding: 0.75rem 1rem;
+    border-radius: 0.875rem;
+    color: colors.$grey-100;
+    background: #313945;
+    outline: none;
+
+    &::placeholder {
+      color: colors.$grey-700;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      background: #20232666;
+      color: colors.$grey-500;
+      border: 0.063rem solid #40464de6;
+
+      &::placeholder {
+        color: colors.$grey-500;
+      }
+    }
+
+    &:not(:disabled):focus {
+      border: 0.125rem solid colors.$blue-100;
+    }
+
+    &__error {
+      border: 0.063rem solid colors.$red-500;
+
+      &:not(:disabled):focus {
+        border: 0.125rem solid colors.$red-500;
+      }
+    }
+  }
+}
