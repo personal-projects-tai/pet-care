@@ -165,12 +165,12 @@ button {
       }
 
       &:not(:disabled):focus {
-        border: 0.188rem solid colors.$blue-300;
+        border: 0.063rem solid colors.$blue-300;
       }
 
       &:not(:disabled):active {
         color: colors.$blue-900;
-        border: 0.188rem solid colors.$blue-300;
+        border: 0.063rem solid colors.$blue-300;
       }
 
       &:not(:disabled):hover {
@@ -191,12 +191,12 @@ button {
 
       &:not(:disabled):focus {
         color: colors.$blue-300;
-        border: 0.188rem solid colors.$blue-700;
+        border: 0.063rem solid colors.$blue-700;
       }
 
       &:not(:disabled):active {
         color: colors.$blue-100;
-        border: 0.188rem solid colors.$blue-300;
+        border: 0.063rem solid colors.$blue-300;
       }
 
       &:not(:disabled):hover {
@@ -324,7 +324,7 @@ button {
       &:not(:disabled):active {
         background: colors.$grey-300;
         color: colors.$grey-700;
-        border: colors.$grey-150;
+        border: 0.188rem solid colors.$grey-150;
       }
 
       &:not(:disabled):hover {
@@ -360,7 +360,7 @@ button {
     }
   }
 
-  &__plained-ghost {
+  &__planed-ghost {
     &__light {
       background: colors.$grey-0;
       color: colors.$grey-500;
@@ -423,12 +423,12 @@ button {
       &:not(:disabled):focus {
         background: colors.$grey-0;
         color: colors.$blue-700;
-        border: 0.188rem dashed colors.$blue-300;
+        border: 0.063rem dashed colors.$blue-300;
       }
 
       &:not(:disabled):active {
         color: colors.$blue-900;
-        border: 0.188rem dashed colors.$blue-300;
+        border: 0.063rem dashed colors.$blue-300;
       }
 
       &:not(:disabled):hover {
@@ -450,12 +450,12 @@ button {
 
       &:not(:disabled):focus {
         color: colors.$blue-300;
-        border: 0.188rem dashed colors.$blue-300;
+        border: 0.063rem dashed colors.$blue-300;
       }
 
       &:not(:disabled):active {
         color: colors.$blue-500;
-        border: 0.188rem dashed colors.$blue-500;
+        border: 0.063rem dashed colors.$blue-500;
       }
 
       &:not(:disabled):hover {
@@ -490,14 +490,14 @@ button {
     }
 
     &:not(:disabled):focus {
-      border: 0.125rem solid colors.$blue-100;
+      border: 0.063rem solid colors.$blue-100;
     }
 
     &__error {
       border: 0.063rem solid colors.$red-500;
 
       &:not(:disabled):focus {
-        border: 0.125rem solid colors.$red-500;
+        border: 0.063rem solid colors.$red-500;
       }
     }
   }
@@ -526,14 +526,14 @@ button {
     }
 
     &:not(:disabled):focus {
-      border: 0.125rem solid colors.$blue-100;
+      border: 0.063rem solid colors.$blue-100;
     }
 
     &__error {
       border: 0.063rem solid colors.$red-500;
 
       &:not(:disabled):focus {
-        border: 0.125rem solid colors.$red-500;
+        border: 0.063rem solid colors.$red-500;
       }
     }
   }
