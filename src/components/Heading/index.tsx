@@ -1,7 +1,7 @@
 export type Props = {
   heading: string
-  type: string
-  mode: string
+  type: '1' | '2' | '3' | '4'
+  mode: 'dark' | 'light'
 }
 
 export function Heading({ heading, mode, type }: Props) {

@@ -1,5 +1,5 @@
 export type Props = {
-  type: string
+  type: 'number' | 'text' | 'button' | 'checkbox' | 'date' | 'email' | 'password'
   placeholder: string
   mode: 'light' | 'dark'
 }

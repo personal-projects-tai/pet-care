@@ -1,8 +1,8 @@
 export type Props = {
   subtitle: string
-  size: string
-  type: string
-  mode: string
+  size: '1' | '2' | '3'
+  type: 'regular' | 'semibold' | 'underlined'
+  mode: 'dark' | 'light'
 }
 
 export function Subtitle({ subtitle, size, type, mode }: Props) {
