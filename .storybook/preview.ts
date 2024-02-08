@@ -5,6 +5,7 @@ import '../src/assets/styles/variables/colors.scss'
 import '../src/assets/styles/variables/spaces.scss'
 import '../src/assets/styles/variables/shadows.scss'
 import '../src/assets/styles/variables/breakpoints.scss'
+import '../src/assets/styles/global/index.scss'
 
 const preview: Preview = {
   parameters: {
