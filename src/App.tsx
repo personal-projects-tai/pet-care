@@ -1,3 +1,15 @@
+import { SwitchButton } from '@/components/SwitchButton'
+import { useTheme, ThemeProvider } from '@/hooks/ThemeContext'
+
 export function App() {
-  return <></>
+  const { theme } = useTheme()
+
+  console.log('theme::', theme)
+  return (
+    <>
+      <ThemeProvider>
+        <SwitchButton />
+      </ThemeProvider>
+    </>
+  )
 }

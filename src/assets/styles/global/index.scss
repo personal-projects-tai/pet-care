@@ -14,7 +14,6 @@
 
 body {
   -webkit-font-smoothing: antialised;
-  background: themes.$bg-login-dark;
 }
 
 body,
@@ -24,6 +23,14 @@ button {
   font-size: fonts.$text-16;
   font-weight: fonts.$regular-400;
   font-family: fonts.$font-family;
+}
+
+.light {
+	background-color: themes.$bg-login-light;
+}
+
+.dark {
+	background-color: themes.$bg-login-dark;
 }
 
 .btn {

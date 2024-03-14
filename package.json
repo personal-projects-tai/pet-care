@@ -8,7 +8,6 @@
     "build": "tsc && vite build",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
-    "format:style": "stylelint '**/*.scss' --formatter",
     "lint": "eslint . --ext ts,tsx,js,jsx",
     "lint:fix": "eslint . --ext ts,tsx,js,jsx --fix",
     "preview": "vite preview",

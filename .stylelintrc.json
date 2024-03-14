@@ -20,6 +20,6 @@
     "color-no-invalid-hex": true,
     "no-invalid-position-at-import-rule": true,
     "string-no-newline": true,
-    "length-zero-no-unit": true
+    "length-zero-no-unit": null
   }
 }
