@@ -10,10 +10,5 @@ export default {
     }
 
     return commands
-  },
-  '*.{css,scss}': filenames => {
-    const commands = [`stylelint "${filenames.join('" "')}" --formatter`]
-
-    return commands
   }
 }
