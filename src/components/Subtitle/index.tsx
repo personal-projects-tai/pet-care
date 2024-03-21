@@ -1,15 +1,23 @@
+import { ReactNode } from 'react'
+
 export type Props = {
-  subtitle: string
   size: '1' | '2' | '3'
   type: 'regular' | 'semibold' | 'underlined'
   mode: 'dark' | 'light'
+  centered?: boolean
+  children: ReactNode
 }
 
-export function Subtitle({ subtitle, size, type, mode }: Props) {
+export function Subtitle({ size, type, mode, children, centered = false }: Props) {
   return (
     <>
-      <h2 role="subtitle" className={`subtitle subtitle__${size} subtitle__${type} subtitle__${mode}`}>
-        {subtitle}
+      <h2
+        role="subtitle"
+        className={`subtitle subtitle__${size} subtitle__${type} subtitle__${mode} ${
+          centered ? 'text-centered' : null
+        }`}
+      >
+        {children}
       </h2>
     </>
   )

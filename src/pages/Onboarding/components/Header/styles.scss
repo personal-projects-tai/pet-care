@@ -1,0 +1,49 @@
+@use '../../../../assets/styles/variables/breakpoints.scss';
+@use '../../../../assets/styles/variables/spaces.scss';
+
+.onboarding-header {
+	padding: 3.125rem;
+
+	img {
+		height: 4.875rem;
+	}
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+	.onboarding-header {
+		display: flex;
+		justify-content: center;
+
+		padding: spaces.$space-12;
+
+		img {
+			height: spaces.$space-22;
+		}
+	}
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
+	.onboarding-header {
+		display: flex;
+		justify-content: center;
+
+		padding: 2.125rem;
+
+		img {
+			height: 3.875rem;
+		}
+	}
+}
+
+@media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
+	.onboarding-header {
+		display: flex;
+		justify-content: center;
+
+		padding: 2.125rem;
+
+		img {
+			height: 4.875rem;
+		}
+	}
+}

@@ -26,11 +26,16 @@ button {
   font-family: fonts.$font-family;
 }
 
+.text-centered {
+	text-align: center;
+}
+
 .btn {
   border: 0;
   gap: spaces.$space-3;
   display: flex;
   align-items: center;
+	justify-content: center;
   cursor: pointer;
 
   &__sm {
@@ -208,7 +213,7 @@ button {
 
   &__planed {
     &__light {
-      background: colors.$grey-0;
+			background-color: transparent;
       color: colors.$blue-500;
 
       &:disabled {
@@ -230,7 +235,7 @@ button {
     }
 
     &__dark {
-      background: colors.$grey-1000;
+      background-color: transparent;
       color: colors.$blue-500;
 
       &:disabled {
@@ -362,7 +367,7 @@ button {
 
   &__planed-ghost {
     &__light {
-      background: colors.$grey-0;
+      background: transparent;
       color: colors.$grey-500;
       border: 0.188rem solid transparent;
 
@@ -385,7 +390,7 @@ button {
     }
 
     &__dark {
-      background: colors.$grey-1000;
+      background: transparent;
       color: colors.$grey-200;
       border: 0.188rem solid transparent;
 
@@ -467,12 +472,13 @@ button {
 }
 
 .inpt {
+	padding: 0.75rem 1rem;
+  border-radius: 0.875rem;
+	outline: none;
+
   &__light {
     border: 0.063rem solid colors.$grey-300;
-    padding: 0.75rem 1rem;
-    border-radius: 0.875rem;
     color: colors.$grey-600;
-    outline: none;
 
     &::placeholder {
       color: colors.$grey-200;
@@ -504,11 +510,8 @@ button {
 
   &__dark {
     border: 0.063rem solid colors.$grey-700;
-    padding: 0.75rem 1rem;
-    border-radius: 0.875rem;
     color: colors.$grey-100;
     background: #313945;
-    outline: none;
 
     &::placeholder {
       color: colors.$grey-700;
@@ -578,7 +581,7 @@ button {
   }
 
   &__dark {
-    color: colors.$grey-0;
+    color: colors.$grey-200;
   }
 
   &__regular {
