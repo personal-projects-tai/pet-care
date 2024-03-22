@@ -29,6 +29,14 @@ button {
 	text-align: center;
 }
 
+.light {
+	background-color: themes.$bg-login-light;
+}
+
+.dark {
+	background-color: themes.$bg-login-dark;
+}
+
 .btn {
   border: 0;
   gap: spaces.$space-3;

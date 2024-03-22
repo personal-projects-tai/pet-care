@@ -1,16 +1,17 @@
+import { useTheme } from '@/hooks/ThemeContext'
 import { ReactNode } from 'react'
 
 export type Props = {
   type: '1' | '2' | '3' | '4'
-  mode: 'dark' | 'light'
   centered?: boolean
   children: ReactNode
 }
 
-export function Heading({ mode, type, children, centered = false }: Props) {
+export function Heading({ type, children, centered = false }: Props) {
+  const { theme } = useTheme()
   return (
     <>
-      <h1 role="heading" className={`heading heading__${type} heading__${mode} ${centered ? 'text-centered' : null}`}>
+      <h1 role="heading" className={`heading heading__${type} heading__${theme} ${centered ? 'text-centered' : null}`}>
         {children}
       </h1>
     </>

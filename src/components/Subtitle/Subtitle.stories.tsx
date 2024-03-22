@@ -9,7 +9,6 @@ export default {
 export const Default: StoryObj = {
   args: {
     subtitle: 'Subtitle',
-    mode: 'dark',
     size: '1',
     type: 'regular'
   }
@@ -18,7 +17,6 @@ export const Default: StoryObj = {
 export const SubtitleOneSemibold: StoryObj = {
   args: {
     subtitle: 'Subtitle',
-    mode: 'dark',
     size: '1',
     type: 'semibold'
   }
@@ -27,7 +25,6 @@ export const SubtitleOneSemibold: StoryObj = {
 export const SubtitleOneUnderlined: StoryObj = {
   args: {
     subtitle: 'Subtitle',
-    mode: 'dark',
     size: '1',
     type: 'underlined'
   }
@@ -36,7 +33,6 @@ export const SubtitleOneUnderlined: StoryObj = {
 export const SubtitleTwoRegular: StoryObj = {
   args: {
     subtitle: 'Subtitle',
-    mode: 'dark',
     size: '2',
     type: 'regular'
   }
@@ -45,7 +41,6 @@ export const SubtitleTwoRegular: StoryObj = {
 export const SubtitleTwoSemibold: StoryObj = {
   args: {
     subtitle: 'Subtitle',
-    mode: 'dark',
     size: '2',
     type: 'semibold'
   }
@@ -54,7 +49,6 @@ export const SubtitleTwoSemibold: StoryObj = {
 export const SubtitleTwoUnderlined: StoryObj = {
   args: {
     subtitle: 'Subtitle',
-    mode: 'dark',
     size: '2',
     type: 'underlined'
   }
@@ -63,7 +57,6 @@ export const SubtitleTwoUnderlined: StoryObj = {
 export const SubtitleThreeRegular: StoryObj = {
   args: {
     subtitle: 'Subtitle',
-    mode: 'dark',
     size: '3',
     type: 'regular'
   }
@@ -72,7 +65,6 @@ export const SubtitleThreeRegular: StoryObj = {
 export const SubtitleThreeSemibold: StoryObj = {
   args: {
     subtitle: 'Subtitle',
-    mode: 'dark',
     size: '3',
     type: 'semibold'
   }
@@ -81,7 +73,6 @@ export const SubtitleThreeSemibold: StoryObj = {
 export const SubtitleThreeUnderlined: StoryObj = {
   args: {
     subtitle: 'Subtitle',
-    mode: 'dark',
     size: '3',
     type: 'underlined'
   }

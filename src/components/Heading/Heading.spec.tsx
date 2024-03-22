@@ -5,7 +5,7 @@ import { Heading } from '.'
 
 describe('<Heading />', () => {
   it('should render the heading', () => {
-    render(<Heading heading="Title" mode="dark" type="1" />)
+    render(<Heading type="1">Heading</Heading>)
 
     expect(screen.getByRole('heading')).toBeInTheDocument()
   })

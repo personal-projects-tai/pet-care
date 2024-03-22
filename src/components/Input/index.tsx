@@ -1,13 +1,15 @@
+import { useTheme } from '@/hooks/ThemeContext'
+
 export type Props = {
   type: 'number' | 'text' | 'button' | 'checkbox' | 'date' | 'email' | 'password'
   placeholder: string
-  mode: 'light' | 'dark'
 }
 
-export function Input({ mode, placeholder, type }: Props) {
+export function Input({ placeholder, type }: Props) {
+  const { theme } = useTheme()
   return (
     <>
-      <input role="input" type={type} placeholder={placeholder} className={`inpt__${mode}`} />
+      <input role="input" type={type} placeholder={placeholder} className={`inpt__${theme}`} />
     </>
   )
 }
