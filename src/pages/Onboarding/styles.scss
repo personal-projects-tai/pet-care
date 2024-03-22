@@ -1,45 +1,45 @@
 @use '../../assets/styles/variables/breakpoints.scss';
 
 .onboarding {
-	height: 85vh;
-	width: 90;
+  height: 85vh;
+  width: 90;
 
-	position: relative;
+  position: relative;
 
-	background-image: url('../../assets/images/dog.png');
-	background-size: auto 90%;
-	background-repeat: no-repeat;
-	background-position: left bottom;
+  background-image: url('../../assets/images/dog.png');
+  background-size: auto 90%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
 @media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
-	.onboarding {
-		height: 90vh;
-		background-size: auto 82%;
-		background-position: center center;
-	}
+  .onboarding {
+    height: 90vh;
+    background-size: auto 82%;
+    background-position: center center;
+  }
 }
 
 @media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
-	.onboarding {
-		height: 75vh;
-		background-size: auto 80%;
-		background-position: center center;
-	}
+  .onboarding {
+    height: 75vh;
+    background-size: auto 80%;
+    background-position: center center;
+  }
 }
 
 @media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
-	.onboarding {
-		height: 88vh;
-		background-size: auto 80%;
-		background-position: center center;
-	}
+  .onboarding {
+    height: 88vh;
+    background-size: auto 80%;
+    background-position: center center;
+  }
 }
 
 @media (min-width: breakpoints.$breakpoint-lg) and (max-width: breakpoints.$breakpoint-xl) {
-	.onboarding {
-		height: 88vh;
-		background-size: auto 80%;
-		background-position: center center;
-	}
+  .onboarding {
+    height: 88vh;
+    background-size: auto 80%;
+    background-position: center center;
+  }
 }

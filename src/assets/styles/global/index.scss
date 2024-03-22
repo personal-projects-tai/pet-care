@@ -26,15 +26,15 @@ button {
 }
 
 .text-centered {
-	text-align: center;
+  text-align: center;
 }
 
 .light {
-	background-color: themes.$bg-login-light;
+  background-color: themes.$bg-login-light;
 }
 
 .dark {
-	background-color: themes.$bg-login-dark;
+  background-color: themes.$bg-login-dark;
 }
 
 .btn {
@@ -42,7 +42,7 @@ button {
   gap: spaces.$space-3;
   display: flex;
   align-items: center;
-	justify-content: center;
+  justify-content: center;
   cursor: pointer;
 
   &__sm {
@@ -220,7 +220,7 @@ button {
 
   &__planed {
     &__light {
-			background-color: transparent;
+      background-color: transparent;
       color: colors.$blue-500;
 
       &:disabled {
@@ -479,9 +479,9 @@ button {
 }
 
 .inpt {
-	padding: 0.75rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 0.875rem;
-	outline: none;
+  outline: none;
 
   &__light {
     border: 0.063rem solid colors.$grey-300;
