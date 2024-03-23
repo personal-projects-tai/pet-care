@@ -4,9 +4,9 @@
   height: calc(100vh - 181.5px);
   width: 90;
 
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
   background-image: url('../../assets/images/dog.png');
   background-size: auto 90%;
@@ -20,7 +20,7 @@
     background-size: auto 72%;
     background-position: center bottom;
 
-		align-items: end;
+    align-items: end;
   }
 }
 
@@ -30,7 +30,7 @@
     background-size: auto 80%;
     background-position: center bottom;
 
-		align-items: end;
+    align-items: end;
   }
 }
 
@@ -40,7 +40,7 @@
     background-size: auto 80%;
     background-position: center center;
 
-		align-items: end;
+    align-items: end;
   }
 }
 
@@ -50,6 +50,6 @@
     background-size: auto 80%;
     background-position: center center;
 
-		align-items: end;
+    align-items: end;
   }
 }
