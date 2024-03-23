@@ -9,7 +9,6 @@ export default {
 export const Default: StoryObj = {
   args: {
     heading: 'Heading 1',
-    mode: 'dark',
     type: '1'
   }
 }
@@ -17,7 +16,6 @@ export const Default: StoryObj = {
 export const HeadingTwo: StoryObj = {
   args: {
     heading: 'Heading 2',
-    mode: 'dark',
     type: '2'
   }
 }
@@ -25,7 +23,6 @@ export const HeadingTwo: StoryObj = {
 export const HeadingThree: StoryObj = {
   args: {
     heading: 'Heading 3',
-    mode: 'dark',
     type: '3'
   }
 }
@@ -33,7 +30,6 @@ export const HeadingThree: StoryObj = {
 export const HeadingFour: StoryObj = {
   args: {
     heading: 'Heading 4',
-    mode: 'dark',
     type: '4'
   }
 }

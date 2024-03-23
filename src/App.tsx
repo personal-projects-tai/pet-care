@@ -1,14 +1,12 @@
-import { SwitchButton } from '@/components/SwitchButton'
-import { useTheme, ThemeProvider } from '@/hooks/ThemeContext'
+import { RouterProvider } from 'react-router-dom'
+import { router } from '@/router'
+import { ThemeProvider } from '@/hooks/ThemeContext'
 
 export function App() {
-  const { theme } = useTheme()
-
-  console.log('theme::', theme)
   return (
     <>
       <ThemeProvider>
-        <SwitchButton />
+        <RouterProvider router={router} />
       </ThemeProvider>
     </>
   )

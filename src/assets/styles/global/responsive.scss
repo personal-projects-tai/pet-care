@@ -1,0 +1,181 @@
+@use '../variables/breakpoints.scss';
+
+@use '../variables/fonts.scss';
+
+@use '../variables/spaces.scss';
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .btn {
+    &__sm {
+      padding: spaces.$space-2;
+      border-radius: spaces.$space-5;
+    }
+
+    &__md {
+      padding: spaces.$space-5;
+      border-radius: spaces.$space-5;
+    }
+
+    &__lg {
+      padding: spaces.$space-6;
+      border-radius: spaces.$space-5;
+    }
+  }
+
+  .heading {
+    &__1 {
+      font-size: fonts.$text-30;
+      line-height: fonts.$line-height-sm;
+    }
+
+    &__2 {
+      font-size: fonts.$text-22;
+      line-height: fonts.$line-height-sm;
+    }
+
+    &__3 {
+      font-size: fonts.$text-14;
+      line-height: fonts.$line-height-sm;
+    }
+
+    &__4 {
+      font-size: fonts.$text-12;
+      line-height: fonts.$line-height-sm;
+    }
+  }
+
+  .subtitle {
+    &__1 {
+      font-size: fonts.$text-16;
+    }
+
+    &__2 {
+      font-size: fonts.$text-14;
+    }
+
+    &__3 {
+      font-size: fonts.$text-12;
+    }
+  }
+
+  .text {
+    &__1 {
+      font-size: fonts.$text-14;
+    }
+
+    &__2 {
+      font-size: fonts.$text-12;
+    }
+
+    &__3 {
+      font-size: fonts.$text-12;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
+  .btn {
+    &__sm {
+      padding: spaces.$space-3;
+      border-radius: spaces.$space-6;
+    }
+
+    &__md {
+      padding: spaces.$space-6;
+      border-radius: spaces.$space-6;
+    }
+
+    &__lg {
+      padding: spaces.$space-7;
+      border-radius: spaces.$space-6;
+    }
+  }
+
+  .heading {
+    &__1 {
+      font-size: fonts.$text-32;
+      line-height: fonts.$line-height;
+    }
+
+    &__2 {
+      font-size: fonts.$text-24;
+      line-height: fonts.$line-height-sm;
+    }
+
+    &__3 {
+      font-size: fonts.$text-16;
+      line-height: fonts.$line-height-sm;
+    }
+
+    &__4 {
+      font-size: fonts.$text-14;
+      line-height: fonts.$line-height-sm;
+    }
+  }
+
+  .subtitle {
+    &__1 {
+      font-size: fonts.$text-18;
+    }
+
+    &__2 {
+      font-size: fonts.$text-16;
+    }
+
+    &__3 {
+      font-size: fonts.$text-14;
+    }
+  }
+
+  .text {
+    &__1 {
+      font-size: fonts.$text-14;
+    }
+
+    &__2 {
+      font-size: fonts.$text-12;
+    }
+
+    &__3 {
+      font-size: fonts.$text-12;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
+  .heading {
+    &__1 {
+      font-size: fonts.$text-34;
+      line-height: fonts.$line-height-lg;
+    }
+
+    &__2 {
+      font-size: fonts.$text-26;
+      line-height: fonts.$line-height;
+    }
+
+    &__3 {
+      font-size: fonts.$text-18;
+      line-height: fonts.$line-height-sm;
+    }
+
+    &__4 {
+      font-size: fonts.$text-16;
+      line-height: fonts.$line-height-sm;
+    }
+  }
+
+  .subtitle {
+    &__1 {
+      font-size: fonts.$text-20;
+    }
+
+    &__2 {
+      font-size: fonts.$text-18;
+    }
+
+    &__3 {
+      font-size: fonts.$text-16;
+    }
+  }
+}

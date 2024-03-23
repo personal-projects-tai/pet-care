@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
 
-import { Heading } from '.'
+import { Header } from '.'
 
-describe('<Heading />', () => {
-  it('should render the heading', () => {
-    render(<Heading type="1">Heading</Heading>)
+describe('<Header />', () => {
+  it('should render the header component', () => {
+    render(<Header />)
 
     expect(screen.getByRole('heading')).toBeInTheDocument()
   })
