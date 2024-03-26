@@ -1,0 +1,54 @@
+@use '../../../assets/styles/variables/breakpoints.scss';
+
+.auth-layout {
+  height: calc(100vh - 11.3438rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-image: url('../../../assets/images/dog.png');
+  background-size: auto 90%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .auth-layout {
+    height: calc(100vh - 5.75rem);
+    background-size: auto 72%;
+    background-position: center bottom;
+
+    align-items: end;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
+  .auth-layout {
+    height: calc(100vh - 8.125rem);
+    background-size: auto 80%;
+    background-position: center bottom;
+
+    align-items: end;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
+  .auth-layout {
+    height: calc(100vh - 9.125rem);
+    background-size: auto 80%;
+    background-position: center center;
+
+    align-items: end;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-lg) and (max-width: breakpoints.$breakpoint-xl) {
+  .auth-layout {
+    height: calc(100vh - 11.3438rem);
+    background-size: auto 80%;
+    background-position: center center;
+
+    align-items: end;
+  }
+}

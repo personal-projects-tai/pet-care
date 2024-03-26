@@ -1,54 +1,43 @@
-@use '../../assets/styles/variables/breakpoints.scss';
-
-.onboarding {
-  height: calc(100vh - 11.3438rem);
-
+@use '../../assets/styles/variables/colors.scss';
+.icon {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 
-  background-image: url('../../assets/images/dog.png');
-  background-size: auto 90%;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
+  margin-top: -70px;
 
-@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
-  .onboarding {
-    height: calc(100vh - 5.75rem);
-    background-size: auto 72%;
-    background-position: center bottom;
+  .rounded-in {
+    padding: 24px;
+    border-radius: 100%;
 
-    align-items: end;
+    &__light {
+      border: 3px solid colors.$blue-100;
+      background-color: colors.$grey-0;
+
+      svg {
+        color: colors.$blue-500;
+      }
+    }
+
+    &__dark {
+      border: 3px solid colors.$blue-300;
+      background-color: colors.$grey-800;
+
+      svg {
+        color: colors.$blue-300;
+      }
+    }
   }
-}
 
-@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
-  .onboarding {
-    height: calc(100vh - 8.125rem);
-    background-size: auto 80%;
-    background-position: center bottom;
+  .rounded-out {
+    padding: 16px;
+    border-radius: 100%;
 
-    align-items: end;
-  }
-}
+    &__light {
+      background-color: colors.$grey-0;
+    }
 
-@media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
-  .onboarding {
-    height: calc(100vh - 9.125rem);
-    background-size: auto 80%;
-    background-position: center center;
-
-    align-items: end;
-  }
-}
-
-@media (min-width: breakpoints.$breakpoint-lg) and (max-width: breakpoints.$breakpoint-xl) {
-  .onboarding {
-    height: calc(100vh - 11.3438rem);
-    background-size: auto 80%;
-    background-position: center center;
-
-    align-items: end;
+    &__dark {
+      background-color: colors.$grey-800;
+    }
   }
 }

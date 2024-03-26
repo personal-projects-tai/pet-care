@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
 
-import { Onboarding } from '.'
+import { AuthLayout } from '.'
 
-describe('<Onboarding />', () => {
+describe('<AuthLayout />', () => {
   it('should render the heading', () => {
-    render(<Onboarding />)
+    render(<AuthLayout />)
 
     expect(screen.getByRole('main')).toBeInTheDocument()
   })
