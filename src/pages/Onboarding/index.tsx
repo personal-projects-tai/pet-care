@@ -1,4 +1,3 @@
-/// <reference types="vite-plugin-svgr/client" />
 import { useTheme } from '@/hooks/ThemeContext'
 import { Card } from './components/Card'
 
