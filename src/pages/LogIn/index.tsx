@@ -1,16 +1,16 @@
-import { Card } from '../Onboarding/components/Card'
-
-import './styles.scss'
 import { useTheme } from '@/hooks/ThemeContext'
+import { Card } from '../Onboarding/components/Card'
+import { Heading } from '@/components/Heading'
 
 import User from '@/assets/icons/user.svg?react'
-import { Heading } from '@/components/Heading'
+
+import './styles.scss'
 import { Subtitle } from '@/components/Subtitle'
-import { Button } from '@/components/Button'
 import { Input } from '@/components/Input'
+import { Button } from '@/components/Button'
 import { Link } from 'react-router-dom'
 
-export function SignUp() {
+export function LogIn() {
   const { theme } = useTheme()
   return (
     <Card>
@@ -22,28 +22,22 @@ export function SignUp() {
         </div>
       </div>
       <Heading type="1" centered={true}>
-        Create account
+        Log in
       </Heading>
       <Subtitle size="2" type="regular" centered={true}>
-        Welcome! Please enter your information below and get started.
+        Welcome back! Please enter your information below and get started.
       </Subtitle>
       <form className="sign-up-form">
         <Input placeholder="Email" type="email" />
         <Input placeholder="Password" type="password" />
-        <div>
-          <Input type="checkbox" id="accept" />
-          <label htmlFor="accept" className={`label-${theme}`}>
-            Accept Terms and Conditions
-          </label>
-        </div>
       </form>
       <Button size="lg" type="primary">
-        Create account
+        Log in
       </Button>
       <div className="log-in-context">
-        <span className={`have-account__${theme}`}>Already have an account?</span>
-        <Link to={'/login'} className={`anchor-${theme}`}>
-          Log in here
+        <span className={`have-account__${theme}`}>Don't have an account?</span>
+        <Link to={'/sign-up'} className={`anchor-${theme}`}>
+          Sign up here
         </Link>
       </div>
     </Card>
