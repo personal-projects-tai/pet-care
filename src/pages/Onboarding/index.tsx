@@ -9,9 +9,14 @@ import { Button } from '@/components/Button'
 import SquarePen from '@/assets/icons/square-pen.svg?react'
 
 import './styles.scss'
+import { router } from '@/router'
 
 export function Onboarding() {
   const { theme } = useTheme()
+
+  const handleSendToSignUp = () => {
+    router.navigate('/sign-up')
+  }
   return (
     <Card>
       <div className="icon">
@@ -28,8 +33,12 @@ export function Onboarding() {
         Create personalized profiles for each of your beloved pets on PawBuddy. Share their name, breed, and age while
         connecting with a vibrant community.
       </Subtitle>
-      <Button size="lg" type="primary" title="Get Started" />
-      <Button size="lg" type="planed-ghost" title="Sign Up later" />
+      <Button size="lg" type="primary" handleFn={handleSendToSignUp}>
+        Get Started
+      </Button>
+      <Button size="lg" type="planed-ghost">
+        Sign Up later
+      </Button>
     </Card>
   )
 }

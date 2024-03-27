@@ -1,0 +1,66 @@
+@use '../../assets/styles/variables/colors.scss';
+.icon {
+  display: flex;
+  justify-content: center;
+
+  margin-top: -70px;
+
+  .rounded-in {
+    padding: 24px;
+    border-radius: 100%;
+
+    &__light {
+      border: 3px solid colors.$blue-100;
+      background-color: colors.$grey-0;
+
+      svg {
+        color: colors.$blue-500;
+      }
+    }
+
+    &__dark {
+      border: 3px solid colors.$blue-300;
+      background-color: colors.$grey-800;
+
+      svg {
+        color: colors.$blue-300;
+      }
+    }
+  }
+
+  .rounded-out {
+    padding: 16px;
+    border-radius: 100%;
+
+    &__light {
+      background-color: colors.$grey-0;
+    }
+
+    &__dark {
+      background-color: colors.$grey-800;
+    }
+  }
+}
+
+.sign-up-form {
+	gap: 26px;
+	display: flex;
+	flex-direction: column;
+}
+
+.log-in-context {
+	gap: 0.5rem;
+	display: flex;
+	justify-content: center;
+
+	padding: 1rem;
+	.have-account {
+		&__light {
+			color: colors.$grey-500;
+		}
+
+		&__dark {
+			color: colors.$grey-200;
+		}
+	}
+}
