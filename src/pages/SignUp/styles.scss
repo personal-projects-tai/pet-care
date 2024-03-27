@@ -43,24 +43,24 @@
 }
 
 .sign-up-form {
-	gap: 26px;
-	display: flex;
-	flex-direction: column;
+  gap: 26px;
+  display: flex;
+  flex-direction: column;
 }
 
 .log-in-context {
-	gap: 0.5rem;
-	display: flex;
-	justify-content: center;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
 
-	padding: 1rem;
-	.have-account {
-		&__light {
-			color: colors.$grey-500;
-		}
+  padding: 1rem;
+  .have-account {
+    &__light {
+      color: colors.$grey-500;
+    }
 
-		&__dark {
-			color: colors.$grey-200;
-		}
-	}
+    &__dark {
+      color: colors.$grey-200;
+    }
+  }
 }
