@@ -1,4 +1,7 @@
 @use '../../assets/styles/variables/colors.scss';
+
+@use '../../assets/styles/variables/breakpoints.scss';
+
 .icon {
   display: flex;
   justify-content: center;
@@ -39,5 +42,34 @@
     &__dark {
       background-color: colors.$grey-800;
     }
+  }
+}
+
+.sign-up-form {
+  gap: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+.log-in-context {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+
+  padding: 1rem;
+  .have-account {
+    &__light {
+      color: colors.$grey-500;
+    }
+
+    &__dark {
+      color: colors.$grey-200;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .log-in-context {
+    flex-direction: column;
   }
 }

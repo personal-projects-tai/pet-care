@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
 
-import { Onboarding } from '.'
+import { Checkbox } from '.'
 
-describe('<Onboarding />', () => {
+describe('<Checkbox />', () => {
   it('should render the heading', () => {
-    render(<Onboarding />)
+    render(<Checkbox />)
 
-    expect(screen.getByRole('main')).toBeInTheDocument()
+    expect(screen.getByRole('checkbox')).toBeInTheDocument()
   })
 })

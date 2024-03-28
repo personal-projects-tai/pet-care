@@ -25,6 +25,26 @@ button {
   font-family: fonts.$font-family;
 }
 
+a {
+  text-decoration: none;
+}
+
+.anchor-light {
+  color: colors.$blue-500;
+
+  &:hover {
+    color: colors.$blue-300;
+  }
+}
+
+.anchor-dark {
+  color: colors.$blue-300;
+
+  &:hover {
+    color: colors.$blue-500;
+  }
+}
+
 .text-centered {
   text-align: center;
 }
@@ -478,10 +498,29 @@ button {
   }
 }
 
+.inpt-container {
+  width: 100%;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  svg {
+    position: absolute;
+    right: 1.25rem;
+
+    color: colors.$grey-500;
+
+    cursor: pointer;
+  }
+}
+
 .inpt {
   padding: 0.75rem 1rem;
   border-radius: 0.875rem;
   outline: none;
+  width: 100%;
 
   &__light {
     border: 0.063rem solid colors.$grey-300;
@@ -512,6 +551,10 @@ button {
       &:not(:disabled):focus {
         border: 0.063rem solid colors.$red-500;
       }
+    }
+
+    &[type='checkbox'] + label::before {
+      background-color: transparent;
     }
   }
 
@@ -546,6 +589,52 @@ button {
         border: 0.063rem solid colors.$red-500;
       }
     }
+
+    &[type='checkbox'] + label::before {
+      background-color: #313945;
+    }
+  }
+
+  &[type='checkbox'] {
+    display: none;
+  }
+
+  &[type='checkbox'] + label::before {
+    content: '';
+    display: flex;
+
+    width: 1.25rem;
+    height: 1.25rem;
+
+    border: 1px solid colors.$grey-300;
+    border-radius: 0.25rem;
+  }
+
+  &[type='checkbox']:checked + label::before {
+    background-color: colors.$blue-500;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12' /%3E%3C/svg%3E");
+    background-size: 1.25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: 1px solid colors.$blue-500;
+  }
+}
+
+label {
+  gap: 0.5rem;
+  display: flex;
+  cursor: pointer;
+  width: fit-content;
+  align-items: center;
+
+  &.label-light {
+    color: colors.$grey-600;
+  }
+
+  &.label-dark {
+    color: colors.$grey-200;
   }
 }
 
@@ -554,7 +643,7 @@ button {
   font-family: fonts.$font-title;
 
   &__light {
-    color: colors.$grey-1000;
+    color: colors.$grey-800;
   }
 
   &__dark {
@@ -584,7 +673,7 @@ button {
 
 .subtitle {
   &__light {
-    color: colors.$grey-1000;
+    color: colors.$grey-600;
   }
 
   &__dark {
