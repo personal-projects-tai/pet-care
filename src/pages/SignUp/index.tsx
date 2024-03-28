@@ -1,14 +1,16 @@
-import { Card } from '../Onboarding/components/Card'
-
 import './styles.scss'
+
 import { useTheme } from '@/hooks/ThemeContext'
 
-import User from '@/assets/icons/user.svg?react'
+import { Link } from 'react-router-dom'
+import { Input } from '@/components/Input'
+import { Button } from '@/components/Button'
 import { Heading } from '@/components/Heading'
 import { Subtitle } from '@/components/Subtitle'
-import { Button } from '@/components/Button'
-import { Input } from '@/components/Input'
-import { Link } from 'react-router-dom'
+import { Checkbox } from '@/components/Checkbox'
+import { Card } from '../Onboarding/components/Card'
+
+import User from '@/assets/icons/user.svg?react'
 
 export function SignUp() {
   const { theme } = useTheme()
@@ -31,7 +33,7 @@ export function SignUp() {
         <Input placeholder="Email" type="email" />
         <Input placeholder="Password" type="password" />
         <div>
-          <Input type="checkbox" id="accept" />
+          <Checkbox id="accept" />
           <label htmlFor="accept" className={`label-${theme}`}>
             Accept Terms and Conditions
           </label>
