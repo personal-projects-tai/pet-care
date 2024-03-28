@@ -1,0 +1,27 @@
+{
+  "onboarding": {
+    "title": "Perfis de animais de estimação personalizados",
+    "description": "Crie perfis personalizados para cada um de seus amados animais de estimação no PawBuddy. Compartilhe seu nome, raça e idade enquanto se conecta a uma comunidade vibrante.",
+    "get_started": "Começar",
+    "sign_up_later": "Cadastrar mais tarde"
+  },
+  "input_placeholder": {
+    "email_placeholder": "Email",
+    "password_placeholder": "Senha"
+  },
+  "sign_up": {
+    "title": "Criar conta",
+    "description": "Bem-vindo! Por favor, insira suas informações abaixo para iniciar.",
+    "accept_terms": "Aceitar termos e Condições",
+    "create_sign_up": "Criar conta",
+    "has_account": "Já possui uma conta?",
+    "login_link": "Faça login aqui!"
+  },
+  "login": {
+    "title": "Acesse sua conta",
+    "description": "Bem-vindo de volta! Por favor, insira suas informações abaixo para ser redirecionado à sua conta.",
+    "login_button": "Login",
+    "havent_account": "Não possui uma conta?",
+    "sign_up_link": "Cadastre-se aqui!"
+  }
+}

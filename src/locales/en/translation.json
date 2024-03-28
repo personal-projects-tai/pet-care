@@ -1,0 +1,27 @@
+{
+  "onboarding": {
+    "title": "Personalized Pet Profiles",
+    "description": "Create personalized profiles for each of your beloved pets on PawBuddy. Share their name, breed, and age while connecting with a vibrant community.",
+    "get_started": "Get started",
+    "sign_up_later": "Sign up later"
+  },
+  "input_placeholder": {
+    "email_placeholder": "Your email",
+    "password_placeholder": "Password"
+  },
+  "sign_up": {
+    "title": "Create account",
+    "description": "Welcome! Please enter your information below and get started.",
+    "accept_terms": "Accept Terms and Conditions",
+    "create_sign_up": "Create account",
+    "has_account": "Already have an account?",
+    "login_link": "Log in here!"
+  },
+  "login": {
+    "title": "Access your account",
+    "description": "Welcome back! Please enter your information below and get logged.",
+    "login_button": "Login",
+    "havent_account": "Don't have an account?",
+    "sign_up_link": "Sign up here!"
+  }
+}
