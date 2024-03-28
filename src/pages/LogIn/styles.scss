@@ -1,5 +1,7 @@
 @use '../../assets/styles/variables/colors.scss';
 
+@use '../../assets/styles/variables/breakpoints.scss';
+
 .icon {
   display: flex;
   justify-content: center;
@@ -63,5 +65,11 @@
     &__dark {
       color: colors.$grey-200;
     }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .log-in-context {
+    flex-direction: column;
   }
 }
