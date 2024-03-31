@@ -1,37 +1,36 @@
 @use '../../../../assets/styles/variables/colors.scss';
 
 .password-strength {
-	gap: 0.5rem;
-	display: flex;
-	align-items: center;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
 
-	width: 100%;
+  width: 100%;
 
-	.strength {
-		height: 0.5rem;
-		width: 100%;
+  .strength {
+    height: 0.5rem;
+    width: 100%;
 
-		background-color: colors.$grey-300;
-		
+    background-color: colors.$grey-300;
 
-		&__default {
-			background-color: colors.$grey-300;
-		}
+    &__default {
+      background-color: colors.$grey-300;
+    }
 
-		&__weak {
-			background-color: rgb(220 38 38);
-		}
+    &__weak {
+      background-color: rgb(220 38 38);
+    }
 
-		&__medium {
-			background-color: rgb(234 88 12);
-		}
+    &__medium {
+      background-color: rgb(234 88 12);
+    }
 
-		&__strong {
-			background-color: rgb(22 163 74);
-		}
+    &__strong {
+      background-color: rgb(22 163 74);
+    }
 
-		&__very-strong {
-			background-color: rgb(37 99 235);
-		}
-	}
+    &__very-strong {
+      background-color: rgb(37 99 235);
+    }
+  }
 }
