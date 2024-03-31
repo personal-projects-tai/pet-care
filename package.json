@@ -21,11 +21,14 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@hookform/resolvers": "3.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "7.51.2",
     "react-router": "6.21.0",
     "react-router-dom": "6.21.0",
-    "vite-plugin-svgr": "4.2.0"
+    "vite-plugin-svgr": "4.2.0",
+    "zod": "3.22.4"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "7.6.6",
