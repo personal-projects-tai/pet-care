@@ -9,7 +9,7 @@ export default {
 export const Default: StoryObj = {
   args: {
     title: 'Click',
-    type: 'primary',
+    variant: 'primary',
     size: 'md'
   }
 }
@@ -17,7 +17,7 @@ export const Default: StoryObj = {
 export const Secondary: StoryObj = {
   args: {
     title: 'Click',
-    type: 'secondary',
+    variant: 'secondary',
     size: 'md'
   }
 }
@@ -25,7 +25,7 @@ export const Secondary: StoryObj = {
 export const Outlined: StoryObj = {
   args: {
     title: 'Click',
-    type: 'outlined',
+    variant: 'outlined',
     size: 'md'
   }
 }
@@ -33,7 +33,7 @@ export const Outlined: StoryObj = {
 export const Planed: StoryObj = {
   args: {
     title: 'Click',
-    type: 'planed',
+    variant: 'planed',
     size: 'md'
   }
 }
@@ -41,7 +41,7 @@ export const Planed: StoryObj = {
 export const Destructive: StoryObj = {
   args: {
     title: 'Click',
-    type: 'destructive',
+    variant: 'destructive',
     size: 'md'
   }
 }
@@ -49,7 +49,7 @@ export const Destructive: StoryObj = {
 export const Ghost: StoryObj = {
   args: {
     title: 'Click',
-    type: 'ghost',
+    variant: 'ghost',
     size: 'md'
   }
 }
@@ -57,7 +57,7 @@ export const Ghost: StoryObj = {
 export const PlanedGhost: StoryObj = {
   args: {
     title: 'Click',
-    type: 'planed-ghost',
+    variant: 'planed-ghost',
     size: 'md'
   }
 }
@@ -65,7 +65,7 @@ export const PlanedGhost: StoryObj = {
 export const Dashed: StoryObj = {
   args: {
     title: 'Click',
-    type: 'dashed',
+    variant: 'dashed',
     size: 'md'
   }
 }

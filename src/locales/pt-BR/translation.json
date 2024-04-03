@@ -23,5 +23,9 @@
     "login_button": "Login",
     "havent_account": "Não possui uma conta?",
     "sign_up_link": "Cadastre-se aqui!"
+  },
+  "utils": {
+    "email": "Email",
+    "password": "Senha"
   }
 }
