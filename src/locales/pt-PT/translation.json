@@ -23,5 +23,37 @@
     "login_button": "Login",
     "havent_account": "Não possui uma conta?",
     "sign_up_link": "Cadastre-se aqui!"
+  },
+  "dashboard": {
+    "side_menu": {
+      "your_pets": "Seus animais de estimação",
+      "add_pet": "adicionar",
+      "dashboard": "Painel",
+      "contacts": "Contatos",
+      "calendar": "Calendário",
+      "account": "Conta",
+      "settings": "Configurações",
+      "hello": "Olá",
+      "not_logged": "Visitante"
+    },
+    "empty_state": {
+      "title": "Oh Oh!",
+      "description": "Parece que você não tem perfis configurados no momento. Adicione seu animal de estimação agora",
+      "add_pet": "Adicione um animal de estimação agora"
+    },
+    "homepage": {
+      "title": "Perfis de animais de estimação ativos",
+      "description": "Veja todos os seus animais de estimação e informações",
+      "health_card": {
+        "title": "Cartão de saúde",
+        "description": "Acompanhe as consultas e todo o histórico médico do seu animal de estimação em um só lugar"
+      },
+      "nutrition": {
+        "title": "Nutrição"
+      },
+      "activities": {
+        "title": "Atividades"
+      }
+    }
   }
 }
