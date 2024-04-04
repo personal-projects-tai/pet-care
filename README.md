@@ -23,24 +23,32 @@ To run Pet Care locally, follow these steps:
    ```bash
    git clone https://github.com/personal-projects-tai/pet-care.git
 
+   ```
+
 2. Navigate to the project directory:
-	```bash
-	cd pet-care
+   ```bash
+   cd pet-care
+   ```
 3. Install dependencies:
-	```bash
-	npm install
+   ```bash
+   npm install
+   ```
 4. Start the development server:
-	```bash
-	npm run dev
+   ```bash
+   npm run dev
+   ```
 5. Open your web browser and visit http://localhost:5173.
 
 ## Technologies Used
+
 - React: Frontend framework for building user interfaces.
 - Storybook: Open-source tool for build and showcase UI components.
 - SCSS: Preprocessor that extends the functionality of regular CSS.
 
 ## Contributing
+
 Contributions are welcome! If you find any bugs or have suggestions for new features, please open an issue or submit a pull request. For major changes, please discuss them in an issue before submitting a pull request.
 
 ## License
+
 This project is licensed under the MIT License.

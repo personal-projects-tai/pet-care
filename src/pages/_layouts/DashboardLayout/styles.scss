@@ -1,0 +1,6 @@
+@use '../../../assets/styles/variables/colors.scss';
+
+.dashboard {
+  height: 100vh;
+  background-color: colors.$grey-900;
+}
