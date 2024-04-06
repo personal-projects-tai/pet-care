@@ -9,9 +9,14 @@ import { Subtitle } from '@/components/Subtitle'
 import { Input } from '@/components/Input'
 import { Button } from '@/components/Button'
 import { Link } from 'react-router-dom'
+import { router } from '@/router'
 
 export function LogIn() {
   const { theme } = useTheme()
+
+  function handleLogin() {
+    router.navigate('/dashboard')
+  }
   return (
     <Card>
       <div className="icon">
@@ -27,13 +32,13 @@ export function LogIn() {
       <Subtitle size="2" type="regular" centered={true}>
         Welcome back! Please enter your information below and get started.
       </Subtitle>
-      <form className="sign-up-form">
+      <form className="sign-up-form" onSubmit={handleLogin}>
         <Input placeholder="Email" type="email" />
         <Input placeholder="Password" type="password" />
+        <Button size="lg" type="primary">
+          Log in
+        </Button>
       </form>
-      <Button size="lg" type="primary">
-        Log in
-      </Button>
       <div className="log-in-context">
         <span className={`have-account__${theme}`}>Don't have an account?</span>
         <Link to={'/sign-up'} className={`anchor-${theme}`}>

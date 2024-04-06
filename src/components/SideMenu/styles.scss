@@ -2,6 +2,8 @@
 
 @use '../../assets/styles/variables/fonts.scss';
 
+@use '../../assets/styles/variables/breakpoints.scss';
+
 .sidemenu {
   display: flex;
   flex-direction: column;
@@ -10,10 +12,41 @@
 
   position: relative;
 
-  width: 17.2rem;
   height: inherit;
 
   padding: 0 1.88rem 2.5rem 1.88rem;
+
+  width: 0;
+  max-width: 17.2rem;
+  overflow: hidden;
+  transition:
+    width 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+
+  &.open {
+    width: 17.2rem;
+
+    .sidebar-content {
+      opacity: 1;
+    }
+  }
+
+  &.close {
+    padding: 0;
+
+    .sidebar-content {
+      opacity: 0;
+    }
+  }
+
+  .sidebar-content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .ic-close {
+    display: none;
+  }
 
   header {
     padding: 1.5rem 0;
@@ -148,6 +181,63 @@
         font-size: 1.125rem;
         font-weight: fonts.$semi-bold-600;
       }
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .sidemenu {
+    .ic-close {
+      display: block;
+      color: colors.$grey-400;
+
+      position: absolute;
+      right: 0;
+      top: 1.5rem;
+
+      cursor: pointer;
+    }
+
+    &__user-info {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
+  .sidemenu {
+    .ic-close {
+      display: block;
+      color: colors.$grey-400;
+
+      position: absolute;
+      right: 0;
+      top: 1.5rem;
+
+      cursor: pointer;
+    }
+
+    &__user-info {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
+  .sidemenu {
+    .ic-close {
+      display: block;
+      color: colors.$grey-400;
+
+      position: absolute;
+      right: 0;
+      top: 1.5rem;
+
+      cursor: pointer;
+    }
+
+    &__user-info {
+      display: none;
     }
   }
 }
