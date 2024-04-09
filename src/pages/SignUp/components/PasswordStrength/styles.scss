@@ -1,0 +1,54 @@
+@use '../../../../assets/styles/variables/colors.scss';
+
+.password-strength {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  transition: opacity 0.2s ease-in;
+
+  opacity: 0;
+
+  &.visible {
+    opacity: 1;
+  }
+
+  .strength {
+    height: 0.5rem;
+    width: 100%;
+
+    border-radius: 0.25rem;
+
+    transition: all 300ms ease-in-out;
+
+    &__light {
+      background-color: colors.$grey-300;
+    }
+
+    &__dark {
+      background-color: #313945;
+    }
+
+    &__default {
+      background-color: colors.$grey-300;
+    }
+
+    &__weak {
+      background-color: colors.$red-500;
+    }
+
+    &__medium {
+      background-color: colors.$orange-500;
+    }
+
+    &__strong {
+      background-color: colors.$green-700;
+    }
+
+    &__very-strong {
+      background-color: colors.$blue-500;
+    }
+  }
+}
