@@ -9,9 +9,12 @@ import { Subtitle } from '@/components/Subtitle'
 import { Input } from '@/components/Input'
 import { Button } from '@/components/Button'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 export function LogIn() {
   const { theme } = useTheme()
+
+  const { t } = useTranslation()
   return (
     <Card>
       <div className="icon">
@@ -22,22 +25,22 @@ export function LogIn() {
         </div>
       </div>
       <Heading type="1" centered={true}>
-        Log in
+        {t('login.title')}
       </Heading>
       <Subtitle size="2" type="regular" centered={true}>
-        Welcome back! Please enter your information below and get started.
+        {t('login.description')}
       </Subtitle>
       <form className="sign-up-form">
-        <Input placeholder="Email" type="email" />
-        <Input placeholder="Password" type="password" />
+        <Input placeholder={t('utils.email')} type="email" />
+        <Input placeholder={t('utils.password')} type="password" />
       </form>
-      <Button size="lg" type="primary">
-        Log in
+      <Button size="lg" variant="primary">
+        {t('login.login_button')}
       </Button>
       <div className="log-in-context">
-        <span className={`have-account__${theme}`}>Don't have an account?</span>
+        <span className={`have-account__${theme}`}>{t('login.havent_account')}</span>
         <Link to={'/sign-up'} className={`anchor-${theme}`}>
-          Sign up here
+          {t('login.sign_up_link')}
         </Link>
       </div>
     </Card>

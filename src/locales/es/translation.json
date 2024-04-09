@@ -23,5 +23,9 @@
     "login_button": "Acceso",
     "havent_account": "¿No tienes una cuenta?",
     "sign_up_link": "¡Registrar aquí!"
+  },
+  "utils": {
+    "email": "Correo electrónico",
+    "password": "Contraseña"
   }
 }

@@ -13,6 +13,7 @@ import { PasswordStrength } from './components/PasswordStrength'
 
 import { z } from 'zod'
 import { useForm } from 'react-hook-form'
+import { useTranslation } from 'react-i18next'
 import { zodResolver } from '@hookform/resolvers/zod'
 
 import User from '@/assets/icons/user.svg?react'
@@ -26,6 +27,8 @@ type SignUpType = z.infer<typeof signUpForm>
 
 export function SignUp() {
   const { theme } = useTheme()
+
+  const { t } = useTranslation()
 
   const { register, handleSubmit, watch } = useForm<SignUpType>({
     resolver: zodResolver(signUpForm)
@@ -44,29 +47,29 @@ export function SignUp() {
         </div>
       </div>
       <Heading type="1" centered={true}>
-        Create account
+        {t('sign_up.title')}
       </Heading>
       <Subtitle size="2" type="regular" centered={true}>
-        Welcome! Please enter your information below and get started.
+        {t('sign_up.description')}
       </Subtitle>
       <form className="sign-up-form" onSubmit={handleSubmit(handleSignUp)}>
-        <Input placeholder="Email" type="email" {...register('email')} />
-        <Input placeholder="Password" type="password" {...register('password')} />
+        <Input placeholder={t('utils.email')} type="email" {...register('email')} />
+        <Input placeholder={t('utils.password')} type="password" {...register('password')} />
         {watch('password') && <PasswordStrength password={watch('password')} />}
         <div>
           <Checkbox id="accept" />
           <label htmlFor="accept" className={`label-${theme}`}>
-            Accept Terms and Conditions
+            {t('sign_up.accept_terms')}
           </label>
         </div>
-        <Button size="lg" type="primary">
-          Create account
+        <Button size="lg" variant="primary">
+          {t('sign_up.create_sign_up')}
         </Button>
       </form>
       <div className="log-in-context">
-        <span className={`have-account__${theme}`}>Already have an account?</span>
+        <span className={`have-account__${theme}`}>{t('sign_up.has_account')}</span>
         <Link to={'/login'} className={`anchor-${theme}`}>
-          Log in here
+          {t('sign_up.login_link')}
         </Link>
       </div>
     </Card>
