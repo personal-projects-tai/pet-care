@@ -1,14 +1,14 @@
 import './styles.scss'
 
-import logo from '@/assets/images/logo-logged.svg'
 import Apps from '@/assets/icons/apps.svg?react'
-import ChartBubbles from '@/assets/icons/chart-bubbles.svg?react'
-import Calendar from '@/assets/icons/calendar.svg?react'
-import User from '@/assets/icons/user-account.svg?react'
 import Gear from '@/assets/icons/gear.svg?react'
 import Plus from '@/assets/icons/plus.svg?react'
-import ArrowRightFromBracket from '@/assets/icons/arrow-right-from-bracket.svg?react'
+import logo from '@/assets/images/logo-logged.svg'
 import Close from '@/assets/icons/close.svg?react'
+import User from '@/assets/icons/user-account.svg?react'
+import Calendar from '@/assets/icons/calendar.svg?react'
+import ChartBubbles from '@/assets/icons/chart-bubbles.svg?react'
+import ArrowRightFromBracket from '@/assets/icons/arrow-right-from-bracket.svg?react'
 
 import { useSidebar } from '@/hooks/DashboardSidebarContext'
 
@@ -16,7 +16,7 @@ export function SideMenu() {
   const { toggleIsOpen, isOpen } = useSidebar()
   return (
     <div role="menu" className={`sidemenu ${isOpen ? 'open' : 'close'}`}>
-      <div className=".sidebar-content">
+      <div className="sidebar-content">
         <Close className="ic-close" onClick={toggleIsOpen} />
         <header>
           <img src={logo} alt="Logo Paw Buddy" />

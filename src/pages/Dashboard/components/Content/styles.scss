@@ -1,0 +1,106 @@
+@use '../../../../assets/styles/variables/colors.scss';
+
+@use '../../../../assets/styles/variables/fonts.scss';
+
+@use '../../../../assets/styles/variables/breakpoints.scss';
+
+.content {
+  &__column {
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.88rem 0;
+
+    &__light {
+      > p {
+        color: colors.$grey-600;
+      }
+    }
+
+    &__dark {
+      > p {
+        color: colors.$grey-0;
+      }
+    }
+
+    > p {
+      font-size: fonts.$text-16;
+      font-weight: fonts.$medium-500;
+    }
+  }
+
+  &__header {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+
+    &__light {
+      > span {
+        color: colors.$grey-700;
+        background-color: colors.$grey-150;
+      }
+    }
+
+    &__dark {
+      > span {
+        color: colors.$grey-200;
+        background-color: colors.$grey-700;
+      }
+    }
+
+    > span {
+      font-size: fonts.$text-16;
+      font-weight: fonts.$semi-bold-600;
+
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.625rem;
+    }
+  }
+}
+
+.cards {
+	width: 100%;
+
+	gap: 1.25rem;
+	display: flex;
+
+	margin-top: 2rem;
+
+	.both-cards {
+		gap: 1.25rem;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.card {
+  &__image {
+    img {
+      height: 16.5rem;
+    }
+
+		&__secondary {
+			img {
+				height: 6.5rem;
+			}
+		}
+  }
+
+	&__info {
+		gap: 0.25rem;
+		display: flex;
+		flex-direction: column;
+		width: 21.875rem;
+	}
+}
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-md) {
+  .content {
+    &__column {
+      padding: 1.3rem 0;
+      > p {
+        display: none;
+      }
+    }
+  }
+}

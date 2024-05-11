@@ -21,12 +21,13 @@
   overflow: hidden;
   transition:
     width 0.3s ease-in-out,
-    opacity 0.3s ease-in-out;
+    opacity 0s ease-in-out;
 
   &.open {
     width: 17.2rem;
 
     .sidebar-content {
+      display: inline-block;
       opacity: 1;
     }
   }
@@ -188,7 +189,7 @@
 @media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
   .sidemenu {
     .ic-close {
-      display: block;
+      display: inline-block;
       color: colors.$grey-400;
 
       position: absolute;
@@ -207,10 +208,10 @@
 @media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
   .sidemenu {
     .ic-close {
-      display: block;
+      display: inline-block;
       color: colors.$grey-400;
+			position: absolute;
 
-      position: absolute;
       right: 0;
       top: 1.5rem;
 
@@ -226,10 +227,10 @@
 @media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
   .sidemenu {
     .ic-close {
-      display: block;
+      display: inline-block;
       color: colors.$grey-400;
-
       position: absolute;
+
       right: 0;
       top: 1.5rem;
 
