@@ -1,59 +1,63 @@
 {
-  "onboarding": {
-    "title": "Personalized Pet Profiles",
-    "description": "Create personalized profiles for each of your beloved pets on PawBuddy. Share their name, breed, and age while connecting with a vibrant community.",
-    "get_started": "Get started",
-    "sign_up_later": "Sign up later"
-  },
-  "input_placeholder": {
-    "email_placeholder": "Your email",
-    "password_placeholder": "Password"
-  },
-  "sign_up": {
-    "title": "Create account",
-    "description": "Welcome! Please enter your information below and get started.",
-    "accept_terms": "Accept Terms and Conditions",
-    "create_sign_up": "Create account",
-    "has_account": "Already have an account?",
-    "login_link": "Log in here!"
-  },
-  "login": {
-    "title": "Access your account",
-    "description": "Welcome back! Please enter your information below and get logged.",
-    "login_button": "Login",
-    "havent_account": "Don't have an account?",
-    "sign_up_link": "Sign up here!"
-  },
-  "dashboard": {
-    "side_menu": {
-      "your_pets": "Your Pets",
-      "add_pet": "add new",
-      "dashboard": "Dashboard",
-      "contacts": "Contacts",
-      "calendar": "Calendar",
-      "account": "Account",
-      "settings": "Settings",
-      "hello": "Hello",
-      "not_logged": "Visitor"
-    },
-    "empty_state": {
-      "title": "Uh Oh!",
-      "description": "Looks like you have no profiles set up at this moment, add your pet now",
-      "add_pet": "Add a pet now"
-    },
-    "homepage": {
-      "title": "Active pet profiles",
-      "description": "See all your pets and information",
-      "health_card": {
-        "title": "Health Card",
-        "description": "Keep up with appointments and all your pet’s medical history in one place"
-      },
-      "nutrition": {
-        "title": "Nutrition"
-      },
-      "activities": {
-        "title": "Activities"
-      }
-    }
-  }
+	"onboarding": {
+		"title": "Personalized Pet Profiles",
+		"description": "Create personalized profiles for each of your beloved pets on PawBuddy. Share their name, breed, and age while connecting with a vibrant community.",
+		"get_started": "Get started",
+		"sign_up_later": "Sign up later"
+	},
+	"input_placeholder": {
+		"email_placeholder": "Your email",
+		"password_placeholder": "Password"
+	},
+	"sign_up": {
+		"title": "Create account",
+		"description": "Welcome! Please enter your information below and get started.",
+		"accept_terms": "Accept Terms and Conditions",
+		"create_sign_up": "Create account",
+		"has_account": "Already have an account?",
+		"login_link": "Log in here!"
+	},
+	"login": {
+		"title": "Access your account",
+		"description": "Welcome back! Please enter your information below and get logged.",
+		"login_button": "Login",
+		"havent_account": "Don't have an account?",
+		"sign_up_link": "Sign up here!"
+	},
+	"dashboard": {
+		"side_menu": {
+			"your_pets": "Your Pets",
+			"add_pet": "add new",
+			"dashboard": "Dashboard",
+			"contacts": "Contacts",
+			"calendar": "Calendar",
+			"account": "Account",
+			"settings": "Settings",
+			"hello": "Hello",
+			"not_logged": "Visitor"
+		},
+		"empty_state": {
+			"title": "Uh Oh!",
+			"description": "Looks like you have no profiles set up at this moment, add your pet now",
+			"add_pet": "Add a pet now"
+		},
+		"homepage": {
+			"title": "Active pet profiles",
+			"description": "See all your pets and information",
+			"health_card": {
+				"title": "Health Card",
+				"description": "Keep up with appointments and all your pet’s medical history in one place"
+			},
+			"nutrition": {
+				"title": "Nutrition"
+			},
+			"activities": {
+				"title": "Activities"
+			}
+		}
+	},
+	"utils": {
+		"email": "Email",
+		"password": "Password"
+	}
 }

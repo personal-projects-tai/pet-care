@@ -1,59 +1,63 @@
 {
-  "onboarding": {
-    "title": "Perfiles de mascotas personalizados",
-    "description": "Crea perfiles personalizados para cada una de tus queridas mascotas en PawBuddy. Comparta su nombre, raza y edad mientras se conecta con una comunidad vibrante.",
-    "get_started": "Para comenzar",
-    "sign_up_later": "Regístrate más tarde"
-  },
-  "input_placeholder": {
-    "email_placeholder": "Correo electrónico",
-    "password_placeholder": "Contraseña"
-  },
-  "sign_up": {
-    "title": "Crea una cuenta",
-    "description": "¡Bienvenido! Ingrese su información a continuación para comenzar.",
-    "accept_terms": "Aceptar terminos y condiciones",
-    "create_sign_up": "Crea una cuenta",
-    "has_account": "¿Ya tienes una cuenta?",
-    "login_link": "¡Entre aquí!"
-  },
-  "login": {
-    "title": "Acceder a tu cuenta",
-    "description": "¡Bienvenido de nuevo! Ingrese su información a continuación para ser redirigido a su cuenta.",
-    "login_button": "Acceso",
-    "havent_account": "¿No tienes una cuenta?",
-    "sign_up_link": "¡Registrar aquí!"
-  },
-  "dashboard": {
-    "side_menu": {
-      "your_pets": "Tus mascotas",
-      "add_pet": "Añadir nuevo(a)",
-      "dashboard": "Panel",
-      "contacts": "Contactos",
-      "calendar": "Calendario",
-      "account": "Cuenta",
-      "settings": "Ajustes",
-      "hello": "Hola",
-      "not_logged": "Visitante"
-    },
-    "empty_state": {
-      "title": "¡UH oh!",
-      "description": "Parece que no tienes perfiles configurados en este momento, agrega tu mascota ahora",
-      "add_pet": "Añade una mascota ahora"
-    },
-    "homepage": {
-      "title": "Perfiles de mascotas activos",
-      "description": "Ver todas tus mascotas e información",
-      "health_card": {
-        "title": "Tarjeta de salud",
-        "description": "Manténgase al día con las citas y todo el historial médico de su mascota en un solo lugar"
-      },
-      "nutrition": {
-        "title": "Nutrición"
-      },
-      "activities": {
-        "title": "Actividades"
-      }
-    }
-  }
+	"onboarding": {
+		"title": "Perfiles de mascotas personalizados",
+		"description": "Crea perfiles personalizados para cada una de tus queridas mascotas en PawBuddy. Comparta su nombre, raza y edad mientras se conecta con una comunidad vibrante.",
+		"get_started": "Para comenzar",
+		"sign_up_later": "Regístrate más tarde"
+	},
+	"input_placeholder": {
+		"email_placeholder": "Correo electrónico",
+		"password_placeholder": "Contraseña"
+	},
+	"sign_up": {
+		"title": "Crea una cuenta",
+		"description": "¡Bienvenido! Ingrese su información a continuación para comenzar.",
+		"accept_terms": "Aceptar terminos y condiciones",
+		"create_sign_up": "Crea una cuenta",
+		"has_account": "¿Ya tienes una cuenta?",
+		"login_link": "¡Entre aquí!"
+	},
+	"login": {
+		"title": "Acceder a tu cuenta",
+		"description": "¡Bienvenido de nuevo! Ingrese su información a continuación para ser redirigido a su cuenta.",
+		"login_button": "Acceso",
+		"havent_account": "¿No tienes una cuenta?",
+		"sign_up_link": "¡Registrar aquí!"
+	},
+	"dashboard": {
+		"side_menu": {
+			"your_pets": "Tus mascotas",
+			"add_pet": "Añadir nuevo(a)",
+			"dashboard": "Panel",
+			"contacts": "Contactos",
+			"calendar": "Calendario",
+			"account": "Cuenta",
+			"settings": "Ajustes",
+			"hello": "Hola",
+			"not_logged": "Visitante"
+		},
+		"empty_state": {
+			"title": "¡UH oh!",
+			"description": "Parece que no tienes perfiles configurados en este momento, agrega tu mascota ahora",
+			"add_pet": "Añade una mascota ahora"
+		},
+		"homepage": {
+			"title": "Perfiles de mascotas activos",
+			"description": "Ver todas tus mascotas e información",
+			"health_card": {
+				"title": "Tarjeta de salud",
+				"description": "Manténgase al día con las citas y todo el historial médico de su mascota en un solo lugar"
+			},
+			"nutrition": {
+				"title": "Nutrición"
+			},
+			"activities": {
+				"title": "Actividades"
+			}
+		}
+	},
+	"utils": {
+		"email": "Correo electrónico",
+		"password": "Contraseña"
+	}
 }

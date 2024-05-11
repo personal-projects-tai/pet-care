@@ -1,59 +1,63 @@
 {
-  "onboarding": {
-    "title": "Perfis de Pets personalizados",
-    "description": "Crie perfis personalizados para cada um de seus amados Pets no PawBuddy. Compartilhe seu nome, raça e idade enquanto se conecta a uma comunidade vibrante.",
-    "get_started": "Começar",
-    "sign_up_later": "Cadastrar mais tarde"
-  },
-  "input_placeholder": {
-    "email_placeholder": "Email",
-    "password_placeholder": "Senha"
-  },
-  "sign_up": {
-    "title": "Criar conta",
-    "description": "Bem-vindo! Por favor, insira suas informações abaixo para iniciar.",
-    "accept_terms": "Aceitar termos e Condições",
-    "create_sign_up": "Criar conta",
-    "has_account": "Já possui uma conta?",
-    "login_link": "Faça login aqui!"
-  },
-  "login": {
-    "title": "Acesse sua conta",
-    "description": "Bem-vindo de volta! Por favor, insira suas informações abaixo para ser redirecionado à sua conta.",
-    "login_button": "Login",
-    "havent_account": "Não possui uma conta?",
-    "sign_up_link": "Cadastre-se aqui!"
-  },
-  "dashboard": {
-    "side_menu": {
-      "your_pets": "Seus Pets",
-      "add_pet": "adicionar",
-      "dashboard": "Painel",
-      "contacts": "Contatos",
-      "calendar": "Calendário",
-      "account": "Conta",
-      "settings": "Configurações",
-      "hello": "Olá",
-      "not_logged": "Visitante"
-    },
-    "empty_state": {
-      "title": "Oh Oh!",
-      "description": "Parece que você não tem perfis configurados no momento. Adicione seu Pet agora",
-      "add_pet": "Adicione um Pet agora"
-    },
-    "homepage": {
-      "title": "Perfis de Pets ativos",
-      "description": "Veja todos os seus Pets e informações",
-      "health_card": {
-        "title": "Cartão de saúde",
-        "description": "Acompanhe as consultas e todo o histórico médico do seu Pet em um só lugar"
-      },
-      "nutrition": {
-        "title": "Nutrição"
-      },
-      "activities": {
-        "title": "Atividades"
-      }
-    }
-  }
+	"onboarding": {
+		"title": "Perfis de Pets personalizados",
+		"description": "Crie perfis personalizados para cada um de seus amados Pets no PawBuddy. Compartilhe seu nome, raça e idade enquanto se conecta a uma comunidade vibrante.",
+		"get_started": "Começar",
+		"sign_up_later": "Cadastrar mais tarde"
+	},
+	"input_placeholder": {
+		"email_placeholder": "Email",
+		"password_placeholder": "Senha"
+	},
+	"sign_up": {
+		"title": "Criar conta",
+		"description": "Bem-vindo! Por favor, insira suas informações abaixo para iniciar.",
+		"accept_terms": "Aceitar termos e Condições",
+		"create_sign_up": "Criar conta",
+		"has_account": "Já possui uma conta?",
+		"login_link": "Faça login aqui!"
+	},
+	"login": {
+		"title": "Acesse sua conta",
+		"description": "Bem-vindo de volta! Por favor, insira suas informações abaixo para ser redirecionado à sua conta.",
+		"login_button": "Login",
+		"havent_account": "Não possui uma conta?",
+		"sign_up_link": "Cadastre-se aqui!"
+	},
+	"dashboard": {
+		"side_menu": {
+			"your_pets": "Seus Pets",
+			"add_pet": "adicionar",
+			"dashboard": "Painel",
+			"contacts": "Contatos",
+			"calendar": "Calendário",
+			"account": "Conta",
+			"settings": "Configurações",
+			"hello": "Olá",
+			"not_logged": "Visitante"
+		},
+		"empty_state": {
+			"title": "Oh Oh!",
+			"description": "Parece que você não tem perfis configurados no momento. Adicione seu Pet agora",
+			"add_pet": "Adicione um Pet agora"
+		},
+		"homepage": {
+			"title": "Perfis de Pets ativos",
+			"description": "Veja todos os seus Pets e informações",
+			"health_card": {
+				"title": "Cartão de saúde",
+				"description": "Acompanhe as consultas e todo o histórico médico do seu Pet em um só lugar"
+			},
+			"nutrition": {
+				"title": "Nutrição"
+			},
+			"activities": {
+				"title": "Atividades"
+			}
+		}
+	},
+	"utils": {
+		"email": "Email",
+		"password": "Senha"
+	}
 }

@@ -1,18 +1,17 @@
 import { useTheme } from '@/hooks/ThemeContext'
-import { ReactNode } from 'react'
+import { ButtonHTMLAttributes, ReactNode } from 'react'
 
-export type Props = {
-  type: 'primary' | 'secondary' | 'outlined' | 'planed' | 'destructive' | 'ghost' | 'planed-ghost' | 'dashed'
+export interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant: 'primary' | 'secondary' | 'outlined' | 'planed' | 'destructive' | 'ghost' | 'planed-ghost' | 'dashed'
   size: 'sm' | 'md' | 'lg'
   children: ReactNode
-  handleFn?: () => void
 }
 
-export function Button({ type, size, children, handleFn }: Props) {
+export function Button({ variant, size, children, ...rest }: Props) {
   const { theme } = useTheme()
   return (
     <>
-      <button role="button" className={`btn btn__${size} btn__${type}__${theme}`} onClick={handleFn}>
+      <button role="button" className={`btn btn__${size} btn__${variant}__${theme}`} {...rest}>
         {children}
       </button>
     </>
