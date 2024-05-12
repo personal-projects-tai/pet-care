@@ -48,11 +48,13 @@
 				"title": "Tarjeta de salud",
 				"description": "Manténgase al día con las citas y todo el historial médico de su mascota en un solo lugar"
 			},
-			"nutrition": {
-				"title": "Nutrición"
+			"nutrition_card": {
+				"title": "Nutrición",
+				"description": "Realice un seguimiento de las comidas de su mascota y del historial alimentario completo en un solo lugar"
 			},
-			"activities": {
-				"title": "Actividades"
+			"activities_card": {
+				"title": "Actividades",
+				"description": "Realice un seguimiento de las actividades físicas de su mascota y del historial físico completo en un solo lugar"
 			}
 		}
 	},

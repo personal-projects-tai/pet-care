@@ -48,11 +48,13 @@
 				"title": "Cartão de saúde",
 				"description": "Acompanhe as consultas e todo o histórico médico do seu Pet em um só lugar"
 			},
-			"nutrition": {
-				"title": "Nutrição"
+			"nutrition_card": {
+				"title": "Nutrição",
+				"description": "Acompanhe as refeições do seu animal de estimação e todo o histórico alimentar em um só lugar"
 			},
-			"activities": {
-				"title": "Atividades"
+			"activities_card": {
+				"title": "Atividades",
+				"description": "Acompanhe as atividades físicas e todo o histórico físico do seu animal de estimação em um só lugar"
 			}
 		}
 	},

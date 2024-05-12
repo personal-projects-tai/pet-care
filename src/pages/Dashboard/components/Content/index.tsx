@@ -11,9 +11,11 @@ import ImageActivitiesCard from '@/assets/images/activities_card.png'
 
 import './styles.scss'
 import '@/pages/Dashboard/components/Carousel/embla.scss'
+import { useTranslation } from 'react-i18next'
 
 export function Content() {
   const { theme } = useTheme()
+  const { t } = useTranslation()
 
   const OPTIONS: EmblaOptionsType = { loop: true }
   const SLIDES: SlideProps[] = [
@@ -70,18 +72,18 @@ export function Content() {
     <main className="content">
       <header className={`content__column content__column__${theme}`}>
         <div className={`content__header content__header__${theme}`}>
-          <Heading type="2">Active pet profiles</Heading>
+          <Heading type="2">{t('dashboard.homepage.title')}</Heading>
           <span>3</span>
         </div>
-        <p>See all your pets and information</p>
+        <p>{t('dashboard.homepage.description')}</p>
       </header>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       <section className="cards">
         <Card>
           <div className="card__info">
-            <Heading type="3">Health</Heading>
+            <Heading type="3">{t('dashboard.homepage.health_card.title')}</Heading>
             <Subtitle type="regular" size="3">
-              Keep up with appointments and all your pet's medical history in one place
+              {t('dashboard.homepage.health_card.description')}
             </Subtitle>
           </div>
           <div className="card__image">
@@ -94,9 +96,9 @@ export function Content() {
               <img src={ImageNutritionCard} alt="Nutrition Card Pet" />
             </div>
             <div className="card__info">
-              <Heading type="3">Nutrition</Heading>
+              <Heading type="3">{t('dashboard.homepage.nutrition_card.title')}</Heading>
               <Subtitle type="regular" size="3">
-                Track your pet's meals and entire food history in one place
+                {t('dashboard.homepage.nutrition_card.description')}
               </Subtitle>
             </div>
           </Card>
@@ -105,9 +107,9 @@ export function Content() {
               <img src={ImageActivitiesCard} alt="Activities Card Pet" />
             </div>
             <div className="card__info">
-              <Heading type="3">Activities</Heading>
+              <Heading type="3">{t('dashboard.homepage.activities_card.title')}</Heading>
               <Subtitle type="regular" size="3">
-                Track your pet's physical activities and entire physical history in one place
+                {t('dashboard.homepage.activities_card.description')}
               </Subtitle>
             </div>
           </Card>

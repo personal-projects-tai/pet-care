@@ -48,11 +48,13 @@
 				"title": "Health Card",
 				"description": "Keep up with appointments and all your pet’s medical history in one place"
 			},
-			"nutrition": {
-				"title": "Nutrition"
+			"nutrition_card": {
+				"title": "Nutrition",
+				"description": "Track your pet's meals and entire food history in one place"
 			},
-			"activities": {
-				"title": "Activities"
+			"activities_card": {
+				"title": "Activities",
+				"description": "Track your pet's physical activities and entire physical history in one place"
 			}
 		}
 	},

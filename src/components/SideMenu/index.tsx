@@ -11,9 +11,11 @@ import ChartBubbles from '@/assets/icons/chart-bubbles.svg?react'
 import ArrowRightFromBracket from '@/assets/icons/arrow-right-from-bracket.svg?react'
 
 import { useSidebar } from '@/hooks/DashboardSidebarContext'
+import { useTranslation } from 'react-i18next'
 
 export function SideMenu() {
   const { toggleIsOpen, isOpen } = useSidebar()
+  const { t } = useTranslation()
   return (
     <div role="menu" className={`sidemenu ${isOpen ? 'open' : 'close'}`}>
       <div className="sidebar-content">
@@ -23,12 +25,12 @@ export function SideMenu() {
         </header>
         <div className="divider"></div>
         <section className="sidemenu__pets">
-          <span>Your Pets</span>
+          <span>{t('dashboard.side_menu.your_pets')}</span>
           <div className="add_new">
             <button className="btn">
               <Plus />
             </button>
-            <span>Add new</span>
+            <span>{t('dashboard.side_menu.add_pet')}</span>
           </div>
         </section>
         <div className="divider"></div>
@@ -36,15 +38,15 @@ export function SideMenu() {
           <ul>
             <li>
               <Apps />
-              <span>Dashboard</span>
+              <span>{t('dashboard.side_menu.dashboard')}</span>
             </li>
             <li>
               <ChartBubbles />
-              <span>Contacts</span>
+              <span>{t('dashboard.side_menu.contacts')}</span>
             </li>
             <li>
               <Calendar />
-              <span>Calendar</span>
+              <span>{t('dashboard.side_menu.calendar')}</span>
             </li>
           </ul>
         </nav>
@@ -53,11 +55,11 @@ export function SideMenu() {
           <ul>
             <li>
               <User />
-              <span>Account</span>
+              <span>{t('dashboard.side_menu.account')}</span>
             </li>
             <li>
               <Gear />
-              <span>Settings</span>
+              <span>{t('dashboard.side_menu.settings')}</span>
             </li>
           </ul>
         </nav>
@@ -66,7 +68,7 @@ export function SideMenu() {
             <User />
           </div>
           <div className="info">
-            <span>Hello</span>
+            <span>{t('dashboard.side_menu.hello')}</span>
             <span className="user-name">Esther</span>
           </div>
           <ArrowRightFromBracket />

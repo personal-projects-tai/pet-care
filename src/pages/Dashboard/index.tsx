@@ -3,14 +3,15 @@ import './styles.scss'
 import User from '@/assets/icons/user.svg?react'
 import MagnifyingGlass from '@/assets/icons/magnifying-glass.svg?react'
 import Bars from '@/assets/icons/bars.svg?react'
-// import { Empty } from './components/Empty'
 import { useSidebar } from '@/hooks/DashboardSidebarContext'
 import { Content } from './components/Content'
 import { useTheme } from '@/hooks/ThemeContext'
+import { useTranslation } from 'react-i18next'
 
 export function Dashboard() {
   const { toggleIsOpen } = useSidebar()
   const { theme } = useTheme()
+  const { t } = useTranslation()
   return (
     <section className={`dashboard-panel dashboard-panel__${theme}`}>
       <header className={`header-mobile header-mobile__${theme}`}>
@@ -20,7 +21,7 @@ export function Dashboard() {
               <User height={25} />
             </div>
             <div className={`info info__${theme}`}>
-              <span>Hello,</span>
+              <span>{t('dashboard.side_menu.hello')},</span>
               <span className="user-name">Esther</span>
             </div>
           </div>
@@ -31,7 +32,6 @@ export function Dashboard() {
           </div>
         </div>
       </header>
-      {/* <Empty /> */}
       <Content />
     </section>
   )
