@@ -60,19 +60,19 @@
 }
 
 .cards {
-	width: 100%;
+  width: 100%;
 
-	gap: 1.25rem;
-	display: flex;
-	// flex-direction: column;
+  gap: 1.25rem;
+  display: flex;
+  // flex-direction: column;
 
-	margin-top: 2rem;
+  margin-top: 2rem;
 
-	.both-cards {
-		gap: 1.25rem;
-		display: flex;
-		flex-direction: column;
-	}
+  .both-cards {
+    gap: 1.25rem;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card {
@@ -81,19 +81,19 @@
       height: 16.5rem;
     }
 
-		&__secondary {
-			img {
-				height: 6.5rem;
-			}
-		}
+    &__secondary {
+      img {
+        height: 6.5rem;
+      }
+    }
   }
 
-	&__info {
-		gap: 0.25rem;
-		display: flex;
-		flex-direction: column;
-		width: 21.875rem;
-	}
+  &__info {
+    gap: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    width: 21.875rem;
+  }
 }
 @media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-md) {
   .content {
@@ -105,42 +105,42 @@
     }
   }
 
-	.cards {
-		flex-direction: column;
-	}
+  .cards {
+    flex-direction: column;
+  }
 
-	.card {
-		&__image {
-			img {
-				height: 10.5rem;
-			}
-		}
-	}
+  .card {
+    &__image {
+      img {
+        height: 10.5rem;
+      }
+    }
+  }
 }
 
 @media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
-	.cards {
-		flex-direction: column;
-	}
+  .cards {
+    flex-direction: column;
+  }
 
-	.card {
-		&__image {
-			img {
-				height: 14.5rem;
-			}
-		}
-	}
+  .card {
+    &__image {
+      img {
+        height: 14.5rem;
+      }
+    }
+  }
 }
 
 @media (min-width: breakpoints.$breakpoint-lg) and (max-width: breakpoints.$breakpoint-xl) {
-	.cards {
-		flex-direction: column;
-	}
+  .cards {
+    flex-direction: column;
+  }
 }
 
 // 11200
 @media (min-width: 1120px) and (max-width: 1590px) {
-	.cards {
-		flex-direction: column;
-	}
+  .cards {
+    flex-direction: column;
+  }
 }

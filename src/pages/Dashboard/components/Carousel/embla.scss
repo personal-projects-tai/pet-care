@@ -402,12 +402,12 @@
 }
 
 @media (min-width: breakpoints.$breakpoint-xl) and (max-width: 1590px) {
-	.embla {
-		&__controls {
-			top: 7rem;
+  .embla {
+    &__controls {
+      top: 7rem;
       width: 106%;
       position: absolute;
       left: -2rem;
-		}
-	}
+    }
+  }
 }
