@@ -1,7 +1,7 @@
 import { useTheme } from '@/hooks/ThemeContext'
 import './styles.scss'
-import logo from '@/assets/images/logo.png'
-import logoLight from '@/assets/images/logo-light.png'
+import logo from '@/assets/images/logo.svg'
+import logoLight from '@/assets/images/logo-light.svg'
 import { router } from '@/router'
 
 export function Header() {

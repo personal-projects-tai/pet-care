@@ -1,0 +1,85 @@
+@use '../../../../assets/styles/variables/colors.scss';
+
+@use '../../../../assets/styles/variables/breakpoints.scss';
+
+.empty {
+  gap: 3.12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 3rem 0;
+
+  header {
+    width: 24rem;
+
+    > h2 {
+      margin-top: 1.25rem;
+    }
+  }
+
+  button {
+    width: 34.375rem;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .empty-img {
+    height: 13rem;
+  }
+
+  .empty {
+    height: 80%;
+
+    position: relative;
+
+    button {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
+  .empty-img {
+    height: 13rem;
+  }
+
+  .empty {
+    height: 80%;
+
+    position: relative;
+
+    button {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
+  .empty-img {
+    height: 13rem;
+  }
+
+  .empty {
+    height: 80%;
+
+    position: relative;
+
+    button {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+    }
+  }
+}

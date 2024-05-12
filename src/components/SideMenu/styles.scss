@@ -1,0 +1,244 @@
+@use '../../assets/styles/variables/colors.scss';
+
+@use '../../assets/styles/variables/fonts.scss';
+
+@use '../../assets/styles/variables/breakpoints.scss';
+
+.sidemenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+
+  position: relative;
+
+  height: inherit;
+
+  padding: 0 1.88rem 2.5rem 1.88rem;
+
+  width: 0;
+  max-width: 17.2rem;
+  overflow: hidden;
+  transition:
+    width 0.3s ease-in-out,
+    opacity 0s ease-in-out;
+
+  &.open {
+    width: 17.2rem;
+
+    .sidebar-content {
+      display: inline-block;
+      opacity: 1;
+    }
+  }
+
+  &.close {
+    padding: 0;
+
+    .sidebar-content {
+      opacity: 0;
+    }
+  }
+
+  .sidebar-content {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .ic-close {
+    display: none;
+  }
+
+  header {
+    padding: 1.5rem 0;
+  }
+
+  .divider {
+    background-color: colors.$grey-700;
+    width: 11rem;
+    height: 0.0938rem;
+  }
+
+  &__pets {
+    gap: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 2.26rem 0;
+
+    > span {
+      color: colors.$grey-200;
+      font-weight: fonts.$medium-500;
+    }
+
+    .add_new {
+      gap: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      > button {
+        padding: 1.12rem;
+        border-radius: 100%;
+
+        background-color: colors.$grey-900;
+        border: 1px solid colors.$grey-500;
+
+        > svg {
+          color: colors.$grey-500;
+        }
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: colors.$grey-800;
+        }
+      }
+
+      > span {
+        color: colors.$grey-400;
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  &__menu {
+    margin: 2.26rem 0;
+    > ul {
+      list-style: none;
+
+      > li {
+        color: colors.$grey-100;
+        font-weight: fonts.$medium-500;
+
+        display: flex;
+        gap: 0.5rem;
+
+        margin: 0.75rem 0;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+
+        cursor: pointer;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: colors.$blue-500;
+          background-color: #d1e6ff;
+        }
+      }
+    }
+  }
+
+  &__user-info {
+    gap: 0.75rem;
+    display: flex;
+    align-items: center;
+
+    padding: 1rem;
+    border-radius: 0.875rem;
+
+    background-color: colors.$grey-700;
+
+    position: absolute;
+    bottom: 2.5rem;
+
+    > svg {
+      color: colors.$grey-100;
+    }
+
+    .avatar {
+      height: 3.75rem;
+      width: 3.75rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 100%;
+
+      background-color: colors.$grey-900;
+
+      > svg {
+        color: colors.$grey-100;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+
+      > span {
+        color: colors.$grey-150;
+        font-size: 0.875rem;
+        font-weight: fonts.$regular-400;
+        line-height: 1.375rem;
+
+        width: 5.5rem;
+      }
+
+      .user-name {
+        font-size: 1.125rem;
+        font-weight: fonts.$semi-bold-600;
+      }
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .sidemenu {
+    .ic-close {
+      display: inline-block;
+      color: colors.$grey-400;
+
+      position: absolute;
+      right: 0;
+      top: 1.5rem;
+
+      cursor: pointer;
+    }
+
+    &__user-info {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
+  .sidemenu {
+    .ic-close {
+      display: inline-block;
+      color: colors.$grey-400;
+      position: absolute;
+
+      right: 0;
+      top: 1.5rem;
+
+      cursor: pointer;
+    }
+
+    &__user-info {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
+  .sidemenu {
+    .ic-close {
+      display: inline-block;
+      color: colors.$grey-400;
+      position: absolute;
+
+      right: 0;
+      top: 1.5rem;
+
+      cursor: pointer;
+    }
+
+    &__user-info {
+      display: none;
+    }
+  }
+}
