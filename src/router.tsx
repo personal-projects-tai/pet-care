@@ -5,6 +5,8 @@ import { SignUp } from './pages/SignUp'
 import { LogIn } from './pages/LogIn'
 import { DashboardLayout } from './pages/_layouts/DashboardLayout'
 import { Dashboard } from './pages/Dashboard'
+import { AddPetLayout } from './pages/_layouts/AddPetLayout'
+import { Breed } from './pages/AddPet/Breed'
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +34,16 @@ export const router = createBrowserRouter([
       {
         path: '/dashboard',
         element: <Dashboard />
+      },
+      {
+        path: 'add-pet',
+        element: <AddPetLayout />,
+        children: [
+          {
+            path: '',
+            element: <Breed />
+          }
+        ]
       }
     ]
   }

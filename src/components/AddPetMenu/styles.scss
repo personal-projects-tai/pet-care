@@ -1,0 +1,62 @@
+@use '../../assets/styles/variables/colors.scss';
+
+@use '../../assets/styles/variables/breakpoints.scss';
+
+.add-pet-menu {
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+      cursor: pointer;
+    }
+
+    &__light {
+      svg {
+        color: colors.$grey-800;
+      }
+    }
+
+    &__dark {
+      svg {
+        color: colors.$grey-0;
+      }
+    }
+  }
+
+  &__title {
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__progress-bar {
+    width: 100%;
+    height: 0.3rem;
+    border-radius: 0.5rem;
+
+    margin-top: 1.25rem;
+
+    position: relative;
+
+    &__light {
+      background-color: colors.$grey-600;
+    }
+
+    &__dark {
+      background-color: colors.$grey-700;
+    }
+  }
+
+  &__progress-bar-inner {
+    height: 0.5rem;
+    background-color: colors.$yellow-500;
+    border-radius: 0.5rem;
+    width: 12.5%;
+
+    position: absolute;
+    left: 0;
+    top: -30%;
+  }
+}

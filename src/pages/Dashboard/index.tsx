@@ -1,4 +1,5 @@
 import './styles.scss'
+import '../shared/dashboard-panel.scss'
 
 import User from '@/assets/icons/user.svg?react'
 import MagnifyingGlass from '@/assets/icons/magnifying-glass.svg?react'

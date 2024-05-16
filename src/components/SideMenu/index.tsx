@@ -12,10 +12,16 @@ import ArrowRightFromBracket from '@/assets/icons/arrow-right-from-bracket.svg?r
 
 import { useSidebar } from '@/hooks/DashboardSidebarContext'
 import { useTranslation } from 'react-i18next'
+import { router } from '@/router'
 
 export function SideMenu() {
   const { toggleIsOpen, isOpen } = useSidebar()
   const { t } = useTranslation()
+
+  function handleAddNewPet() {
+    router.navigate('/dashboard/add-pet')
+  }
+
   return (
     <div role="menu" className={`sidemenu ${isOpen ? 'open' : 'close'}`}>
       <div className="sidebar-content">
@@ -27,7 +33,7 @@ export function SideMenu() {
         <section className="sidemenu__pets">
           <span>{t('dashboard.side_menu.your_pets')}</span>
           <div className="add_new">
-            <button className="btn">
+            <button className="btn" onClick={() => handleAddNewPet()}>
               <Plus />
             </button>
             <span>{t('dashboard.side_menu.add_pet')}</span>
