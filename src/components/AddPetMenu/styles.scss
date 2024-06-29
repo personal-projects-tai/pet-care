@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
 
-		position: relative;
+    position: relative;
 
     svg {
       cursor: pointer;
@@ -61,40 +61,40 @@
     top: -30%;
   }
 
-	.breed {
-		width: 16.6%;
-	}
+  .breed {
+    width: 16.6%;
+  }
 
-	.name {
-		width: 33.2%;
-	}
+  .name {
+    width: 33.2%;
+  }
 
-	.size {
-		width: 49.8%;
-	}
+  .size {
+    width: 49.8%;
+  }
 
-	.weight {
-		width: 66.4%;
-	}
+  .weight {
+    width: 66.4%;
+  }
 
-	.important_dates {
-		width: 83%;
-	}
+  .important_dates {
+    width: 83%;
+  }
 
-	.caretakers {
-		width: 100%;
-	}
+  .caretakers {
+    width: 100%;
+  }
 }
 
 @media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
-	.add-pet-menu {
-		&__steps {
-			svg {
-				display: block;
-				position: absolute;
-				top: -1.625rem;
-				left: 0;
-			}
-		}
-	}
+  .add-pet-menu {
+    &__steps {
+      svg {
+        display: block;
+        position: absolute;
+        top: -1.625rem;
+        left: 0;
+      }
+    }
+  }
 }

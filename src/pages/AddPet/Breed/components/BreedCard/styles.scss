@@ -97,18 +97,18 @@
 }
 
 @media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
-	.breed-card {
-		padding: 1rem 1rem;
-		&__image {
-			img {
-				width: 6rem;
-				height: 6rem;
-			}
+  .breed-card {
+    padding: 1rem 1rem;
+    &__image {
+      img {
+        width: 6rem;
+        height: 6rem;
+      }
 
-			.inner-circle,
-			.outer-circle {
-				padding: 0.8rem;
-			}
-		}
-	}
+      .inner-circle,
+      .outer-circle {
+        padding: 0.8rem;
+      }
+    }
+  }
 }
