@@ -22,6 +22,10 @@ export function SideMenu() {
     router.navigate('/dashboard/add-pet')
   }
 
+  function handleGoToDashboard() {
+    router.navigate('/dashboard')
+  }
+
   return (
     <div role="menu" className={`sidemenu ${isOpen ? 'open' : 'close'}`}>
       <div className="sidebar-content">
@@ -42,7 +46,7 @@ export function SideMenu() {
         <div className="divider"></div>
         <nav className="sidemenu__menu">
           <ul>
-            <li>
+            <li onClick={handleGoToDashboard}>
               <Apps />
               <span>{t('dashboard.side_menu.dashboard')}</span>
             </li>

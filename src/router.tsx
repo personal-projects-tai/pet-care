@@ -42,6 +42,10 @@ export const router = createBrowserRouter([
           {
             path: '',
             element: <Breed />
+          },
+          {
+            path: 'name',
+            element: <Breed />
           }
         ]
       }

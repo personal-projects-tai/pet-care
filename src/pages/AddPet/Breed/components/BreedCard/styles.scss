@@ -1,12 +1,14 @@
 @use '../../../../../assets/styles/variables/colors.scss';
 
+@use '../../../../../assets/styles/variables/breakpoints.scss';
+
 .breed-card {
   gap: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding: 1.25rem 1rem 0 1rem;
+  padding: 1.25rem;
   border-radius: 1.125rem;
 
   overflow: hidden;
@@ -14,19 +16,19 @@
 
   &__light {
     background-color: colors.$grey-0;
-    border: 1px solid colors.$grey-150;
+    border: 2px solid colors.$grey-150;
     box-shadow:
       0px 0px 5px 0px rgba(12, 26, 75, 0.05),
       0px 4px 20px -2px rgba(50, 50, 71, 0.02);
 
     &:active {
-      border: 1px solid colors.$blue-500;
+      border: 2px solid colors.$blue-500;
     }
   }
 
   &__dark {
     background: colors.$grey-800;
-    border: 1px solid colors.$grey-700;
+    border: 2px solid colors.$grey-700;
     box-shadow:
       0px 0px 5px 0px rgba(12, 26, 75, 0.05),
       0px 4px 20px -2px rgba(50, 50, 71, 0.02);
@@ -74,5 +76,39 @@
 }
 
 .selected {
-  border: 1px solid colors.$blue-500;
+  border: 2px solid colors.$blue-500;
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .breed-card {
+    padding: 1rem 1rem;
+    &__image {
+      img {
+        width: 6rem;
+        height: 6rem;
+      }
+
+      .inner-circle,
+      .outer-circle {
+        padding: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
+	.breed-card {
+		padding: 1rem 1rem;
+		&__image {
+			img {
+				width: 6rem;
+				height: 6rem;
+			}
+
+			.inner-circle,
+			.outer-circle {
+				padding: 0.8rem;
+			}
+		}
+	}
 }

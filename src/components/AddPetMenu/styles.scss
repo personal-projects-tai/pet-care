@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: space-between;
 
+		position: relative;
+
     svg {
       cursor: pointer;
     }
@@ -53,10 +55,46 @@
     height: 0.5rem;
     background-color: colors.$yellow-500;
     border-radius: 0.5rem;
-    width: 12.5%;
 
     position: absolute;
     left: 0;
     top: -30%;
   }
+
+	.breed {
+		width: 16.6%;
+	}
+
+	.name {
+		width: 33.2%;
+	}
+
+	.size {
+		width: 49.8%;
+	}
+
+	.weight {
+		width: 66.4%;
+	}
+
+	.important_dates {
+		width: 83%;
+	}
+
+	.caretakers {
+		width: 100%;
+	}
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+	.add-pet-menu {
+		&__steps {
+			svg {
+				display: block;
+				position: absolute;
+				top: -1.625rem;
+				left: 0;
+			}
+		}
+	}
 }

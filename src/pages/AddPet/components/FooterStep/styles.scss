@@ -1,5 +1,7 @@
 @use '../../../../assets/styles/variables/colors.scss';
 
+@use '../../../../assets/styles/variables/breakpoints.scss';
+
 .next-step {
   width: 78%;
   display: flex;
@@ -9,6 +11,7 @@
   position: fixed;
   bottom: 2.25rem;
   left: 20.125rem;
+	z-index: 800;
 
   &__light {
     background-color: colors.$grey-0;
@@ -26,4 +29,37 @@
   .actions {
     display: flex;
   }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+	.next-step {
+		width: 100%;
+		left: 0;
+		bottom: 0;
+
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
+	.next-step {
+		width: 100%;
+		left: 0;
+		bottom: 0;
+
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+}
+
+@media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
+	.next-step {
+		width: 100%;
+		left: 0;
+		bottom: 0;
+
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
 }

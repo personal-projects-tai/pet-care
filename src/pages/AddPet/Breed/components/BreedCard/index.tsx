@@ -2,6 +2,7 @@ import { Heading } from '@/components/Heading'
 import { useTheme } from '@/hooks/ThemeContext'
 
 import './styles.scss'
+import { useEffect } from 'react'
 
 interface Props {
   id: number
@@ -22,6 +23,21 @@ export function BreedCard({ id, breed, image }: Props) {
     const clickedCard = document.getElementById(id.toString())
     clickedCard?.classList.add('selected')
   }
+
+  function handleOutsideClick(event: MouseEvent) {
+    const prevSelected = document.querySelector('.breed-card.selected')
+    if (!(event.target as HTMLElement).closest('.breed-card')) {
+      prevSelected?.classList.remove('selected')
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('click', handleOutsideClick)
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick)
+    }
+  }, [])
 
   return (
     <div className={`breed-card breed-card__${theme}`} id={id.toString()} onClick={() => handleSelectBreed(id)}>
