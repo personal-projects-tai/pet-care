@@ -1,13 +1,12 @@
-import { Heading } from '@/components/Heading'
-import { Subtitle } from '@/components/Subtitle'
+import './styles.scss'
 
-import background from '@/assets/images/empty.png'
-
-import { router } from '@/router'
-import { Button } from '@/components/Button'
 import { useTranslation } from 'react-i18next'
 
-import './styles.scss'
+import background from '@/assets/images/empty.png'
+import { Button } from '@/components/Button'
+import { Heading } from '@/components/Heading'
+import { Subtitle } from '@/components/Subtitle'
+import { router } from '@/router'
 
 export function Empty() {
   const { t } = useTranslation()

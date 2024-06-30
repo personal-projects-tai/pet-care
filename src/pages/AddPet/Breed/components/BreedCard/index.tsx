@@ -1,8 +1,9 @@
+import './styles.scss'
+
+import { useEffect } from 'react'
+
 import { Heading } from '@/components/Heading'
 import { useTheme } from '@/hooks/ThemeContext'
-
-import './styles.scss'
-import { useEffect } from 'react'
 
 interface Props {
   id: number

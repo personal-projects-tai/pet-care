@@ -1,13 +1,15 @@
 import './styles.scss'
 import '../shared/dashboard-panel.scss'
 
-import User from '@/assets/icons/user.svg?react'
-import MagnifyingGlass from '@/assets/icons/magnifying-glass.svg?react'
-import Bars from '@/assets/icons/bars.svg?react'
-import { useSidebar } from '@/hooks/DashboardSidebarContext'
-import { Content } from './components/Content'
-import { useTheme } from '@/hooks/ThemeContext'
 import { useTranslation } from 'react-i18next'
+
+import Bars from '@/assets/icons/bars.svg?react'
+import MagnifyingGlass from '@/assets/icons/magnifying-glass.svg?react'
+import User from '@/assets/icons/user.svg?react'
+import { useSidebar } from '@/hooks/DashboardSidebarContext'
+import { useTheme } from '@/hooks/ThemeContext'
+
+import { Content } from './components/Content'
 
 export function Dashboard() {
   const { toggleIsOpen } = useSidebar()

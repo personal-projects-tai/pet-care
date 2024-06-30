@@ -1,14 +1,15 @@
-import { Heading } from '../Heading'
+import './styles.scss'
+
+import { useTranslation } from 'react-i18next'
 
 import ArrowLeft from '@/assets/icons/arrow-left.svg?react'
-
-import './styles.scss'
-import { Subtitle } from '../Subtitle'
-import { useTheme } from '@/hooks/ThemeContext'
-import { useTranslation } from 'react-i18next'
-import { router } from '@/router'
-import { useSteps } from '@/hooks/StepsContext'
 import { STEPS_PATHS } from '@/hooks/@types/steps'
+import { useSteps } from '@/hooks/StepsContext'
+import { useTheme } from '@/hooks/ThemeContext'
+import { router } from '@/router'
+
+import { Heading } from '../Heading'
+import { Subtitle } from '../Subtitle'
 
 export function AddPetMenu() {
   const { t } = useTranslation()
@@ -35,7 +36,7 @@ export function AddPetMenu() {
   return (
     <div className="add-pet-menu">
       <div className={`add-pet-menu__items add-pet-menu__items__${theme}`}>
-        <ArrowLeft onClick={() => handleBackStep()} />
+        <ArrowLeft role="img" onClick={() => handleBackStep()} />
         <span className="add-pet-menu__title">
           <Heading type="3">{t('dashboard.add_pet.menu.title')}</Heading>
           <Subtitle type="regular" size="3" centered>

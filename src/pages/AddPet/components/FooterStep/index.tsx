@@ -1,12 +1,13 @@
-import { Button } from '@/components/Button'
-import { Subtitle } from '@/components/Subtitle'
-import { useTheme } from '@/hooks/ThemeContext'
+import './styles.scss'
+
 import { useTranslation } from 'react-i18next'
 
-import './styles.scss'
-import { useSteps } from '@/hooks/StepsContext'
-import { router } from '@/router'
+import { Button } from '@/components/Button'
+import { Subtitle } from '@/components/Subtitle'
 import { STEPS_PATHS } from '@/hooks/@types/steps'
+import { useSteps } from '@/hooks/StepsContext'
+import { useTheme } from '@/hooks/ThemeContext'
+import { router } from '@/router'
 
 export function FooterStep() {
   const { t } = useTranslation()

@@ -1,10 +1,11 @@
-import { useCallback, useEffect, useRef } from 'react'
 import { EmblaCarouselType, EmblaEventType, EmblaOptionsType } from 'embla-carousel'
-import { DotButton, NextButton, PrevButton, useDotButton, usePrevNextButtons } from './EmblaCarouselArrowButtons'
-
 import useEmblaCarousel from 'embla-carousel-react'
-import MaleGender from '@/assets/icons/male-gender.svg?react'
+import { useCallback, useEffect, useRef } from 'react'
+
 import FemaleGender from '@/assets/icons/female-gender.svg?react'
+import MaleGender from '@/assets/icons/male-gender.svg?react'
+
+import { DotButton, NextButton, PrevButton, useDotButton, usePrevNextButtons } from './EmblaCarouselArrowButtons'
 
 const TWEEN_FACTOR_BASE = 0.15
 

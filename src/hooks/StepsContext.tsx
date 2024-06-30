@@ -1,5 +1,7 @@
+import { createContext, ReactNode, useCallback, useContext, useEffect, useState } from 'react'
+
 import { router } from '@/router'
-import { ReactNode, createContext, useContext, useEffect, useState, useCallback } from 'react'
+
 import { STEPS_PATHS } from './@types/steps'
 
 type StepType = 'breed' | 'name' | 'size' | 'weight' | 'important_dates' | 'caretakers'

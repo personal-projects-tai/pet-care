@@ -1,9 +1,11 @@
-import { router } from '@/router'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { StepsProvider, useSteps } from './StepsContext'
-import { STEPS_PATHS } from './@types/steps'
 import { render, screen } from '@testing-library/react'
 import { act } from 'react-dom/test-utils'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
+
+import { router } from '@/router'
+
+import { STEPS_PATHS } from './@types/steps'
+import { StepsProvider, useSteps } from './StepsContext'
 
 vi.mock('@/router', () => ({
   router: {

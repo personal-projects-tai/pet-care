@@ -1,13 +1,14 @@
-import { Input } from '@/components/Input'
-import { Heading } from '@/components/Heading'
+import './styles.scss'
+
 import { useTranslation } from 'react-i18next'
-import { Subtitle } from '@/components/Subtitle'
-import { BreedCard } from './components/BreedCard'
 
 import MagnifyingGlass from '@/assets/icons/magnifying-glass.svg?react'
+import { Heading } from '@/components/Heading'
+import { Input } from '@/components/Input'
+import { Subtitle } from '@/components/Subtitle'
 
-import './styles.scss'
 import { FooterStep } from '../components/FooterStep'
+import { BreedCard } from './components/BreedCard'
 
 const pets = [
   {

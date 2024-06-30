@@ -1,15 +1,15 @@
-import { useTheme } from '@/hooks/ThemeContext'
-import { Card } from './components/Card'
+import './styles.scss'
 
-import { Heading } from '@/components/Heading'
-import { Subtitle } from '@/components/Subtitle'
-import { Button } from '@/components/Button'
+import { useTranslation } from 'react-i18next'
 
 import SquarePen from '@/assets/icons/square-pen.svg?react'
-
-import './styles.scss'
+import { Button } from '@/components/Button'
+import { Heading } from '@/components/Heading'
+import { Subtitle } from '@/components/Subtitle'
+import { useTheme } from '@/hooks/ThemeContext'
 import { router } from '@/router'
-import { useTranslation } from 'react-i18next'
+
+import { Card } from './components/Card'
 
 export function Onboarding() {
   const { theme } = useTheme()

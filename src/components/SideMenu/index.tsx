@@ -1,17 +1,17 @@
 import './styles.scss'
 
+import { useTranslation } from 'react-i18next'
+
 import Apps from '@/assets/icons/apps.svg?react'
-import Gear from '@/assets/icons/gear.svg?react'
-import Plus from '@/assets/icons/plus.svg?react'
-import logo from '@/assets/images/logo-logged.svg'
-import Close from '@/assets/icons/close.svg?react'
-import User from '@/assets/icons/user-account.svg?react'
+import ArrowRightFromBracket from '@/assets/icons/arrow-right-from-bracket.svg?react'
 import Calendar from '@/assets/icons/calendar.svg?react'
 import ChartBubbles from '@/assets/icons/chart-bubbles.svg?react'
-import ArrowRightFromBracket from '@/assets/icons/arrow-right-from-bracket.svg?react'
-
+import Close from '@/assets/icons/close.svg?react'
+import Gear from '@/assets/icons/gear.svg?react'
+import Plus from '@/assets/icons/plus.svg?react'
+import User from '@/assets/icons/user-account.svg?react'
+import logo from '@/assets/images/logo-logged.svg'
 import { useSidebar } from '@/hooks/DashboardSidebarContext'
-import { useTranslation } from 'react-i18next'
 import { router } from '@/router'
 
 export function SideMenu() {

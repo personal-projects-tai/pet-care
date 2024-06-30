@@ -1,12 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom'
+
+import { AddPetLayout } from './pages/_layouts/AddPetLayout'
 import { AuthLayout } from './pages/_layouts/AuthLayout'
+import { DashboardLayout } from './pages/_layouts/DashboardLayout'
+import { Breed } from './pages/AddPet/Breed'
+import { Name } from './pages/AddPet/Name'
+import { Dashboard } from './pages/Dashboard'
+import { LogIn } from './pages/LogIn'
 import { Onboarding } from './pages/Onboarding'
 import { SignUp } from './pages/SignUp'
-import { LogIn } from './pages/LogIn'
-import { DashboardLayout } from './pages/_layouts/DashboardLayout'
-import { Dashboard } from './pages/Dashboard'
-import { AddPetLayout } from './pages/_layouts/AddPetLayout'
-import { Breed } from './pages/AddPet/Breed'
 
 export const router = createBrowserRouter([
   {
@@ -45,7 +47,7 @@ export const router = createBrowserRouter([
           },
           {
             path: 'name',
-            element: <Breed />
+            element: <Name />
           }
         ]
       }

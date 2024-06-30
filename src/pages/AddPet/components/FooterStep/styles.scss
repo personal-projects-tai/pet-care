@@ -21,7 +21,7 @@
     background-color: colors.$grey-900;
   }
 
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 1.5rem;
   box-shadow:
     0px 0px 8px 0px rgba(12, 26, 75, 0.1),
@@ -57,6 +57,17 @@
   .next-step {
     width: 100%;
     left: 0;
+    bottom: 0;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-lg) and (max-width: breakpoints.$breakpoint-xl) {
+  .next-step {
+    width: 66%;
+    right: 0;
     bottom: 0;
 
     border-bottom-left-radius: 0;
