@@ -41,11 +41,9 @@ describe('AddPetMenu', () => {
 
   beforeEach(() => {
     vi.clearAllMocks()
-
     ;(useTranslation as Mock).mockReturnValue({
       t: mockT
     })
-
     ;(useSteps as Mock).mockReturnValue({
       step: 'breed',
       numericStep: 1,

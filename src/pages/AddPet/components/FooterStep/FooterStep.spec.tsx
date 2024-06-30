@@ -33,11 +33,9 @@ describe('FooterStep', () => {
 
   beforeEach(() => {
     vi.clearAllMocks()
-
     ;(useTranslation as Mock).mockReturnValue({
       t: mockT
     })
-
     ;(useSteps as Mock).mockReturnValue({
       actionStep: mockActionStep
     })

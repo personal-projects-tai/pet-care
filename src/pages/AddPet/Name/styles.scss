@@ -2,121 +2,121 @@
 @use '../../../assets/styles/variables/breakpoints.scss';
 
 .name-page {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	gap: 3.75rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.75rem;
 
-	&__outer-circle {
-		padding: 2.5rem;
-		border-radius: 100%;
+  &__outer-circle {
+    padding: 2.5rem;
+    border-radius: 100%;
 
-		&__light {
-			border: 1px solid colors.$grey-150;
-		}
+    &__light {
+      border: 1px solid colors.$grey-150;
+    }
 
-		&__dark {
-			border: 1px solid colors.$grey-700;
-		}
-	}
+    &__dark {
+      border: 1px solid colors.$grey-700;
+    }
+  }
 
-	&__inner-circle {
-		padding: 1.875rem;
-		border-radius: 100%;
+  &__inner-circle {
+    padding: 1.875rem;
+    border-radius: 100%;
 
-		position: relative;
+    position: relative;
 
-		&__light {
-			border: 1px solid colors.$grey-150;
-		}
+    &__light {
+      border: 1px solid colors.$grey-150;
+    }
 
-		&__dark {
-			border: 1px solid colors.$grey-700;
-		}
+    &__dark {
+      border: 1px solid colors.$grey-700;
+    }
 
-		img {
-			width: 16.875rem;
-			height: 16.875rem;
-			object-fit: cover;
+    img {
+      width: 16.875rem;
+      height: 16.875rem;
+      object-fit: cover;
 
       border-radius: 100%;
-		}
+    }
 
-		.icon {
-			position: absolute;
-			right: calc(100% - 60%);
-			bottom: 15px;
+    .icon {
+      position: absolute;
+      right: calc(100% - 60%);
+      bottom: 15px;
 
-			cursor: pointer;
+      cursor: pointer;
 
-			border: 1px solid #F4F8FB;
-			background: colors.$grey-0;
+      border: 1px solid #f4f8fb;
+      background: colors.$grey-0;
 
-			box-shadow: 0px 1px 4px 0px rgba(139, 158, 184, 0.20);
+      box-shadow: 0px 1px 4px 0px rgba(139, 158, 184, 0.2);
 
-			padding: 1.125rem;
-			border-radius: 14px;
+      padding: 1.125rem;
+      border-radius: 14px;
 
-			input[type="file"] {
-				display: none;
-			}
+      input[type='file'] {
+        display: none;
+      }
 
-			svg {
-				color: colors.$blue-500;
-			}
-		}
-	}
+      svg {
+        color: colors.$blue-500;
+      }
+    }
+  }
 
-	&__field {
-		gap: 1.25rem;
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		justify-content: center;
+  &__field {
+    gap: 1.25rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
-		&__light {
-			label {
-				color: colors.$grey-800;
-			}
-		}
+    &__light {
+      label {
+        color: colors.$grey-800;
+      }
+    }
 
-		&__dark {
-			label {
-				color: colors.$grey-0;
-			}
-		}
+    &__dark {
+      label {
+        color: colors.$grey-0;
+      }
+    }
 
-		input {
-			width: 25rem;
-		}
-	}
+    input {
+      width: 25rem;
+    }
+  }
 }
 
 @media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
-	.name-page {
-		margin-top: 2.5rem;
-		&__outer-circle {
-			padding: 1.6875rem;
-		}
-	
-		&__inner-circle {
-			padding: 1.125rem;
-	
-			img {
-				width: 11.625rem;
-				height: 11.625rem;
-			}
-	
-			.icon {
-				right: calc(100% - 63%);
-				bottom: 10px;
-			}
-		}
+  .name-page {
+    margin-top: 2.5rem;
+    &__outer-circle {
+      padding: 1.6875rem;
+    }
 
-		&__field {
-			input {
-				width: 100%;
-			}
-		}
-	}
+    &__inner-circle {
+      padding: 1.125rem;
+
+      img {
+        width: 11.625rem;
+        height: 11.625rem;
+      }
+
+      .icon {
+        right: calc(100% - 63%);
+        bottom: 10px;
+      }
+    }
+
+    &__field {
+      input {
+        width: 100%;
+      }
+    }
+  }
 }
