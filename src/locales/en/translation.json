@@ -24,6 +24,40 @@
     "havent_account": "Don't have an account?",
     "sign_up_link": "Sign up here!"
   },
+  "dashboard": {
+    "side_menu": {
+      "your_pets": "Your Pets",
+      "add_pet": "add new",
+      "dashboard": "Dashboard",
+      "contacts": "Contacts",
+      "calendar": "Calendar",
+      "account": "Account",
+      "settings": "Settings",
+      "hello": "Hello",
+      "not_logged": "Visitor"
+    },
+    "empty_state": {
+      "title": "Uh Oh!",
+      "description": "Looks like you have no profiles set up at this moment, add your pet now",
+      "add_pet": "Add a pet now"
+    },
+    "homepage": {
+      "title": "Active pet profiles",
+      "description": "See all your pets and information",
+      "health_card": {
+        "title": "Health Card",
+        "description": "Keep up with appointments and all your pet’s medical history in one place"
+      },
+      "nutrition_card": {
+        "title": "Nutrition",
+        "description": "Track your pet's meals and entire food history in one place"
+      },
+      "activities_card": {
+        "title": "Activities",
+        "description": "Track your pet's physical activities and entire physical history in one place"
+      }
+    }
+  },
   "utils": {
     "email": "Email",
     "password": "Password"

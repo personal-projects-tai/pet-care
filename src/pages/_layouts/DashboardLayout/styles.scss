@@ -1,0 +1,19 @@
+@use '../../../assets/styles/variables/colors.scss';
+
+@use '../../../assets/styles/variables/breakpoints.scss';
+
+.dashboard {
+  height: 100vh;
+  width: 100%;
+  background-color: colors.$grey-1000;
+
+  display: flex;
+
+  overflow-x: hidden;
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .dashboard {
+    position: relative;
+  }
+}

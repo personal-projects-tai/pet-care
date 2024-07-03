@@ -9,11 +9,15 @@ import { Subtitle } from '@/components/Subtitle'
 import { Input } from '@/components/Input'
 import { Button } from '@/components/Button'
 import { Link } from 'react-router-dom'
+import { router } from '@/router'
 import { useTranslation } from 'react-i18next'
 
 export function LogIn() {
   const { theme } = useTheme()
 
+  function handleLogin() {
+    router.navigate('/dashboard')
+  }
   const { t } = useTranslation()
   return (
     <Card>
@@ -30,7 +34,7 @@ export function LogIn() {
       <Subtitle size="2" type="regular" centered={true}>
         {t('login.description')}
       </Subtitle>
-      <form className="sign-up-form">
+      <form className="sign-up-form" onSubmit={handleLogin}>
         <Input placeholder={t('utils.email')} type="email" />
         <Input placeholder={t('utils.password')} type="password" />
       </form>

@@ -24,6 +24,40 @@
     "havent_account": "¿No tienes una cuenta?",
     "sign_up_link": "¡Registrar aquí!"
   },
+  "dashboard": {
+    "side_menu": {
+      "your_pets": "Tus mascotas",
+      "add_pet": "Añadir nuevo(a)",
+      "dashboard": "Panel",
+      "contacts": "Contactos",
+      "calendar": "Calendario",
+      "account": "Cuenta",
+      "settings": "Ajustes",
+      "hello": "Hola",
+      "not_logged": "Visitante"
+    },
+    "empty_state": {
+      "title": "¡UH oh!",
+      "description": "Parece que no tienes perfiles configurados en este momento, agrega tu mascota ahora",
+      "add_pet": "Añade una mascota ahora"
+    },
+    "homepage": {
+      "title": "Perfiles de mascotas activos",
+      "description": "Ver todas tus mascotas e información",
+      "health_card": {
+        "title": "Tarjeta de salud",
+        "description": "Manténgase al día con las citas y todo el historial médico de su mascota en un solo lugar"
+      },
+      "nutrition_card": {
+        "title": "Nutrición",
+        "description": "Realice un seguimiento de las comidas de su mascota y del historial alimentario completo en un solo lugar"
+      },
+      "activities_card": {
+        "title": "Actividades",
+        "description": "Realice un seguimiento de las actividades físicas de su mascota y del historial físico completo en un solo lugar"
+      }
+    }
+  },
   "utils": {
     "email": "Correo electrónico",
     "password": "Contraseña"
