@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .weight-page {
-	gap: 2.5rem;
+  gap: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-	&__image {
+  &__image {
     &__light {
       .outer-circle,
       .inner-circle {
@@ -41,32 +41,31 @@
     }
   }
 
-	&__title {
+  &__title {
     gap: 0.5rem;
     display: flex;
     flex-direction: column;
   }
 
-	&__result {
+  &__result {
+    &__light {
+      color: colors.$blue-500;
+    }
 
-		&__light {
-			color: colors.$blue-500;
-		}
+    &__dark {
+      color: colors.$blue-300;
+    }
 
-		&__dark {
-			color: colors.$blue-300;
-		}
-		
-		h1 {
-			font-size: 80px;
-			font-family: 'Noto Sans';
-		}
-	}
+    h1 {
+      font-size: 80px;
+      font-family: 'Noto Sans';
+    }
+  }
 
-	&__fields {
-		gap: 1.25rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+  &__fields {
+    gap: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
