@@ -1,0 +1,40 @@
+@use '../../assets/styles/variables/colors.scss';
+
+.radio-input {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+
+  padding: 0.9375rem;
+  border-radius: 0.875rem;
+
+  &__light {
+    border: 1px solid colors.$grey-200;
+    label {
+      color: colors.$grey-600;
+    }
+  }
+
+  &__dark {
+    border: 1px solid colors.$grey-700;
+    label {
+      color: colors.$grey-200;
+    }
+  }
+
+  input[type='radio'] {
+    accent-color: colors.$blue-500;
+  }
+
+  label {
+    padding-right: 4.375rem;
+  }
+}
+
+.selected {
+	border-color: colors.$blue-500;
+
+	label {
+		color: colors.$blue-500;
+	}
+}

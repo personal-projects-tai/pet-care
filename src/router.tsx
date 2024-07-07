@@ -6,6 +6,7 @@ import { DashboardLayout } from './pages/_layouts/DashboardLayout'
 import { Breed } from './pages/AddPet/Breed'
 import { Name } from './pages/AddPet/Name'
 import { Size } from './pages/AddPet/Size'
+import { Weight } from './pages/AddPet/Weight'
 import { Dashboard } from './pages/Dashboard'
 import { LogIn } from './pages/LogIn'
 import { Onboarding } from './pages/Onboarding'
@@ -53,6 +54,10 @@ export const router = createBrowserRouter([
           {
             path: 'size',
             element: <Size />
+          },
+          {
+            path: 'weight',
+            element: <Weight />
           }
         ]
       }

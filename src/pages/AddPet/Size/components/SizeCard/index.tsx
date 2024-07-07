@@ -49,7 +49,7 @@ export function SizeCard({ icon, id }: Props) {
     return descriptionMap[icon]
   }
 
-  function handleSelectBreed(id: number) {
+  function handleSelectSize(id: number) {
     const prevSelected = document.querySelector('.size-card.selected')
 
     if (prevSelected) {
@@ -79,7 +79,7 @@ export function SizeCard({ icon, id }: Props) {
     <div
       className={`size-card size-card__${icon} size-card__${theme}`}
       id={id.toString()}
-      onClick={() => handleSelectBreed(id)}
+      onClick={() => handleSelectSize(id)}
     >
       <div className={`size-card__icon size-card__icon__${theme} size-card__icon__${icon}`}>{renderIcon()}</div>
       <div className={`size-card__info size-card__info__${theme} size-card__info__${icon}`}>
