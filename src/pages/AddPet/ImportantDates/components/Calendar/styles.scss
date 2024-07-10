@@ -12,27 +12,27 @@
       &__prev-button,
       &__next-button {
         border: 1px solid colors.$grey-500;
-				transition: all 0.3s;
+        transition: all 0.3s;
         svg {
           color: colors.$grey-500;
-					transition: all 0.3s;
+          transition: all 0.3s;
         }
 
-				&:hover {
-					svg {
-						color: colors.$blue-700;
-					}
-					border-color: colors.$blue-700;
-				}
+        &:hover {
+          svg {
+            color: colors.$blue-700;
+          }
+          border-color: colors.$blue-700;
+        }
       }
 
       &__label {
         color: colors.$grey-800;
-				transition: all 0.3s;
+        transition: all 0.3s;
 
-				&:hover {
-					color: colors.$grey-700;
-				}
+        &:hover {
+          color: colors.$grey-700;
+        }
       }
     }
 
@@ -44,7 +44,7 @@
 
           color: colors.$grey-700;
 
-					transition: all 0.3s;
+          transition: all 0.3s;
 
           &:disabled {
             background: colors.$grey-100;
@@ -53,10 +53,10 @@
             cursor: not-allowed;
           }
 
-					&:not(:disabled):hover {
-						border-color: colors.$blue-700;
-						color: colors.$blue-700;
-					}
+          &:not(:disabled):hover {
+            border-color: colors.$blue-700;
+            color: colors.$blue-700;
+          }
         }
 
         &__day--neighboringMonth {
@@ -91,7 +91,7 @@
 
           color: colors.$grey-700;
 
-					transition: all 0.3s;
+          transition: all 0.3s;
 
           &:disabled {
             background: colors.$grey-100;
@@ -100,10 +100,10 @@
             cursor: not-allowed;
           }
 
-					&:not(:disabled):hover {
-						border-color: colors.$blue-700;
-						color: colors.$blue-700;
-					}
+          &:not(:disabled):hover {
+            border-color: colors.$blue-700;
+            color: colors.$blue-700;
+          }
         }
       }
     }
@@ -116,7 +116,7 @@
 
           color: colors.$grey-700;
 
-					transition: all 0.3s;
+          transition: all 0.3s;
 
           &:disabled {
             background: colors.$grey-100;
@@ -125,10 +125,10 @@
             cursor: not-allowed;
           }
 
-					&:not(:disabled):hover {
-						border-color: colors.$blue-700;
-						color: colors.$blue-700;
-					}
+          &:not(:disabled):hover {
+            border-color: colors.$blue-700;
+            color: colors.$blue-700;
+          }
         }
       }
     }
@@ -141,7 +141,7 @@
 
           color: colors.$grey-700;
 
-					transition: all 0.3s;
+          transition: all 0.3s;
 
           &:disabled {
             background: colors.$grey-100;
@@ -150,10 +150,10 @@
             cursor: not-allowed;
           }
 
-					&:not(:disabled):hover {
-						border-color: colors.$blue-700;
-						color: colors.$blue-700;
-					}
+          &:not(:disabled):hover {
+            border-color: colors.$blue-700;
+            color: colors.$blue-700;
+          }
         }
       }
     }
@@ -167,27 +167,27 @@
       &__prev-button,
       &__next-button {
         border: 1px solid colors.$grey-500;
-				transition: all 0.3s;
+        transition: all 0.3s;
         svg {
           color: colors.$grey-500;
-					transition: all 0.3s;
+          transition: all 0.3s;
         }
 
-				&:hover {
-					border-color: colors.$blue-300;
-					svg {
-						color: colors.$blue-300;
-					}
-				}
+        &:hover {
+          border-color: colors.$blue-300;
+          svg {
+            color: colors.$blue-300;
+          }
+        }
       }
 
       &__label {
         color: colors.$grey-0;
-				transition: all 0.3s;
+        transition: all 0.3s;
 
-				&:hover {
-					color: colors.$grey-300;
-				}
+        &:hover {
+          color: colors.$grey-300;
+        }
       }
     }
 
@@ -199,7 +199,7 @@
 
           color: colors.$grey-0;
 
-					transition: all 0.3s;
+          transition: all 0.3s;
           &:disabled {
             background: colors.$grey-900;
             border-color: colors.$grey-700;
@@ -208,10 +208,10 @@
             cursor: not-allowed;
           }
 
-					&:not(:disabled):hover {
-						border-color: colors.$blue-300;
-						color: colors.$blue-300;
-					}
+          &:not(:disabled):hover {
+            border-color: colors.$blue-300;
+            color: colors.$blue-300;
+          }
         }
 
         &__day--neighboringMonth {
@@ -247,7 +247,7 @@
 
           color: colors.$grey-0;
 
-					transition: all 0.3s;
+          transition: all 0.3s;
 
           &:disabled {
             background: colors.$grey-900;
@@ -257,10 +257,10 @@
             cursor: not-allowed;
           }
 
-					&:not(:disabled):hover {
-						border-color: colors.$blue-300;
-						color: colors.$blue-300;
-					}
+          &:not(:disabled):hover {
+            border-color: colors.$blue-300;
+            color: colors.$blue-300;
+          }
         }
       }
     }
@@ -273,7 +273,7 @@
 
           color: colors.$grey-0;
 
-					transition: all 0.3s;
+          transition: all 0.3s;
 
           &:disabled {
             background: colors.$grey-900;
@@ -283,10 +283,10 @@
             cursor: not-allowed;
           }
 
-					&:not(:disabled):hover {
-						border-color: colors.$blue-300;
-						color: colors.$blue-300;
-					}
+          &:not(:disabled):hover {
+            border-color: colors.$blue-300;
+            color: colors.$blue-300;
+          }
         }
       }
     }
@@ -299,7 +299,7 @@
 
           color: colors.$grey-0;
 
-					transition: all 0.3s;
+          transition: all 0.3s;
           &:disabled {
             background: colors.$grey-900;
             border-color: colors.$grey-700;
@@ -308,10 +308,10 @@
             cursor: not-allowed;
           }
 
-					&:not(:disabled):hover {
-						border-color: colors.$blue-300;
-						color: colors.$blue-300;
-					}
+          &:not(:disabled):hover {
+            border-color: colors.$blue-300;
+            color: colors.$blue-300;
+          }
         }
       }
     }
