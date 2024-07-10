@@ -1,6 +1,7 @@
 import './styles.scss'
 
 import { ChangeEvent, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import { Input } from '@/components/Input'
 import { RadioButton } from '@/components/RadioButton'
@@ -11,8 +12,9 @@ import { FooterStep } from '../components/FooterStep'
 
 export function Weight() {
   const { theme } = useTheme()
+  const { t } = useTranslation()
 
-  const [weight, setWeight] = useState<string>('0.00')
+  const [weight, setWeight] = useState<string>('')
   const [unit, setUnit] = useState<string>('kg/lb')
   const [kgWeight, setKgWeight] = useState<string>('')
 
@@ -26,7 +28,7 @@ export function Weight() {
       setWeight(formattedValue)
       setKgWeight(formattedValue)
     } else {
-      setWeight('0.00')
+      setWeight('')
     }
   }
 
@@ -59,10 +61,10 @@ export function Weight() {
       </div>
       <div className="weight-page weight-page__title">
         <Subtitle size="1" type="regular" centered>
-          Enter the weight
+          {t('dashboard.add_pet.weight_page.title')}
         </Subtitle>
         <Subtitle size="2" type="regular" centered>
-          Please enter your pet's weight
+          {t('dashboard.add_pet.weight_page.description')}
         </Subtitle>
       </div>
       <div className={`weight-page weight-page__result weight-page__result__${theme}`}>

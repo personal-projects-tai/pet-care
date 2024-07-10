@@ -1,0 +1,451 @@
+@use '../../../../../assets/styles/variables/colors.scss';
+@use '../../../../../assets/styles/variables/fonts.scss';
+
+.react-calendar__navigation__arrow.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__arrow.react-calendar__navigation__next2-button {
+  display: none;
+}
+
+.light {
+  .react-calendar {
+    &__navigation {
+      &__prev-button,
+      &__next-button {
+        border: 1px solid colors.$grey-500;
+				transition: all 0.3s;
+        svg {
+          color: colors.$grey-500;
+					transition: all 0.3s;
+        }
+
+				&:hover {
+					svg {
+						color: colors.$blue-700;
+					}
+					border-color: colors.$blue-700;
+				}
+      }
+
+      &__label {
+        color: colors.$grey-800;
+				transition: all 0.3s;
+
+				&:hover {
+					color: colors.$grey-700;
+				}
+      }
+    }
+
+    &__month-view {
+      &__days {
+        button {
+          border: 1px solid colors.$grey-500;
+          background: colors.$grey-0;
+
+          color: colors.$grey-700;
+
+					transition: all 0.3s;
+
+          &:disabled {
+            background: colors.$grey-100;
+            border-color: colors.$grey-150;
+            color: colors.$grey-500;
+            cursor: not-allowed;
+          }
+
+					&:not(:disabled):hover {
+						border-color: colors.$blue-700;
+						color: colors.$blue-700;
+					}
+        }
+
+        &__day--neighboringMonth {
+          background: colors.$grey-100 !important;
+          border-color: colors.$grey-150 !important;
+          color: colors.$grey-500 !important;
+        }
+      }
+
+      &__weekdays {
+        font-weight: fonts.$regular-400;
+        font-size: fonts.$text-14;
+        color: colors.$grey-600;
+
+        display: grid !important;
+        grid-template-columns: repeat(7, 78px);
+        justify-content: space-around;
+      }
+    }
+
+    &__tile--active {
+      background: rgba(209, 230, 255, 0.5) !important;
+      border: 2px solid colors.$blue-100 !important;
+      color: colors.$blue-500 !important;
+    }
+
+    &__year-view {
+      &__months {
+        button {
+          border: 1px solid colors.$grey-500;
+          background: colors.$grey-0;
+
+          color: colors.$grey-700;
+
+					transition: all 0.3s;
+
+          &:disabled {
+            background: colors.$grey-100;
+            border-color: colors.$grey-150;
+            color: colors.$grey-500;
+            cursor: not-allowed;
+          }
+
+					&:not(:disabled):hover {
+						border-color: colors.$blue-700;
+						color: colors.$blue-700;
+					}
+        }
+      }
+    }
+
+    &__decade-view {
+      &__years {
+        button {
+          border: 1px solid colors.$grey-500;
+          background: colors.$grey-0;
+
+          color: colors.$grey-700;
+
+					transition: all 0.3s;
+
+          &:disabled {
+            background: colors.$grey-100;
+            border-color: colors.$grey-150;
+            color: colors.$grey-500;
+            cursor: not-allowed;
+          }
+
+					&:not(:disabled):hover {
+						border-color: colors.$blue-700;
+						color: colors.$blue-700;
+					}
+        }
+      }
+    }
+
+    &__century-view {
+      &__decades {
+        button {
+          border: 1px solid colors.$grey-500;
+          background: colors.$grey-0;
+
+          color: colors.$grey-700;
+
+					transition: all 0.3s;
+
+          &:disabled {
+            background: colors.$grey-100;
+            border-color: colors.$grey-150;
+            color: colors.$grey-500;
+            cursor: not-allowed;
+          }
+
+					&:not(:disabled):hover {
+						border-color: colors.$blue-700;
+						color: colors.$blue-700;
+					}
+        }
+      }
+    }
+  }
+}
+
+.dark {
+  .react-calendar {
+    background-color: transparent;
+    &__navigation {
+      &__prev-button,
+      &__next-button {
+        border: 1px solid colors.$grey-500;
+				transition: all 0.3s;
+        svg {
+          color: colors.$grey-500;
+					transition: all 0.3s;
+        }
+
+				&:hover {
+					border-color: colors.$blue-300;
+					svg {
+						color: colors.$blue-300;
+					}
+				}
+      }
+
+      &__label {
+        color: colors.$grey-0;
+				transition: all 0.3s;
+
+				&:hover {
+					color: colors.$grey-300;
+				}
+      }
+    }
+
+    &__month-view {
+      &__days {
+        button {
+          border: 1px solid colors.$grey-700;
+          background: colors.$background;
+
+          color: colors.$grey-0;
+
+					transition: all 0.3s;
+          &:disabled {
+            background: colors.$grey-900;
+            border-color: colors.$grey-700;
+            opacity: 0.4;
+            color: colors.$grey-200;
+            cursor: not-allowed;
+          }
+
+					&:not(:disabled):hover {
+						border-color: colors.$blue-300;
+						color: colors.$blue-300;
+					}
+        }
+
+        &__day--neighboringMonth {
+          background: colors.$grey-900 !important;
+          border-color: colors.$grey-700 !important;
+          color: colors.$grey-200 !important;
+          opacity: 0.4;
+        }
+      }
+
+      &__weekdays {
+        font-weight: fonts.$regular-400;
+        font-size: fonts.$text-14;
+        color: colors.$grey-200;
+
+        display: grid !important;
+        grid-template-columns: repeat(7, 78px);
+        justify-content: space-around;
+      }
+    }
+
+    &__tile--active {
+      background: rgba(255, 255, 255, 0.1) !important;
+      border: 2px solid colors.$blue-500 !important;
+      color: colors.$blue-500 !important;
+    }
+
+    &__year-view {
+      &__months {
+        button {
+          border: 1px solid colors.$grey-700;
+          background: colors.$background;
+
+          color: colors.$grey-0;
+
+					transition: all 0.3s;
+
+          &:disabled {
+            background: colors.$grey-900;
+            border-color: colors.$grey-700;
+            opacity: 0.4;
+            color: colors.$grey-200;
+            cursor: not-allowed;
+          }
+
+					&:not(:disabled):hover {
+						border-color: colors.$blue-300;
+						color: colors.$blue-300;
+					}
+        }
+      }
+    }
+
+    &__decade-view {
+      &__years {
+        button {
+          border: 1px solid colors.$grey-700;
+          background: colors.$background;
+
+          color: colors.$grey-0;
+
+					transition: all 0.3s;
+
+          &:disabled {
+            background: colors.$grey-900;
+            border-color: colors.$grey-700;
+            opacity: 0.4;
+            color: colors.$grey-200;
+            cursor: not-allowed;
+          }
+
+					&:not(:disabled):hover {
+						border-color: colors.$blue-300;
+						color: colors.$blue-300;
+					}
+        }
+      }
+    }
+
+    &__century-view {
+      &__decades {
+        button {
+          border: 1px solid colors.$grey-700;
+          background: colors.$background;
+
+          color: colors.$grey-0;
+
+					transition: all 0.3s;
+          &:disabled {
+            background: colors.$grey-900;
+            border-color: colors.$grey-700;
+            opacity: 0.4;
+            color: colors.$grey-200;
+            cursor: not-allowed;
+          }
+
+					&:not(:disabled):hover {
+						border-color: colors.$blue-300;
+						color: colors.$blue-300;
+					}
+        }
+      }
+    }
+  }
+}
+
+.react-calendar {
+  &__navigation {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__prev-button,
+    &__next-button {
+      background: none;
+      cursor: pointer;
+
+      width: fit-content;
+      height: fit-content;
+      padding: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.875rem;
+    }
+
+    &__label {
+      border: 0;
+      flex-grow: 0;
+      background: none;
+      cursor: pointer;
+
+      font-size: fonts.$text-26;
+      font-weight: fonts.$bold-700;
+      font-family: fonts.$font-title;
+    }
+  }
+
+  &__month-view {
+    margin-top: 1.5rem;
+    &__days {
+      gap: 0.8rem;
+      display: grid !important;
+      grid-template-columns: repeat(7, 1fr);
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 1rem;
+
+      button {
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 3.375rem;
+        padding: 0.62rem 0.5rem;
+        border-radius: 0.625rem;
+      }
+    }
+  }
+
+  &__year-view {
+    &__months {
+      margin-top: 1.5rem;
+
+      gap: 0.8rem;
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+      button {
+        cursor: pointer;
+
+        border: 0;
+        padding: 0.62rem 0.5rem;
+        border-radius: 0.625rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__decade-view {
+    &__years {
+      margin-top: 1.5rem;
+
+      gap: 0.8rem;
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+      button {
+        cursor: pointer;
+
+        border: 0;
+        padding: 0.62rem 0.5rem;
+        border-radius: 0.625rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__century-view {
+    &__decades {
+      margin-top: 1.5rem;
+
+      gap: 0.8rem;
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+      button {
+        cursor: pointer;
+
+        border: 0;
+        padding: 0.62rem 0.5rem;
+        border-radius: 0.625rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+abbr[title] {
+  text-decoration: none;
+}
