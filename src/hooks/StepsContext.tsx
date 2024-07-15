@@ -26,7 +26,6 @@ export function StepsProvider({ children }: StepsProviderProps) {
   function actionStep(path: string) {
     setCurrentPath(path)
     router.navigate(path)
-    console.log('path action', path)
   }
 
   const toggleStep = useCallback(() => {

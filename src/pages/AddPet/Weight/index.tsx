@@ -9,6 +9,7 @@ import { Subtitle } from '@/components/Subtitle'
 import { useTheme } from '@/hooks/ThemeContext'
 
 import { FooterStep } from '../components/FooterStep'
+import { PhotoPet } from '../components/PhotoPet'
 
 export function Weight() {
   const { theme } = useTheme()
@@ -52,12 +53,8 @@ export function Weight() {
 
   return (
     <div className="weight-page">
-      <div className={`weight-page weight-page__image weight-page__image__${theme}`}>
-        <div className="outer-circle">
-          <div className="inner-circle">
-            <img src="/breeds/akita.png" alt="" />
-          </div>
-        </div>
+      <div>
+        <PhotoPet />
       </div>
       <div className="weight-page weight-page__title">
         <Subtitle size="1" type="regular" centered>

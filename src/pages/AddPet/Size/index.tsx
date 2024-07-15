@@ -3,23 +3,18 @@ import './styles.scss'
 import { useTranslation } from 'react-i18next'
 
 import { Subtitle } from '@/components/Subtitle'
-import { useTheme } from '@/hooks/ThemeContext'
 
 import { FooterStep } from '../components/FooterStep'
+import { PhotoPet } from '../components/PhotoPet'
 import { SizeCard } from './components/SizeCard'
 
 export function Size() {
   const { t } = useTranslation()
-  const { theme } = useTheme()
 
   return (
     <div className="size-page">
-      <div className={`size-page size-page__image size-page__image__${theme}`}>
-        <div className="outer-circle">
-          <div className="inner-circle">
-            <img src="/breeds/akita.png" alt="" />
-          </div>
-        </div>
+      <div>
+        <PhotoPet />
       </div>
       <div className="size-page size-page__title">
         <Subtitle size="1" type="regular" centered>

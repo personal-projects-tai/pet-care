@@ -112,7 +112,7 @@
         "calendar": {
           "title": "Add dates",
           "menu_options": {
-            "birthdate": "Birth date",
+            "birthdate": "Birthdate",
             "adoption": "Adoption date"
           },
           "confirm": "Confirm booking"

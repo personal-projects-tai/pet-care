@@ -319,6 +319,8 @@
 }
 
 .react-calendar {
+  background-color: transparent;
+  transition: 0.5s;
   &__navigation {
     gap: 1rem;
     display: flex;
