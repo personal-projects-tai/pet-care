@@ -1,4 +1,5 @@
 @use '../../../assets/styles/variables/colors.scss';
+@use '../../../assets/styles/variables/breakpoints.scss';
 
 .size-page {
   gap: 2.5rem;
@@ -15,7 +16,6 @@
   &__cards {
     gap: 1.875rem;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 

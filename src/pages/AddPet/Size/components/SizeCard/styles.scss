@@ -1,4 +1,5 @@
 @use '../../../../../assets/styles/variables/colors.scss';
+@use '../../../../../assets/styles/variables/breakpoints.scss';
 
 .size-card {
   gap: 1rem;
@@ -182,4 +183,18 @@
   svg {
     color: colors.$blue-500;
   }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+	.size-card {
+		&__small {
+			
+		}
+		&__medium {
+
+		}
+		&__large {
+			
+		}
+	}
 }

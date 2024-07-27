@@ -124,7 +124,11 @@
       },
       "caretakers_page": {
         "title": "Contactos agregados",
-        "input_search": "Busca por nombre, etiqueta, correo electrónico..."
+        "input_search": "Busca por nombre, etiqueta, correo electrónico...",
+				"actions": {
+					"add_caretaker": "Añadir cuidador",
+					"confirm": "Confirmar"
+				}
       }
     }
   },

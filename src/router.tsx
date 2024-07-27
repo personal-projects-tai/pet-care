@@ -4,6 +4,7 @@ import { AddPetLayout } from './pages/_layouts/AddPetLayout'
 import { AuthLayout } from './pages/_layouts/AuthLayout'
 import { DashboardLayout } from './pages/_layouts/DashboardLayout'
 import { Breed } from './pages/AddPet/Breed'
+import { Caretakers } from './pages/AddPet/Caretakers'
 import { ImportantDates } from './pages/AddPet/ImportantDates'
 import { Name } from './pages/AddPet/Name'
 import { Size } from './pages/AddPet/Size'
@@ -63,6 +64,10 @@ export const router = createBrowserRouter([
           {
             path: 'important_dates',
             element: <ImportantDates />
+          },
+          {
+            path: 'caretakers',
+            element: <Caretakers />
           }
         ]
       }
