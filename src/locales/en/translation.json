@@ -125,10 +125,10 @@
       "caretakers_page": {
         "title": "Added contacts",
         "input_search": "Search by name, tag, email...",
-				"actions": {
-					"add_caretaker": "Add caretaker",
-					"confirm": "Confirm"
-				}
+        "actions": {
+          "add_caretaker": "Add caretaker",
+          "confirm": "Confirm"
+        }
       }
     }
   },

@@ -186,15 +186,12 @@
 }
 
 @media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
-	.size-card {
-		&__small {
-			
-		}
-		&__medium {
-
-		}
-		&__large {
-			
-		}
-	}
+  .size-card {
+    &__small {
+    }
+    &__medium {
+    }
+    &__large {
+    }
+  }
 }
