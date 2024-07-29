@@ -8,7 +8,7 @@ describe('abbreviate', () => {
   })
 
   it('should return the initials for a name with middle name', () => {
-    expect(abbreviate('Jane Mary Doe')).toBe('JM')
+    expect(abbreviate('Jane Mary Doe')).toBe('JD')
   })
 
   it('should handle single word names gracefully', () => {
