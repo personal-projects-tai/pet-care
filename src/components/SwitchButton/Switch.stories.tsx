@@ -1,6 +1,8 @@
-import { Meta, StoryObj } from '@storybook/react'
-import { SwitchButton } from '.'
 import './styles.scss'
+
+import { Meta, StoryObj } from '@storybook/react'
+
+import { SwitchButton } from '.'
 
 export default {
   title: 'SwitchButton',

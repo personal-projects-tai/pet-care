@@ -1,17 +1,18 @@
-import { Card } from '../Card'
-import { Heading } from '@/components/Heading'
-import { useTheme } from '@/hooks/ThemeContext'
-import { Subtitle } from '@/components/Subtitle'
-import { EmblaOptionsType } from 'embla-carousel'
-
-import EmblaCarousel, { SlideProps } from '../Carousel'
-import ImageHealthCard from '@/assets/images/health_card.png'
-import ImageNutritionCard from '@/assets/images/nutrition_card.png'
-import ImageActivitiesCard from '@/assets/images/activities_card.png'
-
 import './styles.scss'
 import '@/pages/Dashboard/components/Carousel/embla.scss'
+
+import { EmblaOptionsType } from 'embla-carousel'
 import { useTranslation } from 'react-i18next'
+
+import ImageActivitiesCard from '@/assets/images/activities_card.png'
+import ImageHealthCard from '@/assets/images/health_card.png'
+import ImageNutritionCard from '@/assets/images/nutrition_card.png'
+import { Heading } from '@/components/Heading'
+import { Subtitle } from '@/components/Subtitle'
+import { useTheme } from '@/hooks/ThemeContext'
+
+import { Card } from '../Card'
+import EmblaCarousel, { SlideProps } from '../Carousel'
 
 export function Content() {
   const { theme } = useTheme()

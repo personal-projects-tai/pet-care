@@ -1,7 +1,8 @@
-import { SideMenu } from '@/components/SideMenu'
+import './styles.scss'
+
 import { Outlet } from 'react-router'
 
-import './styles.scss'
+import { SideMenu } from '@/components/SideMenu'
 
 export function DashboardLayout() {
   return (

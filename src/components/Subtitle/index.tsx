@@ -1,5 +1,6 @@
-import { useTheme } from '@/hooks/ThemeContext'
 import { ReactNode } from 'react'
+
+import { useTheme } from '@/hooks/ThemeContext'
 
 export type Props = {
   size: '1' | '2' | '3'

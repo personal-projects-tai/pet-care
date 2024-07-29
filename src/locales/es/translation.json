@@ -56,10 +56,89 @@
         "title": "Actividades",
         "description": "Realice un seguimiento de las actividades físicas de su mascota y del historial físico completo en un solo lugar"
       }
+    },
+    "add_pet": {
+      "menu": {
+        "title": "Agregar perfil de mascota",
+        "step": "Paso",
+        "type": {
+          "breed": "Raza",
+          "name": "Nombre",
+          "size": "Tamaño",
+          "weight": "Peso",
+          "important_dates": "Fechas importantes",
+          "caretakers": "Cuidadores(as)"
+        }
+      },
+      "breed_page": {
+        "title": "¿Cuál es la raza de tu mascota?",
+        "description": "Cuéntanos qué tipo de cachorro es tu mascota.",
+        "search_breed": "Búsqueda por especie animal"
+      },
+      "name_page": {
+        "title": "¿Cual es el nombre de tu mascota?",
+        "input_label": "El nombre de tu mascota"
+      },
+      "size_page": {
+        "title": "¿Cuál es el tamaño de tu mascota?",
+        "description": "Selección automática basada en la raza de tus mascotas. Ajustar según la realidad",
+        "sizes": {
+          "small": {
+            "title": "Pequeño(a)",
+            "description": "menos de 14kg"
+          },
+          "medium": {
+            "title": "Medio",
+            "description": "entre 14-25kg"
+          },
+          "large": {
+            "title": "Grande",
+            "description": "más de 25kg"
+          }
+        }
+      },
+      "weight_page": {
+        "title": "¿Cuál es el peso de tu mascota?",
+        "description": "Selección automática basada en la raza de tus mascotas. Ajustar según la realidad",
+        "input_label": "El peso de tu mascota"
+      },
+      "important_dates_page": {
+        "title": "¿Cuáles son las fechas importantes de tu mascota?",
+        "description": "Momentos para celebrar los hitos de tu mascota",
+        "actions": {
+          "add_birthdate": "Agregar fecha de nacimiento",
+          "add_adoption": "Agregar fecha de adopción"
+        },
+        "calendar": {
+          "title": "Agregar fechas",
+          "menu_options": {
+            "birthdate": "Fecha de nacimiento",
+            "adoption": "Fecha de adopción"
+          },
+          "confirm": "Reserva confirmada"
+        },
+        "age": {
+          "years_old": "Años",
+          "months_old": "Meses de edad"
+        }
+      },
+      "caretakers_page": {
+        "title": "Contactos agregados",
+        "input_search": "Busca por nombre, etiqueta, correo electrónico...",
+        "actions": {
+          "add_caretaker": "Añadir cuidador",
+          "confirm": "Confirmar"
+        }
+      }
     }
   },
   "utils": {
     "email": "Correo electrónico",
-    "password": "Contraseña"
+    "password": "Contraseña",
+    "actions": {
+      "title": "Vaya al siguiente paso",
+      "skip_step": "Saltar por ahora",
+      "confirm_step": "Confirmar"
+    }
   }
 }

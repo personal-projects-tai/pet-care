@@ -1,0 +1,24 @@
+@use '../../../assets/styles/variables/colors.scss';
+@use '../../../assets/styles/variables/breakpoints.scss';
+
+.size-page {
+  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__cards {
+    gap: 1.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 1.25rem;
+  }
+}

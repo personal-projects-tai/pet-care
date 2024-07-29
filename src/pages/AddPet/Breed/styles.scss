@@ -1,0 +1,123 @@
+@use '../../../assets/styles/variables/colors.scss';
+
+@use '../../../assets/styles/variables/breakpoints.scss';
+
+.breed-page {
+  position: relative;
+  max-height: 80vh;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .info {
+      gap: 0.3rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .search {
+      width: 30%;
+      position: relative;
+
+      svg {
+        position: absolute;
+        right: 0.9375rem;
+        top: 22%;
+        color: colors.$grey-150;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .breed-list {
+    gap: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 2.5rem;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .breed-page {
+    header {
+      .info {
+        display: none;
+      }
+
+      .search {
+        flex: 1;
+      }
+    }
+
+    .breed-list {
+      padding: 0;
+      margin-top: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
+  .breed-page {
+    header {
+      .info {
+        display: none;
+      }
+
+      .search {
+        flex: 1;
+      }
+    }
+
+    .breed-list {
+      padding: 0;
+      margin-top: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
+  .breed-page {
+    header {
+      flex-direction: column;
+      align-items: start;
+      gap: 0.5rem;
+
+      .search {
+        flex: 1;
+        width: 100%;
+      }
+    }
+
+    .breed-list {
+      padding: 0;
+      margin-top: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-lg) and (max-width: breakpoints.$breakpoint-xl) {
+  .breed-page {
+    header {
+      flex-direction: column;
+      align-items: start;
+      gap: 0.5rem;
+
+      .search {
+        flex: 1;
+        width: 100%;
+      }
+    }
+
+    .breed-list {
+      padding: 0;
+      margin-top: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

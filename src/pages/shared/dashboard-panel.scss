@@ -1,0 +1,42 @@
+@use '../../assets/styles/variables/colors.scss';
+
+@use '../../assets/styles/variables/breakpoints.scss';
+
+.dashboard-panel {
+  width: calc(94vw - 215.035px);
+  height: 95vh;
+
+  margin-top: 1.3rem;
+  margin-left: 1.3rem;
+  border-radius: 1rem;
+  padding: 2.5rem;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &__light {
+    background-color: colors.$grey-0;
+  }
+
+  &__dark {
+    background-color: colors.$background;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .dashboard-panel {
+    width: 90vw;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
+  .dashboard-panel {
+    width: 94vw;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
+  .dashboard-panel {
+    width: 95vw;
+  }
+}

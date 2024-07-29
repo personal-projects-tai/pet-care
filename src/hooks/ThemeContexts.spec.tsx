@@ -1,7 +1,8 @@
 import { renderHook } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
-import { ThemeProvider, useTheme } from './ThemeContext'
 import { act } from 'react-dom/test-utils'
+import { describe, expect, it } from 'vitest'
+
+import { ThemeProvider, useTheme } from './ThemeContext'
 
 describe('useTheme', () => {
   it('should return default theme', () => {

@@ -1,7 +1,8 @@
-import { useTheme } from '@/hooks/ThemeContext'
 import './styles.scss'
+
 import logo from '@/assets/images/logo.svg'
 import logoLight from '@/assets/images/logo-light.svg'
+import { useTheme } from '@/hooks/ThemeContext'
 import { router } from '@/router'
 
 export function Header() {
@@ -9,12 +10,12 @@ export function Header() {
 
   const DEFAULT_THEME = 'light'
 
-  const redirectToHome = () => {
+  const handleRedirectToHome = () => {
     router.navigate('/')
   }
   return (
     <header role="heading" className="onboarding-header">
-      <img src={theme === DEFAULT_THEME ? logoLight : logo} alt="Logo Paw Buddy" onClick={redirectToHome} />
+      <img src={theme === DEFAULT_THEME ? logoLight : logo} alt="Logo Paw Buddy" onClick={handleRedirectToHome} />
     </header>
   )
 }

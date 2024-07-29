@@ -1,9 +1,10 @@
-import { RouterProvider } from 'react-router-dom'
-import { router } from '@/router'
-import { ThemeProvider } from '@/hooks/ThemeContext'
-import { SidebarProvider } from './hooks/DashboardSidebarContext'
 import { I18nextProvider } from 'react-i18next'
+import { RouterProvider } from 'react-router-dom'
 
+import { ThemeProvider } from '@/hooks/ThemeContext'
+import { router } from '@/router'
+
+import { SidebarProvider } from './hooks/DashboardSidebarContext'
 import i18n from './i18n'
 
 export function App() {

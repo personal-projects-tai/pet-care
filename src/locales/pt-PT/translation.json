@@ -56,10 +56,89 @@
         "title": "Atividades",
         "description": "Acompanhe as atividades físicas e todo o histórico físico do seu animal de estimação em um só lugar"
       }
+    },
+    "add_pet": {
+      "menu": {
+        "title": "Adicionar perfil de animal de estimação",
+        "step": "Etapa",
+        "type": {
+          "breed": "Raça",
+          "name": "Nome",
+          "size": "Porte",
+          "weight": "Peso",
+          "important_dates": "Datas importantes",
+          "caretakers": "Cuidadores(as)"
+        }
+      },
+      "breed_page": {
+        "title": "Qual a raça do seu animal de estimação?",
+        "description": "Deixe-nos saber que tipo de cachorrinho seu animal de estimação é",
+        "search_breed": "Pesquise por espécie animal"
+      },
+      "name_page": {
+        "title": "Qual o nome do seu animal de estimação?",
+        "input_label": "Nome do seu animal de estimação"
+      },
+      "size_page": {
+        "title": "Qual o porte do seu animal de estimação?",
+        "description": "Seleção automática com base na raça do seu animal de estimação. Ajuste de acordo com a realidade",
+        "sizes": {
+          "small": {
+            "title": "Pequeno",
+            "description": "abaixo de 14kg"
+          },
+          "medium": {
+            "title": "Médio",
+            "description": "entre 14-25kg"
+          },
+          "large": {
+            "title": "Grande",
+            "description": "acima de 25kg"
+          }
+        }
+      },
+      "weight_page": {
+        "title": "Qual o peso do seu animal de estimação?",
+        "description": "Seleção automática com base na raça do seu animal de estimação. Ajuste de acordo com a realidade",
+        "input_label": "Peso do seu animal de estimação"
+      },
+      "important_dates_page": {
+        "title": "Quais são as datas importantes do seu pet?",
+        "description": "Momentos para comemorar os marcos do seu animal de estimação",
+        "actions": {
+          "add_birthdate": "Adicionar data de nascimento",
+          "add_adoption": "Adicional data de adoção"
+        },
+        "calendar": {
+          "title": "Adicionar datas",
+          "menu_options": {
+            "birthdate": "Nascimento",
+            "adoption": "Adoção"
+          },
+          "confirm": "Confirmar"
+        },
+        "age": {
+          "years_old": "Anos",
+          "months_old": "Meses de idade"
+        }
+      },
+      "caretakers_page": {
+        "title": "Contatos adicionados",
+        "input_search": "Pesquise por nome, tag, e-mail...",
+        "actions": {
+          "add_caretaker": "Adicionar contato",
+          "confirm": "Confirmar"
+        }
+      }
     }
   },
   "utils": {
     "email": "Email",
-    "password": "Senha"
+    "password": "Senha",
+    "actions": {
+      "title": "Vá para a próxima etapa",
+      "skip_step": "Pular por enquanto",
+      "confirm_step": "Confirmar"
+    }
   }
 }
