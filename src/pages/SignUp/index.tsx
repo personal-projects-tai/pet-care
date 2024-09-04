@@ -1,22 +1,21 @@
 import './styles.scss'
 
-import { useTheme } from '@/hooks/ThemeContext'
-
-import { Link } from 'react-router-dom'
-import { Input } from '@/components/Input'
-import { Button } from '@/components/Button'
-import { Heading } from '@/components/Heading'
-import { Subtitle } from '@/components/Subtitle'
-import { Checkbox } from '@/components/Checkbox'
-import { Card } from '../Onboarding/components/Card'
-import { PasswordStrength } from './components/PasswordStrength'
-
-import { z } from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
-import { zodResolver } from '@hookform/resolvers/zod'
+import { Link } from 'react-router-dom'
+import { z } from 'zod'
 
 import User from '@/assets/icons/user.svg?react'
+import { Button } from '@/components/Button'
+import { Checkbox } from '@/components/Checkbox'
+import { Heading } from '@/components/Heading'
+import { Input } from '@/components/Input'
+import { Subtitle } from '@/components/Subtitle'
+import { useTheme } from '@/hooks/ThemeContext'
+
+import { Card } from '../Onboarding/components/Card'
+import { PasswordStrength } from './components/PasswordStrength'
 
 const signUpForm = z.object({
   email: z.string().email(),

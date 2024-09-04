@@ -1,8 +1,9 @@
-import { CheckPasswordStrength } from '@/utils/password'
-
 import './styles.scss'
+
 import { useEffect, useState } from 'react'
+
 import { useTheme } from '@/hooks/ThemeContext'
+import { CheckPasswordStrength } from '@/utils/password'
 
 interface Props {
   password: string

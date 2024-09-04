@@ -1,0 +1,31 @@
+@use '../../../assets/styles/variables/colors.scss';
+@use '../../../assets/styles/variables/breakpoints.scss';
+
+.important-dates-page {
+  gap: 2.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  &__title {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__actions {
+    width: 28rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .important-dates-page {
+    &__actions {
+      width: 22.625rem;
+    }
+  }
+}

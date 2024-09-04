@@ -1,7 +1,8 @@
 import './styles.scss'
-import { useTheme } from '@/hooks/ThemeContext'
 
 import { ReactNode } from 'react'
+
+import { useTheme } from '@/hooks/ThemeContext'
 
 interface CardProps {
   children: ReactNode

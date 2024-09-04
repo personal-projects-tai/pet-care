@@ -1,7 +1,8 @@
-import { ChangeEvent, useState } from 'react'
-import { useTheme } from '@/hooks/ThemeContext'
-
 import './styles.scss'
+
+import { ChangeEvent, useState } from 'react'
+
+import { useTheme } from '@/hooks/ThemeContext'
 
 export function SwitchButton() {
   const { toggleTheme } = useTheme()

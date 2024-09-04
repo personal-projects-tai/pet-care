@@ -1,0 +1,36 @@
+@use '../../../assets/styles/variables/colors.scss';
+
+.weight-page {
+  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__result {
+    &__light {
+      color: colors.$blue-500;
+    }
+
+    &__dark {
+      color: colors.$blue-300;
+    }
+
+    h1 {
+      font-size: 80px;
+      font-family: 'Noto Sans';
+    }
+  }
+
+  &__fields {
+    gap: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

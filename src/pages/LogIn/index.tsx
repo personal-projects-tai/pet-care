@@ -1,16 +1,17 @@
-import { useTheme } from '@/hooks/ThemeContext'
-import { Card } from '../Onboarding/components/Card'
-import { Heading } from '@/components/Heading'
+import './styles.scss'
+
+import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 import User from '@/assets/icons/user.svg?react'
-
-import './styles.scss'
-import { Subtitle } from '@/components/Subtitle'
-import { Input } from '@/components/Input'
 import { Button } from '@/components/Button'
-import { Link } from 'react-router-dom'
+import { Heading } from '@/components/Heading'
+import { Input } from '@/components/Input'
+import { Subtitle } from '@/components/Subtitle'
+import { useTheme } from '@/hooks/ThemeContext'
 import { router } from '@/router'
-import { useTranslation } from 'react-i18next'
+
+import { Card } from '../Onboarding/components/Card'
 
 export function LogIn() {
   const { theme } = useTheme()

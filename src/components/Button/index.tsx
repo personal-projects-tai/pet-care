@@ -1,5 +1,6 @@
-import { useTheme } from '@/hooks/ThemeContext'
 import { ButtonHTMLAttributes, ReactNode } from 'react'
+
+import { useTheme } from '@/hooks/ThemeContext'
 
 export interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant: 'primary' | 'secondary' | 'outlined' | 'planed' | 'destructive' | 'ghost' | 'planed-ghost' | 'dashed'

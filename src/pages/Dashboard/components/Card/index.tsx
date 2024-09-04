@@ -1,7 +1,8 @@
-import { ReactNode } from 'react'
-import { useTheme } from '@/hooks/ThemeContext'
-
 import './styles.scss'
+
+import { ReactNode } from 'react'
+
+import { useTheme } from '@/hooks/ThemeContext'
 
 interface Props {
   children: ReactNode

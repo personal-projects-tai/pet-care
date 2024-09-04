@@ -1,0 +1,34 @@
+@use '../../../../assets/styles/variables/colors.scss';
+
+.photo-pet {
+  &__light {
+    .outer-circle,
+    .inner-circle {
+      border: 1.5px solid colors.$grey-150;
+    }
+  }
+
+  &__dark {
+    .outer-circle,
+    .inner-circle {
+      border: 1.5px solid colors.$grey-700;
+    }
+  }
+
+  .outer-circle {
+    padding: 1rem;
+    border-radius: 100%;
+  }
+
+  .inner-circle {
+    padding: 1rem;
+    border-radius: 100%;
+  }
+
+  img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+}

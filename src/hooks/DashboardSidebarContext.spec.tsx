@@ -1,7 +1,8 @@
 import { renderHook } from '@testing-library/react'
-import { describe, expect, it } from 'vitest'
-import { SidebarProvider, useSidebar } from './DashboardSidebarContext'
 import { act } from 'react-dom/test-utils'
+import { describe, expect, it } from 'vitest'
+
+import { SidebarProvider, useSidebar } from './DashboardSidebarContext'
 
 describe('useSidebar', () => {
   it('should return default sidebar state', () => {

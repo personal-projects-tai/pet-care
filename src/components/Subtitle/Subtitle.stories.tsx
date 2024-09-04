@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
+
 import { Subtitle } from '.'
 
 export default {

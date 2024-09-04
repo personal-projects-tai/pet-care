@@ -9,6 +9,13 @@
   ],
   "ignorePatterns": ["dist", ".eslintrc.cjs", "**/*.css", "**/*.scss"],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["react-refresh"],
-  "rules": {}
+  "plugins": ["react-refresh", "simple-import-sort"],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  }
 }

@@ -56,10 +56,89 @@
         "title": "Activities",
         "description": "Track your pet's physical activities and entire physical history in one place"
       }
+    },
+    "add_pet": {
+      "menu": {
+        "title": "Add Pet Profile",
+        "step": "Step",
+        "type": {
+          "breed": "Breed",
+          "name": "Name",
+          "size": "Size",
+          "weight": "Weight",
+          "important_dates": "Important Dates",
+          "caretakers": "Caretakers"
+        }
+      },
+      "breed_page": {
+        "title": "What's your pet's breed?",
+        "description": "Let us know what kind of a puppy your pet is",
+        "search_breed": "Search by animal species"
+      },
+      "name_page": {
+        "title": "What's your pet's name?",
+        "input_label": "Your pet's name"
+      },
+      "size_page": {
+        "title": "What's your pet's size?",
+        "description": "Automatic selection based on your pets breed. Adjust according to reality",
+        "sizes": {
+          "small": {
+            "title": "Small",
+            "description": "under 14kg"
+          },
+          "medium": {
+            "title": "Medium",
+            "description": "between 14-25kg"
+          },
+          "large": {
+            "title": "Large",
+            "description": "over 25kg"
+          }
+        }
+      },
+      "weight_page": {
+        "title": "What's your pet's weight?",
+        "description": "Automatic selection based on your pets breed. Adjust according to reality",
+        "input_label": "Your pet's weight"
+      },
+      "important_dates_page": {
+        "title": "What's your pet's important dates?",
+        "description": "Times to celebrate your pet's milestones",
+        "actions": {
+          "add_birthdate": "Add birth date",
+          "add_adoption": "Add adoption date"
+        },
+        "calendar": {
+          "title": "Add dates",
+          "menu_options": {
+            "birthdate": "Birthdate",
+            "adoption": "Adoption date"
+          },
+          "confirm": "Confirm booking"
+        },
+        "age": {
+          "years_old": "Years old",
+          "months_old": "Months old"
+        }
+      },
+      "caretakers_page": {
+        "title": "Added contacts",
+        "input_search": "Search by name, tag, email...",
+        "actions": {
+          "add_caretaker": "Add caretaker",
+          "confirm": "Confirm"
+        }
+      }
     }
   },
   "utils": {
     "email": "Email",
-    "password": "Password"
+    "password": "Password",
+    "actions": {
+      "title": "Go to the next step",
+      "skip_step": "Skip for now",
+      "confirm_step": "Confirm"
+    }
   }
 }

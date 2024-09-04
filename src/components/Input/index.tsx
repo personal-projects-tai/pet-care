@@ -1,8 +1,8 @@
-import { useState, forwardRef } from 'react'
-import { useTheme } from '@/hooks/ThemeContext'
+import { forwardRef, useState } from 'react'
 
 import Eye from '@/assets/icons/eye.svg?react'
 import EyeSlash from '@/assets/icons/eye-slash.svg?react'
+import { useTheme } from '@/hooks/ThemeContext'
 
 export interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
   type: 'number' | 'text' | 'button' | 'date' | 'email' | 'password'
