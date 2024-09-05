@@ -132,6 +132,60 @@
       }
     }
   },
+	"pet-profile": {
+		"profile_menu": {
+			"title": "Perfil do animal de estimação",
+			"information": {
+				"general": {
+					"title": "Aparência e sinais distintivos",
+					"gender": "Gênero",
+					"size": "Porte",
+					"weight": "Peso"
+				},
+				"important_dates": {
+					"title": "Datas Importantes",
+					"birthday": "Aniversário",
+					"adoption_day": "Data de Adoção",
+					"age": {
+          "years_old": "Anos",
+          "months_old": "Meses de idade"
+        	}
+				},
+				"caretakers": {
+					"title": "Zeladores(as)"
+				}
+			}
+		},
+		"menu": {
+			"menu_options": {
+				"health_card": "Cartão de Saúde",
+				"nutrition": "Nutrição",
+				"activities": "Atividades"
+			}
+		},
+		"health_card_section": {
+			"options": {
+				"vaccines": {
+					"title": "Vacinas",
+					"details": {
+						"title": "Detalhes",
+						"lot": "Lote",
+						"expiry_date": "Data de validade",
+						"vaccination_date": "Data de vacinação",
+						"validation": "Válido até",
+						"veterinarian": "Veterinário(a)",
+						"notes": {
+							"title": "Notas",
+							"not_notes": "Sem reações ruins"
+						},
+						"actions": {
+							"done": "Feito"
+						}
+					}
+				}
+			}
+		}
+	},
   "utils": {
     "email": "Email",
     "password": "Senha",

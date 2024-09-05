@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { AddPetLayout } from './pages/_layouts/AddPetLayout'
 import { AuthLayout } from './pages/_layouts/AuthLayout'
 import { DashboardLayout } from './pages/_layouts/DashboardLayout'
+import { PetProfileLayout } from './pages/_layouts/PetProfileLayout'
 import { Breed } from './pages/AddPet/Breed'
 import { Caretakers } from './pages/AddPet/Caretakers'
 import { ImportantDates } from './pages/AddPet/ImportantDates'
@@ -70,6 +71,10 @@ export const router = createBrowserRouter([
             element: <Caretakers />
           }
         ]
+      },
+      {
+        path: 'pet-profile',
+        element: <PetProfileLayout />
       }
     ]
   }
