@@ -132,7 +132,7 @@
       }
     }
   },
-	"pet-profile": {
+	"pet_profile": {
 		"profile_menu": {
 			"title": "Perfil do animal de estimação",
 			"information": {
@@ -193,6 +193,20 @@
       "title": "Vá para a próxima etapa",
       "skip_step": "Pular por enquanto",
       "confirm_step": "Confirmar"
-    }
+    },
+		"months": {
+    "jan": "Janeiro",
+    "feb": "Fevereiro",
+    "mar": "Março",
+    "apr": "Abril",
+    "may": "Maio",
+    "jun": "Junho",
+    "jul": "Julho",
+    "aug": "Agosto",
+    "sep": "Setembro",
+    "oct": "Outubro",
+    "nov": "Novembro",
+    "dec": "Dezembro"
+		}
   }
 }

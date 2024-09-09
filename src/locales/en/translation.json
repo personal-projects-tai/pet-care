@@ -132,7 +132,7 @@
       }
     }
   },
-	"pet-profile": {
+	"pet_profile": {
 		"profile_menu": {
 			"title": "Pet Profile",
 			"information": {
@@ -193,6 +193,20 @@
       "title": "Go to the next step",
       "skip_step": "Skip for now",
       "confirm_step": "Confirm"
-    }
+    },
+		"months": {
+			"jan": "January",
+			"feb": "February",
+			"mar": "March",
+			"apr": "April",
+			"may": "May",
+			"jun": "June",
+			"jul": "July",
+			"aug": "August",
+			"sep": "September",
+			"oct": "October",
+			"nov": "November",
+			"dec": "December"
+		}
   }
 }

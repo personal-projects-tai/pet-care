@@ -132,7 +132,7 @@
       }
     }
   },
-	"pet-profile": {
+	"pet_profile": {
 		"profile_menu": {
 			"title": "Perfil de mascota",
 			"information": {
@@ -193,6 +193,20 @@
       "title": "Vaya al siguiente paso",
       "skip_step": "Saltar por ahora",
       "confirm_step": "Confirmar"
-    }
+    },
+		"months": {
+    "jan": "Enero",
+    "feb": "Febrero",
+    "mar": "Marzo",
+    "apr": "Abril",
+    "may": "Mayo",
+    "jun": "Junio",
+    "jul": "Julio",
+    "aug": "Agosto",
+    "sep": "Septiembre",
+    "oct": "Octubre",
+    "nov": "Noviembre",
+    "dec": "Diciembre"
+		}
   }
 }

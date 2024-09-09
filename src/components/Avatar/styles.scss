@@ -1,0 +1,17 @@
+@use '../../assets/styles/variables/colors.scss';
+
+.avatar {
+  padding: 1rem;
+  border-radius: 100%;
+  font-family: 'Noto Sans', sans-serif;
+
+  &__light {
+    background-color: colors.$blue-100;
+    color: colors.$blue-500;
+  }
+
+  &__dark {
+    background-color: colors.$blue-500;
+    color: colors.$blue-100;
+  }
+}
