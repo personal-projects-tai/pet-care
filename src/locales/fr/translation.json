@@ -194,19 +194,19 @@
       "skip_step": "Passer pour l'instant",
       "confirm_step": "Confirmer"
     },
-		"months": {
-    "jan": "Janvier",
-    "feb": "Février",
-    "mar": "Mars",
-    "apr": "Avril",
-    "may": "Mai",
-    "jun": "Juin",
-    "jul": "Juillet",
-    "aug": "Août",
-    "sep": "Septembre",
-    "oct": "Octobre",
-    "nov": "Novembre",
-    "dec": "Décembre"
-		}
+    "months": {
+      "jan": "Janvier",
+      "feb": "Février",
+      "mar": "Mars",
+      "apr": "Avril",
+      "may": "Mai",
+      "jun": "Juin",
+      "jul": "Juillet",
+      "aug": "Août",
+      "sep": "Septembre",
+      "oct": "Octobre",
+      "nov": "Novembre",
+      "dec": "Décembre"
+    }
   }
 }

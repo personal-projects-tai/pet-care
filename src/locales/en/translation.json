@@ -132,60 +132,60 @@
       }
     }
   },
-	"pet_profile": {
-		"profile_menu": {
-			"title": "Pet Profile",
-			"information": {
-				"general": {
-					"title": "Appearance and distinctive signs",
-					"gender": "Gender",
-					"size": "Size",
-					"weight": "Weight"
-				},
-				"important_dates": {
-					"title": "Important Dates",
-					"birthday": "Birthday",
-					"adoption_day": "Adoption Day",
-					"age": {
-          "years_old": "Years old",
-          "months_old": "Months old"
-        	}
-				},
-				"caretakers": {
-					"title": "Caretakers"
-				}
-			}
-		},
-		"menu": {
-			"menu_options": {
-				"health_card": "Health Card",
-				"nutrition": "Nutrition",
-				"activities": "Activities"
-			}
-		},
-		"health_card_section": {
-			"options": {
-				"vaccines": {
-					"title": "Vaccines",
-					"details": {
-						"title": "Details",
-						"lot": "Lot",
-						"expiry_date": "Expiry Date",
-						"vaccination_date": "Vaccination Date",
-						"validation": "Valid until",
-						"veterinarian": "Veterinarian",
-						"notes": {
-							"title": "Notes",
-							"not_notes": "No bad reactions"
-						},
-						"actions": {
-							"done": "Done"
-						}
-					}
-				}
-			}
-		}
-	},
+  "pet_profile": {
+    "profile_menu": {
+      "title": "Pet Profile",
+      "information": {
+        "general": {
+          "title": "Appearance and distinctive signs",
+          "gender": "Gender",
+          "size": "Size",
+          "weight": "Weight"
+        },
+        "important_dates": {
+          "title": "Important Dates",
+          "birthday": "Birthday",
+          "adoption_day": "Adoption Day",
+          "age": {
+            "years_old": "Years old",
+            "months_old": "Months old"
+          }
+        },
+        "caretakers": {
+          "title": "Caretakers"
+        }
+      }
+    },
+    "menu": {
+      "menu_options": {
+        "health_card": "Health Card",
+        "nutrition": "Nutrition",
+        "activities": "Activities"
+      }
+    },
+    "health_card_section": {
+      "options": {
+        "vaccines": {
+          "title": "Vaccines",
+          "details": {
+            "title": "Details",
+            "lot": "Lot",
+            "expiry_date": "Expiry Date",
+            "vaccination_date": "Vaccination Date",
+            "validation": "Valid until",
+            "veterinarian": "Veterinarian",
+            "notes": {
+              "title": "Notes",
+              "not_notes": "No bad reactions"
+            },
+            "actions": {
+              "done": "Done"
+            }
+          }
+        }
+      }
+    }
+  },
   "utils": {
     "email": "Email",
     "password": "Password",
@@ -194,19 +194,19 @@
       "skip_step": "Skip for now",
       "confirm_step": "Confirm"
     },
-		"months": {
-			"jan": "January",
-			"feb": "February",
-			"mar": "March",
-			"apr": "April",
-			"may": "May",
-			"jun": "June",
-			"jul": "July",
-			"aug": "August",
-			"sep": "September",
-			"oct": "October",
-			"nov": "November",
-			"dec": "December"
-		}
+    "months": {
+      "jan": "January",
+      "feb": "February",
+      "mar": "March",
+      "apr": "April",
+      "may": "May",
+      "jun": "June",
+      "jul": "July",
+      "aug": "August",
+      "sep": "September",
+      "oct": "October",
+      "nov": "November",
+      "dec": "December"
+    }
   }
 }
