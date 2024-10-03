@@ -1,7 +1,6 @@
 @use '../../assets/styles/variables/colors.scss';
 
 .avatar {
-  padding: 1rem;
   border-radius: 100%;
   font-family: 'Noto Sans', sans-serif;
 
@@ -14,4 +13,12 @@
     background-color: colors.$blue-500;
     color: colors.$blue-100;
   }
+}
+
+.small {
+  padding: 0.5rem;
+}
+
+.large {
+  padding: 1rem;
 }

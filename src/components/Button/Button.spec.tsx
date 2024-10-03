@@ -5,7 +5,11 @@ import { Button } from '.'
 
 describe('<Button />', () => {
   it('should render the button component', () => {
-    render(<Button size="md" title="Click" type="primary" />)
+    render(
+      <Button size="md" variant="primary">
+        Click
+      </Button>
+    )
 
     expect(screen.getByRole('button')).toBeInTheDocument()
   })

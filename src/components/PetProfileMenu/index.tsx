@@ -1,23 +1,28 @@
 import './styles.scss'
 
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useLocation } from 'react-router'
 
 import ArrowLeftIcon from '@/assets/icons/arrow-left.svg?react'
-import CakeIcon from '@/assets/icons/cake.svg?react'
 import EditIcon from '@/assets/icons/edit.svg?react'
-import HomeIcon from '@/assets/icons/home.svg?react'
 import { useTheme } from '@/hooks/ThemeContext'
-import { CaretakerCard } from '@/pages/AddPet/Caretakers/components/CaretakerCard'
+import { Health } from '@/pages/Health'
+import { router } from '@/router'
 
 import { Button } from '../Button'
 import { Combobox } from '../Combobox'
 import { Heading } from '../Heading'
 import { Subtitle } from '../Subtitle'
-import { tabs } from './constants'
+import { Content } from './components/Content'
+import { mobileTabs } from './constants'
 
 export function PetProfileMenu() {
   const { t } = useTranslation()
   const { theme } = useTheme()
+  const location = useLocation()
+
+  const [selectedTab, setSelectedTab] = useState<string>('information')
 
   const options = [
     { label: 'Maxi', value: '/breeds/collie_border.png' },
@@ -26,36 +31,59 @@ export function PetProfileMenu() {
   ]
 
   function handleSelectTabType(id: string) {
-    const prevSelected = document.querySelector('.selected')
+    setSelectedTab(id)
 
-    if (prevSelected) {
-      prevSelected.classList.remove('selected')
+    // router.navigate(route)
+  }
+
+  function handleBackToDashboard() {
+    router.navigate('/dashboard')
+  }
+
+  function renderMobileComponents() {
+    if (selectedTab === 'information') {
+      return <Content />
     }
 
-    const clickedCard = document.getElementById(id)
-    clickedCard?.classList.add('selected')
+    if (selectedTab === 'health') {
+      return <Health />
+    }
+
+    return <Content />
   }
+
+  useEffect(() => {
+    const path = location.pathname.split('/')
+    const tab = path[path.length - 1]
+
+    if (tab === 'pet-profile') {
+      setSelectedTab('information')
+      return
+    }
+
+    setSelectedTab(tab)
+  }, [location])
 
   return (
     <div className={`pet-profile-menu pet-profile-menu__${theme}`}>
       <nav className={`pet-profile-menu pet-profile-menu__mobile pet-profile-menu__mobile__${theme}`}>
         <div>
-          <ArrowLeftIcon />
+          <ArrowLeftIcon onClick={handleBackToDashboard} />
           <div className="mobile-divider"></div>
           <Heading type="2">{t('pet_profile.profile_menu.title')}</Heading>
         </div>
         <Combobox options={options} selectedOption={options[0]} />
       </nav>
       <div className={`pet-profile-menu pet-profile-menu__tab-mobile pet-profile-menu__tab-mobile__${theme}`}>
-        {tabs.map((tab, index) => {
+        {mobileTabs.map((tab, index) => {
           return (
             <button
               key={index}
-              id={index.toString()}
-              className={index === 0 ? 'selected' : ''}
-              onClick={() => handleSelectTabType(index.toString())}
+              id={tab.id}
+              className={tab.id === selectedTab ? 'selected' : ''}
+              onClick={() => handleSelectTabType(tab.id)}
             >
-              {t(tab)}
+              {t(tab.text)}
             </button>
           )
         })}
@@ -85,74 +113,7 @@ export function PetProfileMenu() {
           </div>
         </div>
       </header>
-      <section className="pet-profile-menu__appearance">
-        <Heading type="3">{t('pet_profile.profile_menu.information.general.title')}</Heading>
-        <Subtitle size="3" type="regular">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, recusandae in numquam assumenda unde
-          incidunt velit. Veritatis, dicta dignissimos!
-        </Subtitle>
-        <div className={`pet-profile-menu__appearance__table pet-profile-menu__appearance__table__${theme}`}>
-          <span>
-            <Subtitle size="3" type="regular">
-              {t('pet_profile.profile_menu.information.general.gender')}
-            </Subtitle>
-            <p>Macho</p>
-          </span>
-          <span>
-            <Subtitle size="3" type="regular">
-              {t('pet_profile.profile_menu.information.general.size')}
-            </Subtitle>
-            <p>Médio</p>
-          </span>
-          <span>
-            <Subtitle size="3" type="regular">
-              {t('pet_profile.profile_menu.information.general.weight')}
-            </Subtitle>
-            <p>22,2 kg</p>
-          </span>
-        </div>
-      </section>
-      <section className="pet-profile-menu__important-dates">
-        <Heading type="3">{t('pet_profile.profile_menu.information.important_dates.title')}</Heading>
-        <div
-          className={`pet-profile-menu__important-dates__birthday pet-profile-menu__important-dates__birthday__${theme}`}
-        >
-          <div>
-            <span>
-              <CakeIcon />
-            </span>
-            <div className="info">
-              <Subtitle size="3" type="regular">
-                {t('pet_profile.profile_menu.information.important_dates.birthday')}
-              </Subtitle>
-              <p>3, {t('utils.months.nov')}, 2019 </p>
-            </div>
-          </div>
-          <div className="age">
-            <p>3 {t('pet_profile.profile_menu.information.important_dates.age.years_old')}</p>
-          </div>
-        </div>
-        <div className={`pet-profile-menu__divider pet-profile-menu__divider__${theme}`}></div>
-        <div
-          className={`pet-profile-menu__important-dates__adoption pet-profile-menu__important-dates__adoption__${theme}`}
-        >
-          <span>
-            <HomeIcon />
-          </span>
-          <div className="info">
-            <Subtitle size="3" type="regular">
-              {t('pet_profile.profile_menu.information.important_dates.adoption_day')}
-            </Subtitle>
-            <p>3, {t('utils.months.nov')}, 2019 </p>
-          </div>
-        </div>
-      </section>
-      <section className={`pet-profile-menu__caretakers`}>
-        <Heading type="3">{t('pet_profile.profile_menu.information.caretakers.title')}</Heading>
-        <CaretakerCard />
-        <div className={`pet-profile-menu__divider pet-profile-menu__divider__${theme}`}></div>
-        <CaretakerCard />
-      </section>
+      {renderMobileComponents()}
     </div>
   )
 }

@@ -158,9 +158,10 @@
     },
     "menu": {
       "menu_options": {
-        "health_card": "Cartão de Saúde",
+        "health_card": "Saúde",
         "nutrition": "Nutrição",
-        "activities": "Atividades"
+        "activities": "Atividades",
+        "information": "Informações"
       }
     },
     "health_card_section": {
@@ -181,7 +182,22 @@
             "actions": {
               "done": "Feito"
             }
+          },
+          "no_vacines": {
+            "title": "Uh, Oh! Parece que seu animal de estimação não possui nenhuma vacina registrada!",
+            "actions": {
+              "add": "Adicionar vacina"
+            }
           }
+        },
+        "treatments": {
+          "title": "Tratamentos antiparasitários"
+        },
+        "medical_intervetions": {
+          "title": "Intervenções médicas"
+        },
+        "other_treatments": {
+          "title": "Outros tratamentos"
         }
       }
     }

@@ -11,6 +11,7 @@ import { Name } from './pages/AddPet/Name'
 import { Size } from './pages/AddPet/Size'
 import { Weight } from './pages/AddPet/Weight'
 import { Dashboard } from './pages/Dashboard'
+import { Health } from './pages/Health'
 import { LogIn } from './pages/LogIn'
 import { Onboarding } from './pages/Onboarding'
 import { SignUp } from './pages/SignUp'
@@ -74,7 +75,13 @@ export const router = createBrowserRouter([
       },
       {
         path: 'pet-profile',
-        element: <PetProfileLayout />
+        element: <PetProfileLayout />,
+        children: [
+          {
+            path: '',
+            element: <Health />
+          }
+        ]
       }
     ]
   }

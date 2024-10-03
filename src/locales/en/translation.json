@@ -160,7 +160,8 @@
       "menu_options": {
         "health_card": "Health Card",
         "nutrition": "Nutrition",
-        "activities": "Activities"
+        "activities": "Activities",
+        "information": "Information"
       }
     },
     "health_card_section": {
@@ -181,7 +182,22 @@
             "actions": {
               "done": "Done"
             }
+          },
+          "no_vacines": {
+            "title": "Uh Oh! Seems your pet doesn't have any registered vaccinations!",
+            "actions": {
+              "add": "Add vaccine"
+            }
           }
+        },
+        "treatments": {
+          "title": "Anti-parasitical treatments"
+        },
+        "medical_intervetions": {
+          "title": "Medical interventions"
+        },
+        "other_treatments": {
+          "title": "Other treatments"
         }
       }
     }

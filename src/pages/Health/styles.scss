@@ -1,0 +1,10 @@
+.health {
+  width: 100%;
+  margin-top: 1.875rem;
+
+  &__options {
+    gap: 1.25rem;
+    display: flex;
+    flex-direction: column;
+  }
+}

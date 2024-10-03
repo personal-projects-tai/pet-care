@@ -160,7 +160,8 @@
       "menu_options": {
         "health_card": "Carte de santé",
         "nutrition": "Nutrition",
-        "activities": "Activités"
+        "activities": "Activités",
+        "information": "Information"
       }
     },
     "health_card_section": {
@@ -181,7 +182,22 @@
             "actions": {
               "done": "Terminé"
             }
+          },
+          "no_vacines": {
+            "title": "Euh oh ! Il semble que votre animal n'ait aucun vaccin enregistré!",
+            "actions": {
+              "add": "Ajouter un vaccin"
+            }
           }
+        },
+        "treatments": {
+          "title": "Traitements antiparasitaires"
+        },
+        "medical_intervetions": {
+          "title": "Interventions médicales"
+        },
+        "other_treatments": {
+          "title": "Autres traitements"
         }
       }
     }

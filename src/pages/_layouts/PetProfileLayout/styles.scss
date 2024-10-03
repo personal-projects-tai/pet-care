@@ -1,3 +1,70 @@
-.pet-profile {
+@use '../../../assets/styles/variables/colors.scss';
+@use '../../../assets/styles/variables/fonts.scss';
+@use '../../../assets/styles/variables/breakpoints.scss';
+
+.pet-profile-desktop {
   display: flex;
+
+  &__tabs {
+    width: 100%;
+    margin: 1.875rem;
+    nav {
+      gap: 1.25rem;
+      display: flex;
+      align-items: center;
+
+      button {
+        cursor: pointer;
+        padding: 0.625rem;
+        border-radius: 0.625rem;
+        font-size: fonts.$text-14;
+        font-weight: fonts.$medium-500;
+      }
+
+      .selected {
+        color: colors.$grey-0;
+        font-weight: fonts.$semi-bold-600;
+        border: 1px solid colors.$yellow-300;
+        background: colors.$yellow-500;
+      }
+    }
+
+    &__light {
+      nav {
+        button {
+          color: colors.$grey-600;
+          border: 1px solid colors.$grey-200;
+          background: colors.$grey-150;
+        }
+      }
+    }
+
+    &__dark {
+      nav {
+        button {
+          color: colors.$grey-200;
+          border: 1px solid colors.$grey-700;
+          background: colors.$grey-900;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .pet-profile-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
+  .pet-profile-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
+  .pet-profile-desktop {
+    display: none;
+  }
 }

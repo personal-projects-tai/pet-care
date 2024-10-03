@@ -160,7 +160,8 @@
       "menu_options": {
         "health_card": "Tarjeta Sanitaria",
         "nutrition": "Nutrición",
-        "activities": "Actividades"
+        "activities": "Actividades",
+        "information": "Información"
       }
     },
     "health_card_section": {
@@ -181,7 +182,22 @@
             "actions": {
               "done": "Hecho"
             }
+          },
+          "no_vacines": {
+            "title": "¡Oh, oh! ¡Parece que tu mascota no tiene ninguna vacuna registrada!",
+            "actions": {
+              "add": "Agregar vacuna"
+            }
           }
+        },
+        "treatments": {
+          "title": "Tratamientos antiparasitarios"
+        },
+        "medical_intervetions": {
+          "title": "Intervenciones médicas"
+        },
+        "other_treatments": {
+          "title": "Otros tratamientos"
         }
       }
     }
