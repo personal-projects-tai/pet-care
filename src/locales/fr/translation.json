@@ -191,7 +191,13 @@
           }
         },
         "treatments": {
-          "title": "Traitements antiparasitaires"
+          "title": "Traitements antiparasitaires",
+          "no_treatments": {
+            "title": "Euh oh ! Il semblerait que votre animal ne bénéficie d'aucun traitement antiparasitaire enregistré !",
+            "actions": {
+              "add": "Ajouter un traitement"
+            }
+          }
         },
         "medical_intervetions": {
           "title": "Interventions médicales"

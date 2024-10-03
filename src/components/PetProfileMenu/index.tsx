@@ -74,7 +74,7 @@ export function PetProfileMenu() {
         </div>
         <Combobox options={options} selectedOption={options[0]} />
       </nav>
-      <div className={`pet-profile-menu pet-profile-menu__tab-mobile pet-profile-menu__tab-mobile__${theme}`}>
+      <div className={`pet-profile-menu__tab-mobile pet-profile-menu__tab-mobile__${theme}`}>
         {mobileTabs.map((tab, index) => {
           return (
             <button

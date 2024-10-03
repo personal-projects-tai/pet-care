@@ -55,16 +55,34 @@
   .pet-profile-desktop {
     display: none;
   }
+
+  .pet-profile-mobile {
+    display: block;
+  }
 }
 
 @media (min-width: breakpoints.$breakpoint-sm) and (max-width: breakpoints.$breakpoint-md) {
   .pet-profile-desktop {
     display: none;
   }
+
+  .pet-profile-mobile {
+    display: block;
+  }
 }
 
 @media (min-width: breakpoints.$breakpoint-md) and (max-width: breakpoints.$breakpoint-lg) {
   .pet-profile-desktop {
+    display: none;
+  }
+
+  .pet-profile-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-lg) and (max-width: breakpoints.$breakpoint-xxl) {
+  .pet-profile-mobile {
     display: none;
   }
 }

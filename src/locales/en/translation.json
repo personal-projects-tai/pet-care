@@ -191,7 +191,13 @@
           }
         },
         "treatments": {
-          "title": "Anti-parasitical treatments"
+          "title": "Anti-parasitical treatments",
+          "no_treatments": {
+            "title": "Uh Oh! Seems your pet doesn't have any registered Anti-parasitical treatments!",
+            "actions": {
+              "add": "Add treatment"
+            }
+          }
         },
         "medical_intervetions": {
           "title": "Medical interventions"
