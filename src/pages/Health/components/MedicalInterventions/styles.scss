@@ -2,7 +2,7 @@
 @use '../../../../assets/styles/variables/fonts.scss';
 @use '../../../../assets/styles/variables/breakpoints.scss';
 
-.parisitical {
+.interventions {
   &__empty {
     gap: 1rem;
     display: flex;
@@ -11,6 +11,7 @@
 
     svg {
       height: 15rem;
+      width: fit-content;
     }
   }
 
@@ -35,8 +36,8 @@
       }
 
       &__side {
+        gap: 0.5rem;
         display: flex;
-        justify-content: space-between;
       }
 
       &__date {
@@ -125,8 +126,43 @@
   }
 }
 
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: fonts.$text-12;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+}
+
+.exam {
+  background-color: colors.$purple-500;
+  color: colors.$grey-0;
+}
+
+.medication {
+  background-color: colors.$magenta-500;
+  color: colors.$grey-0;
+}
+
+.consultation {
+  background-color: colors.$yellow-500;
+  color: colors.$grey-0;
+}
+
+.surgery {
+  background-color: colors.$orange-500;
+  color: colors.$grey-0;
+}
+
+.other {
+  background-color: colors.$grey-600;
+  color: colors.$grey-0;
+}
+
 @media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
-  .parisitical {
+  .interventions {
     &__list {
       &__item {
         &__date {

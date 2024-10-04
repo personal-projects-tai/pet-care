@@ -200,7 +200,20 @@
           }
         },
         "medical_intervetions": {
-          "title": "Interventions médicales"
+          "title": "Interventions médicales",
+          "no_interventions": {
+            "title": "Cela me semble bien... Aucune intervention médicale",
+            "actions": {
+              "add": "Ajouter une intervention médicale"
+            }
+          },
+          "type": {
+            "exam": "Examen",
+            "medication": "Médicament",
+            "consultation": "Consultation",
+            "surgery": "Chirurgie",
+            "other": "Autre"
+          }
         },
         "other_treatments": {
           "title": "Autres traitements"

@@ -197,10 +197,23 @@
             "actions": {
               "add": "Add treatment"
             }
+          },
+          "type": {
+            "exam": "Exam",
+            "medication": "Medication",
+            "consultation": "Consultation",
+            "surgery": "Surgery",
+            "other": "Other"
           }
         },
         "medical_intervetions": {
-          "title": "Medical interventions"
+          "title": "Medical interventions",
+          "no_interventions": {
+            "title": "Sounds good to me... No medical intervention",
+            "actions": {
+              "add": "Add medical intervention"
+            }
+          }
         },
         "other_treatments": {
           "title": "Other treatments"
