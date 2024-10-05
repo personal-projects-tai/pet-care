@@ -1,7 +1,7 @@
-@use "../../../../assets/styles/variables/colors.scss";
+@use '../../../../assets/styles/variables/colors.scss';
 
 .treatments {
-	&__empty {
+  &__empty {
     gap: 1rem;
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@
     }
   }
 
-	&__list {
+  &__list {
     gap: 1.25rem;
     display: flex;
     flex-direction: column;
@@ -97,23 +97,23 @@
 }
 
 .hygiene {
-	background-color: colors.$light-blue-500;
-	color: colors.$grey-0;
+  background-color: colors.$light-blue-500;
+  color: colors.$grey-0;
 }
 
 .physical {
-	background-color: colors.$green-700;
-	color: colors.$grey-0;
+  background-color: colors.$green-700;
+  color: colors.$grey-0;
 }
 
 .beauty {
-	background-color: colors.$magenta-700;
-	color: colors.$grey-0;
+  background-color: colors.$magenta-700;
+  color: colors.$grey-0;
 }
 
 .diet {
-	background-color: colors.$orange-700;
-	color: colors.$grey-0;
+  background-color: colors.$orange-700;
+  color: colors.$grey-0;
 }
 
 .other {
