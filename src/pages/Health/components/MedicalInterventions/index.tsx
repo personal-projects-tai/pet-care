@@ -7,6 +7,7 @@ import PlusIcon from '@/assets/icons/plus.svg?react'
 import EmptyInterventions from '@/assets/images/empty-medical-interventions.svg?react'
 import { Button } from '@/components/Button'
 import { Subtitle } from '@/components/Subtitle'
+import { Tag } from '@/components/Tag'
 import { useTheme } from '@/hooks/ThemeContext'
 
 type MedicalInterventionsType = 'exam' | 'medication' | 'consultation' | 'surgery' | 'other'
@@ -72,7 +73,7 @@ export function MedicalInterventions({ interventions }: MedicalInterventionsProp
                 </Subtitle>
                 <div className="interventions__list__item__side">
                   <div className="interventions__list__item__tag">
-                    <span className={`tag ${item.type}`}>{renderTag(item.type)}</span>
+                    <Tag type={item.type}>{renderTag(item.type)}</Tag>
                   </div>
                 </div>
               </div>

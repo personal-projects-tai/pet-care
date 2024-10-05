@@ -3,6 +3,7 @@ import './styles.scss'
 import { Accordion } from '@/components/Accordion'
 
 import { MedicalInterventions } from './components/MedicalInterventions'
+import { OtherTreatments, OtherTreatmentsType } from './components/OtherTreatments'
 import { Parisitical } from './components/Parisitical'
 import { Vaccines } from './components/Vaccines'
 
@@ -75,6 +76,29 @@ const interventions: MedicalIntervention[] = [
   }
 ]
 
+const otherTreatments: OtherTreatmentsType[] = [
+  {
+    type: 'hygiene',
+    title: 'Banho',
+    description: 'Banho completo'
+  },
+  {
+    type: 'physical',
+    title: 'Fisioterapia',
+    description: 'Fisioterapia nas patas traseiras'
+  },
+  {
+    type: 'beauty',
+    title: 'Tosa',
+    description: 'Banho e Tosa'
+  },
+  {
+    type: 'diet',
+    title: 'Ração para gatos castrados',
+    description: 'Devido à castração, a dieta precisa ser diferente'
+  }
+]
+
 export function Health() {
   return (
     <div className="health">
@@ -89,7 +113,7 @@ export function Health() {
           <MedicalInterventions interventions={interventions} />
         </Accordion>
         <Accordion title="other_treatments">
-          <div>teste</div>
+          <OtherTreatments otherTreatments={otherTreatments} />
         </Accordion>
       </section>
     </div>

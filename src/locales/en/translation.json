@@ -216,7 +216,20 @@
           }
         },
         "other_treatments": {
-          "title": "Other treatments"
+          "title": "Other treatments",
+					"no_other_treatments": {
+						"title": "Uh Oh! Seems your pet doesn't have any registered other treatments!",
+						"actions": {
+							"add": "Add treatment"
+						}
+					},
+					"type": {
+						"hygiene": "Hygiene",
+						"physical": "Physical",
+						"beauty": "Beauty",
+						"diet": "Diet",
+						"other": "Other"
+					}
         }
       }
     }

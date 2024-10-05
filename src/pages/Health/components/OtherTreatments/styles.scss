@@ -1,9 +1,7 @@
-@use '../../../../assets/styles/variables/colors.scss';
-@use '../../../../assets/styles/variables/fonts.scss';
-@use '../../../../assets/styles/variables/breakpoints.scss';
+@use "../../../../assets/styles/variables/colors.scss";
 
-.interventions {
-  &__empty {
+.treatments {
+	&__empty {
     gap: 1rem;
     display: flex;
     align-items: center;
@@ -15,7 +13,7 @@
     }
   }
 
-  &__list {
+	&__list {
     gap: 1.25rem;
     display: flex;
     flex-direction: column;
@@ -29,37 +27,9 @@
       padding: 0.5rem 1rem;
       border-radius: 0.875rem;
 
-      &__date {
-        gap: 0.5rem;
-        display: flex;
-        align-items: center;
-      }
-
       &__side {
         gap: 0.5rem;
         display: flex;
-      }
-
-      &__date {
-        p {
-          font-family: 'Noto Sans';
-          font-size: fonts.$text-16;
-          font-weight: fonts.$medium-500;
-        }
-
-        &__light {
-          p,
-          svg {
-            color: colors.$grey-600;
-          }
-        }
-
-        &__dark {
-          p,
-          svg {
-            color: colors.$grey-200;
-          }
-        }
       }
 
       &__light {
@@ -126,42 +96,27 @@
   }
 }
 
-.exam {
-  background-color: colors.$purple-500;
-  color: colors.$grey-0;
+.hygiene {
+	background-color: colors.$light-blue-500;
+	color: colors.$grey-0;
 }
 
-.medication {
-  background-color: colors.$magenta-700;
-  color: colors.$grey-0;
+.physical {
+	background-color: colors.$green-700;
+	color: colors.$grey-0;
 }
 
-.consultation {
-  background-color: colors.$blue-500;
-  color: colors.$grey-0;
+.beauty {
+	background-color: colors.$magenta-700;
+	color: colors.$grey-0;
 }
 
-.surgery {
-  background-color: colors.$orange-500;
-  color: colors.$grey-0;
+.diet {
+	background-color: colors.$orange-700;
+	color: colors.$grey-0;
 }
 
 .other {
   background-color: colors.$grey-600;
   color: colors.$grey-0;
-}
-
-@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
-  .interventions {
-    &__list {
-      &__item {
-        &__date {
-          p,
-          svg {
-            font-size: fonts.$text-14;
-          }
-        }
-      }
-    }
-  }
 }
