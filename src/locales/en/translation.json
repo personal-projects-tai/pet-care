@@ -213,6 +213,13 @@
             "actions": {
               "add": "Add medical intervention"
             }
+          },
+          "type": {
+            "exam": "Exam",
+            "medication": "Medication",
+            "consultation": "Consultation",
+            "surgery": "Surgery",
+            "other": "Other"
           }
         },
         "other_treatments": {

@@ -1,0 +1,267 @@
+{
+  "onboarding": {
+    "title": "Profili Personalizzati per Animali Domestici",
+    "description": "Crea profili personalizzati per ciascuno dei tuoi amati animali su PawBuddy. Condividi il loro nome, razza e età mentre ti connetti con una comunità vivace.",
+    "get_started": "Inizia",
+    "sign_up_later": "Iscriviti più tardi"
+  },
+  "input_placeholder": {
+    "email_placeholder": "La tua email",
+    "password_placeholder": "Password"
+  },
+  "sign_up": {
+    "title": "Crea un account",
+    "description": "Benvenuto! Inserisci le tue informazioni qui sotto e inizia.",
+    "accept_terms": "Accetta i Termini e Condizioni",
+    "create_sign_up": "Crea account",
+    "has_account": "Hai già un account?",
+    "login_link": "Accedi qui!"
+  },
+  "login": {
+    "title": "Accedi al tuo account",
+    "description": "Bentornato! Inserisci le tue informazioni qui sotto per accedere.",
+    "login_button": "Accedi",
+    "havent_account": "Non hai un account?",
+    "sign_up_link": "Iscriviti qui!"
+  },
+  "dashboard": {
+    "side_menu": {
+      "your_pets": "I tuoi Animali",
+      "add_pet": "aggiungi nuovo",
+      "dashboard": "Dashboard",
+      "contacts": "Contatti",
+      "calendar": "Calendario",
+      "account": "Account",
+      "settings": "Impostazioni",
+      "hello": "Ciao",
+      "not_logged": "Visitatore"
+    },
+    "empty_state": {
+      "title": "Uh Oh!",
+      "description": "Sembra che non hai impostato nessun profilo in questo momento, aggiungi il tuo animale ora",
+      "add_pet": "Aggiungi un animale ora"
+    },
+    "homepage": {
+      "title": "Profili attivi degli animali domestici",
+      "description": "Visualizza tutti i tuoi animali e le loro informazioni",
+      "health_card": {
+        "title": "Scheda Sanitaria",
+        "description": "Tieni traccia degli appuntamenti e dell'intera storia medica del tuo animale in un unico posto"
+      },
+      "nutrition_card": {
+        "title": "Nutrizione",
+        "description": "Tieni traccia dei pasti e dell'intera storia alimentare del tuo animale in un unico posto"
+      },
+      "activities_card": {
+        "title": "Attività",
+        "description": "Tieni traccia delle attività fisiche del tuo animale e dell'intera storia fisica in un unico posto"
+      }
+    },
+    "add_pet": {
+      "menu": {
+        "title": "Aggiungi Profilo Animale",
+        "step": "Fase",
+        "type": {
+          "breed": "Razza",
+          "name": "Nome",
+          "size": "Taglia",
+          "weight": "Peso",
+          "important_dates": "Date Importanti",
+          "caretakers": "Titolari"
+        }
+      },
+      "breed_page": {
+        "title": "Qual è la razza del tuo animale?",
+        "description": "Facci sapere che tipo di cucciolo è il tuo animale",
+        "search_breed": "Cerca per specie animale"
+      },
+      "name_page": {
+        "title": "Qual è il nome del tuo animale?",
+        "input_label": "Nome del tuo animale"
+      },
+      "size_page": {
+        "title": "Qual è la taglia del tuo animale?",
+        "description": "Selezione automatica in base alla razza del tuo animale. Regola in base alla realtà",
+        "sizes": {
+          "small": {
+            "title": "Piccolo",
+            "description": "sotto i 14kg"
+          },
+          "medium": {
+            "title": "Medio",
+            "description": "tra 14-25kg"
+          },
+          "large": {
+            "title": "Grande",
+            "description": "oltre i 25kg"
+          }
+        }
+      },
+      "weight_page": {
+        "title": "Qual è il peso del tuo animale?",
+        "description": "Selezione automatica in base alla razza del tuo animale. Regola in base alla realtà",
+        "input_label": "Peso del tuo animale"
+      },
+      "important_dates_page": {
+        "title": "Quali sono le date importanti del tuo animale?",
+        "description": "Date per festeggiare i traguardi del tuo animale",
+        "actions": {
+          "add_birthdate": "Aggiungi data di nascita",
+          "add_adoption": "Aggiungi data di adozione"
+        },
+        "calendar": {
+          "title": "Aggiungi date",
+          "menu_options": {
+            "birthdate": "Data di nascita",
+            "adoption": "Data di adozione"
+          },
+          "confirm": "Conferma la prenotazione"
+        },
+        "age": {
+          "years_old": "Anni",
+          "months_old": "Mesi"
+        }
+      },
+      "caretakers_page": {
+        "title": "Contatti aggiunti",
+        "input_search": "Cerca per nome, tag, email...",
+        "actions": {
+          "add_caretaker": "Aggiungi titolare",
+          "confirm": "Conferma"
+        }
+      }
+    }
+  },
+  "pet_profile": {
+    "profile_menu": {
+      "title": "Profilo Animale",
+      "information": {
+        "general": {
+          "title": "Aspetto e segni distintivi",
+          "gender": "Genere",
+          "size": "Taglia",
+          "weight": "Peso"
+        },
+        "important_dates": {
+          "title": "Date Importanti",
+          "birthday": "Data di nascita",
+          "adoption_day": "Data di adozione",
+          "age": {
+            "years_old": "Anni",
+            "months_old": "Mesi"
+          }
+        },
+        "caretakers": {
+          "title": "Titolari"
+        }
+      }
+    },
+    "menu": {
+      "menu_options": {
+        "health_card": "Scheda Sanitaria",
+        "nutrition": "Nutrizione",
+        "activities": "Attività",
+        "information": "Informazioni"
+      }
+    },
+    "health_card_section": {
+      "options": {
+        "vaccines": {
+          "title": "Vaccini",
+          "details": {
+            "title": "Dettagli",
+            "lot": "Lotto",
+            "expiry_date": "Data di scadenza",
+            "vaccination_date": "Data di vaccinazione",
+            "validation": "Valido fino a",
+            "veterinarian": "Veterinario",
+            "notes": {
+              "title": "Note",
+              "not_notes": "Nessuna reazione avversa"
+            },
+            "actions": {
+              "done": "Fatto"
+            }
+          },
+          "no_vacines": {
+            "title": "Uh Oh! Sembra che il tuo animale non abbia vaccinazioni registrate!",
+            "actions": {
+              "add": "Aggiungi vaccino"
+            }
+          }
+        },
+        "treatments": {
+          "title": "Trattamenti antiparassitari",
+          "no_treatments": {
+            "title": "Uh Oh! Sembra che il tuo animale non abbia trattamenti antiparassitari registrati!",
+            "actions": {
+              "add": "Aggiungi trattamento"
+            }
+          },
+          "type": {
+            "exam": "Esame",
+            "medication": "Medicina",
+            "consultation": "Consultazione",
+            "surgery": "Chirurgia",
+            "other": "Altro"
+          }
+        },
+        "medical_intervetions": {
+          "title": "Interventi medici",
+          "no_interventions": {
+            "title": "Sembra tutto a posto... Nessun intervento medico",
+            "actions": {
+              "add": "Aggiungi intervento medico"
+            }
+          },
+          "type": {
+            "exam": "Esame",
+            "medication": "Medicina",
+            "consultation": "Consultazione",
+            "surgery": "Chirurgia",
+            "other": "Altro"
+          }
+        },
+        "other_treatments": {
+          "title": "Altri trattamenti",
+          "no_other_treatments": {
+            "title": "Uh Oh! Sembra che il tuo animale non abbia altri trattamenti registrati!",
+            "actions": {
+              "add": "Aggiungi trattamento"
+            }
+          },
+          "type": {
+            "hygiene": "Igiene",
+            "physical": "Fisico",
+            "beauty": "Bellezza",
+            "diet": "Dieta",
+            "other": "Altro"
+          }
+        }
+      }
+    }
+  },
+  "utils": {
+    "email": "Email",
+    "password": "Password",
+    "actions": {
+      "title": "Vai al passaggio successivo",
+      "skip_step": "Salta per ora",
+      "confirm_step": "Conferma"
+    },
+    "months": {
+      "jan": "Gennaio",
+      "feb": "Febbraio",
+      "mar": "Marzo",
+      "apr": "Aprile",
+      "may": "Maggio",
+      "jun": "Giugno",
+      "jul": "Luglio",
+      "aug": "Agosto",
+      "sep": "Settembre",
+      "oct": "Ottobre",
+      "nov": "Novembre",
+      "dec": "Dicembre"
+    }
+  }
+}
