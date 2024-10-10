@@ -1,19 +1,23 @@
 import './styles.scss'
 
 import Minus from '@/assets/icons/minus.svg?react'
+import { Avatar } from '@/components/Avatar'
 import { useTheme } from '@/hooks/ThemeContext'
-import { abbreviate } from '@/utils/abbreviationName'
 
-export function CaretakerCard() {
+interface CaretakerCard {
+  isMinusActive?: boolean
+}
+
+export function CaretakerCard({ isMinusActive }: CaretakerCard) {
   const { theme } = useTheme()
   return (
     <div className={`caretaker-card caretaker-card__${theme}`}>
-      <div className={`caretaker-card__icon caretaker-card__icon__${theme}`}>{abbreviate('Taiza Marques')}</div>
+      <Avatar username="Taiza Marques" />
       <div className={`caretaker-card__info caretaker-card__info__${theme}`}>
         <p className="username">Taiza Marques</p>
         <p className="mail">taiza.marques@mail.com</p>
       </div>
-      <Minus />
+      {isMinusActive && <Minus />}
     </div>
   )
 }

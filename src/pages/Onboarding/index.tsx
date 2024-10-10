@@ -19,6 +19,10 @@ export function Onboarding() {
   const handleSendToSignUp = () => {
     router.navigate('/sign-up')
   }
+
+  const handleSendToDashboard = () => {
+    router.navigate('/dashboard')
+  }
   return (
     <Card>
       <div className="icon">
@@ -37,7 +41,7 @@ export function Onboarding() {
       <Button size="lg" variant="primary" onClick={handleSendToSignUp}>
         {t('onboarding.get_started')}
       </Button>
-      <Button size="lg" variant="planed-ghost">
+      <Button size="lg" variant="planed-ghost" onClick={handleSendToDashboard}>
         {t('onboarding.sign_up_later')}
       </Button>
     </Card>

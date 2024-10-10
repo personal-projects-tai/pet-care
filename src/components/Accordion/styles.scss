@@ -1,0 +1,103 @@
+@use '../../assets/styles/variables/colors.scss';
+@use '../../assets/styles/variables/fonts.scss';
+@use '../../assets/styles/variables/breakpoints.scss';
+
+.accordion {
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 1.125rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &__header {
+    cursor: pointer;
+    border: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__light {
+      background-color: colors.$grey-0;
+    }
+
+    &__dark {
+      background-color: colors.$grey-800;
+    }
+
+    &__title {
+      gap: 1.25rem;
+      display: flex;
+      align-items: center;
+
+      &__icon {
+        width: 3.75rem;
+        height: 3.75rem;
+        padding: 0.75rem;
+        border-radius: 0.75rem;
+        backdrop-filter: blur(1.875rem);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__light {
+          background-color: #f1f9ff;
+          border: 0.0625rem solid colors.$blue-100;
+        }
+
+        &__dark {
+          border: 0.0625rem solid #4091cc;
+          background-color: rgba(64, 145, 204, 0.3);
+        }
+      }
+    }
+
+    &__toggle-btn {
+      border: 0;
+      cursor: pointer;
+      background-color: transparent;
+      transition: transform 0.5s ease-in-out;
+
+      svg {
+        color: colors.$blue-500;
+      }
+    }
+  }
+
+  &__content {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition:
+      max-height 0.5s ease-in-out,
+      opacity 0.5s ease-in-out;
+  }
+
+  &__light {
+    background-color: colors.$grey-0;
+    border: 0.0625rem solid colors.$grey-150;
+  }
+
+  &__dark {
+    background-color: colors.$grey-800;
+    border: 0.0625rem solid colors.$grey-700;
+  }
+}
+
+.expanded {
+  .accordion__header__toggle-btn {
+    transform: rotate(180deg);
+  }
+
+  .accordion__content {
+    max-height: 31.25rem;
+    opacity: 1;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .accordion {
+    padding: 1rem;
+  }
+}

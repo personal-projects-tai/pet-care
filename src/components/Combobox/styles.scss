@@ -1,0 +1,102 @@
+@use '../../assets/styles/variables/colors.scss';
+@use '../../assets/styles/variables/fonts.scss';
+
+.combobox {
+  position: relative;
+  display: inline-block;
+  width: 7.5rem;
+
+  &__button {
+    gap: 0.25rem;
+    display: flex;
+    align-items: center;
+    padding: 0.625rem 0.875rem;
+
+    cursor: pointer;
+    border-radius: 0.625rem;
+
+    font-size: fonts.$text-14;
+    font-weight: fonts.$medium-500;
+
+    &__light {
+      background-color: colors.$grey-150;
+      border: 0.0625rem solid rgba(217, 223, 230, 0.6);
+
+      span,
+      svg {
+        color: colors.$grey-800;
+      }
+    }
+
+    &__dark {
+      background-color: colors.$grey-900;
+      border: 0.0625rem solid rgba(96, 104, 115, 0.6);
+
+      span,
+      svg {
+        color: colors.$grey-0;
+      }
+    }
+  }
+
+  &__avatar {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+
+  &__dropdown {
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+
+    border-radius: 0.625rem;
+
+    padding: 0;
+    margin-top: 0.25rem;
+    list-style-type: none;
+
+    &__light {
+      color: colors.$grey-800;
+      background-color: colors.$grey-0;
+      border: 1px solid colors.$grey-150;
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    &__dark {
+      color: colors.$grey-0;
+      background-color: colors.$grey-900;
+      border: 0.0625rem solid rgba(96, 104, 115, 0.6);
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__item {
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &__light {
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+
+    &__dark {
+      &:hover {
+        background-color: colors.$grey-700;
+      }
+    }
+  }
+
+  &__item-label {
+    margin-left: 0.625rem;
+    font-size: fonts.$text-14;
+  }
+}

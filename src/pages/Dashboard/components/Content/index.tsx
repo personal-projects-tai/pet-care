@@ -10,6 +10,7 @@ import ImageNutritionCard from '@/assets/images/nutrition_card.png'
 import { Heading } from '@/components/Heading'
 import { Subtitle } from '@/components/Subtitle'
 import { useTheme } from '@/hooks/ThemeContext'
+import { router } from '@/router'
 
 import { Card } from '../Card'
 import EmblaCarousel, { SlideProps } from '../Carousel'
@@ -69,6 +70,10 @@ export function Content() {
       species: 'Dog'
     }
   ]
+
+  function handleGoToHealthCard() {
+    router.navigate('/dashboard/pet-profile')
+  }
   return (
     <main className="content">
       <header className={`content__column content__column__${theme}`}>
@@ -80,7 +85,7 @@ export function Content() {
       </header>
       <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       <section className="cards">
-        <Card>
+        <Card navigateTo={handleGoToHealthCard}>
           <div className="card__info">
             <Heading type="3">{t('dashboard.homepage.health_card.title')}</Heading>
             <Subtitle type="regular" size="3">
