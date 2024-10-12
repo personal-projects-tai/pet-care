@@ -1,0 +1,100 @@
+@use "../../assets/styles/variables/colors.scss";
+@use "../../assets/styles/variables/fonts.scss";
+
+.backdrop-modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: colors.$background-modal;
+	backdrop-filter: blur(0.0625rem);
+	z-index: 10;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	opacity: 0;
+	visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+
+  &.active {
+    opacity: 1;
+		visibility: visible;
+  }
+}
+
+.modal {
+	padding: 1.875rem;
+	border-radius: 1.5rem;
+
+	max-width: 38.75rem;
+
+	transform: translateY(20px);
+	opacity: 0;
+	transition: transform 0.5s ease, opacity 0.5s ease;
+
+	&.active {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		span {
+			font-family: fonts.$font-family;
+			font-size: fonts.$text-26;
+			font-weight: fonts.$semi-bold-600;
+		}
+
+		svg {
+			cursor: pointer;
+		}
+	}
+
+	section {
+		width: 100%;
+	}
+
+	footer {
+		.additional {
+			width: 100%;
+
+			gap: 0.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: end;
+		}
+
+		.informational {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: end;
+		}
+	}
+
+	&__light {
+		background-color: colors.$light-background;
+
+		header {
+			span, svg {
+				color: colors.$grey-800;
+			}
+		}
+	}
+
+	&__dark {
+		background-color: colors.$background;
+
+		header {
+			span, svg {
+				color: colors.$grey-0;
+			}
+		}
+	}
+}

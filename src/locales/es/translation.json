@@ -140,5 +140,16 @@
       "skip_step": "Saltar por ahora",
       "confirm_step": "Confirmar"
     }
-  }
+  },
+	"modal": {
+		"actions": {
+			"additional": {
+				"cancel": "Cancelar",
+				"confirm": "Confirmar"
+			},
+			"informational": {
+				"done": "Hecho"
+			}
+		}
+	}
 }
