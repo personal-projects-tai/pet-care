@@ -263,5 +263,16 @@
       "nov": "Novembre",
       "dec": "Dicembre"
     }
-  }
+  },
+	"modal": {
+		"actions": {
+			"additional": {
+				"cancel": "Cancellare",
+				"confirm": "Confermare"
+			},
+			"informational": {
+				"done": "Fatto"
+			}
+		}
+	}
 }

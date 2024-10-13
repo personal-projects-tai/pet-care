@@ -256,5 +256,16 @@
       "nov": "Листопад",
       "dec": "Грудень"
     }
-  }
+  },
+	"modal": {
+		"actions": {
+			"additional": {
+				"cancel": "Скасувати",
+				"confirm": "Підтвердити"
+			},
+			"informational": {
+				"done": "Готово"
+			}
+		}
+	}
 }

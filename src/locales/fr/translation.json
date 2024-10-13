@@ -256,5 +256,16 @@
       "nov": "Novembre",
       "dec": "Décembre"
     }
-  }
+  },
+	"modal": {
+		"actions": {
+			"additional": {
+				"cancel": "Annuler",
+				"confirm": "Confirmer"
+			},
+			"informational": {
+				"done": "Fait"
+			}
+		}
+	}
 }

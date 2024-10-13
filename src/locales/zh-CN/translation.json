@@ -263,5 +263,16 @@
       "nov": "十一月",
       "dec": "十二月"
     }
-  }
+  },
+	"modal": {
+		"actions": {
+			"additional": {
+				"cancel": "取消",
+				"confirm": "确认"
+			},
+			"informational": {
+				"done": "完毕"
+			}
+		}
+	}
 }

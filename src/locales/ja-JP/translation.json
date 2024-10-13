@@ -263,5 +263,16 @@
       "nov": "11月",
       "dec": "12月"
     }
-  }
+  },
+	"modal": {
+		"actions": {
+			"additional": {
+				"cancel": "キャンセル",
+				"confirm": "確認する"
+			},
+			"informational": {
+				"done": "終わり"
+			}
+		}
+	}
 }
