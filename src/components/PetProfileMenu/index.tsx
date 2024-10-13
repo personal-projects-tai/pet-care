@@ -14,7 +14,7 @@ import { Button } from '../Button'
 import { Combobox } from '../Combobox'
 import { Heading } from '../Heading'
 import { Subtitle } from '../Subtitle'
-import { Content } from './components/Content'
+import { ContentPetProfileMenu } from './components/ContentPetProfileMenu'
 import { mobileTabs } from './constants'
 
 export function PetProfileMenu() {
@@ -32,8 +32,6 @@ export function PetProfileMenu() {
 
   function handleSelectTabType(id: string) {
     setSelectedTab(id)
-
-    // router.navigate(route)
   }
 
   function handleBackToDashboard() {
@@ -42,14 +40,14 @@ export function PetProfileMenu() {
 
   function renderMobileComponents() {
     if (selectedTab === 'information') {
-      return <Content />
+      return <ContentPetProfileMenu />
     }
 
     if (selectedTab === 'health') {
       return <Health />
     }
 
-    return <Content />
+    return <ContentPetProfileMenu />
   }
 
   useEffect(() => {

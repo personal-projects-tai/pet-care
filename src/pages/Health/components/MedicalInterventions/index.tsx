@@ -2,7 +2,6 @@ import './styles.scss'
 
 import { useTranslation } from 'react-i18next'
 
-// import CalendarDateIcon from '@/assets/icons/calendar-date.svg?react'
 import PlusIcon from '@/assets/icons/plus.svg?react'
 import EmptyInterventions from '@/assets/images/empty-medical-interventions.svg?react'
 import { Button } from '@/components/Button'

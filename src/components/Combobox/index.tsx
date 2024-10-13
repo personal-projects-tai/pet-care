@@ -15,7 +15,7 @@ interface ComboboxProps {
   options: Option[]
 }
 
-export const Combobox: React.FC<ComboboxProps> = ({ selectedOption, options }) => {
+export function Combobox({ selectedOption, options }: ComboboxProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [highlightedIndex, setHighlightedIndex] = useState(0)
   const [selected, setSelected] = useState<Option>(selectedOption)

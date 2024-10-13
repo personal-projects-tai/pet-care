@@ -7,7 +7,7 @@ import { Subtitle } from '@/components/Subtitle'
 import { useTheme } from '@/hooks/ThemeContext'
 import { CaretakerCard } from '@/pages/AddPet/Caretakers/components/CaretakerCard'
 
-export function Content() {
+export function ContentPetProfileMenu() {
   const { t } = useTranslation()
   const { theme } = useTheme()
 
