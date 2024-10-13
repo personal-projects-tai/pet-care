@@ -25,8 +25,8 @@ export function Caretakers() {
           {t('dashboard.add_pet.caretakers_page.title')}
         </Subtitle>
         <div className="caretakers-page__caretakers__cards">
-          <CaretakerCard />
-          <CaretakerCard />
+          <CaretakerCard isMinusActive />
+          <CaretakerCard isMinusActive />
         </div>
       </div>
     </div>

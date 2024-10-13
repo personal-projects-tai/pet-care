@@ -1,0 +1,267 @@
+{
+  "onboarding": {
+    "title": "个性化宠物档案",
+    "description": "在PawBuddy上为每只爱宠创建个性化档案。分享它们的名字、品种和年龄，同时与充满活力的社区连接。",
+    "get_started": "开始使用",
+    "sign_up_later": "稍后注册"
+  },
+  "input_placeholder": {
+    "email_placeholder": "您的电子邮件",
+    "password_placeholder": "密码"
+  },
+  "sign_up": {
+    "title": "创建账户",
+    "description": "欢迎！请在下方输入您的信息并开始使用。",
+    "accept_terms": "接受条款和条件",
+    "create_sign_up": "创建账户",
+    "has_account": "已有账户？",
+    "login_link": "在这里登录！"
+  },
+  "login": {
+    "title": "访问您的账户",
+    "description": "欢迎回来！请在下方输入您的信息并登录。",
+    "login_button": "登录",
+    "havent_account": "还没有账户？",
+    "sign_up_link": "在这里注册！"
+  },
+  "dashboard": {
+    "side_menu": {
+      "your_pets": "您的宠物",
+      "add_pet": "添加新宠物",
+      "dashboard": "仪表盘",
+      "contacts": "联系人",
+      "calendar": "日历",
+      "account": "账户",
+      "settings": "设置",
+      "hello": "你好",
+      "not_logged": "访客"
+    },
+    "empty_state": {
+      "title": "哎呀！",
+      "description": "看起来您目前还没有设置任何宠物档案，立即添加您的宠物吧",
+      "add_pet": "立即添加宠物"
+    },
+    "homepage": {
+      "title": "活跃的宠物档案",
+      "description": "查看您所有宠物及其信息",
+      "health_card": {
+        "title": "健康卡",
+        "description": "在一个地方跟踪所有的预约和宠物的医疗历史"
+      },
+      "nutrition_card": {
+        "title": "营养",
+        "description": "在一个地方跟踪宠物的饮食和整个食物历史"
+      },
+      "activities_card": {
+        "title": "活动",
+        "description": "在一个地方跟踪宠物的身体活动和整个身体历史"
+      }
+    },
+    "add_pet": {
+      "menu": {
+        "title": "添加宠物档案",
+        "step": "步骤",
+        "type": {
+          "breed": "品种",
+          "name": "名字",
+          "size": "体型",
+          "weight": "体重",
+          "important_dates": "重要日期",
+          "caretakers": "照料者"
+        }
+      },
+      "breed_page": {
+        "title": "您的宠物是什么品种？",
+        "description": "告诉我们您的宠物是什么样的幼崽",
+        "search_breed": "按动物种类搜索"
+      },
+      "name_page": {
+        "title": "您的宠物叫什么名字？",
+        "input_label": "您的宠物名字"
+      },
+      "size_page": {
+        "title": "您的宠物体型是怎样的？",
+        "description": "根据您的宠物品种自动选择。可根据实际情况进行调整",
+        "sizes": {
+          "small": {
+            "title": "小型",
+            "description": "14kg以下"
+          },
+          "medium": {
+            "title": "中型",
+            "description": "14-25kg之间"
+          },
+          "large": {
+            "title": "大型",
+            "description": "25kg以上"
+          }
+        }
+      },
+      "weight_page": {
+        "title": "您的宠物体重是多少？",
+        "description": "根据您的宠物品种自动选择。可根据实际情况进行调整",
+        "input_label": "您的宠物体重"
+      },
+      "important_dates_page": {
+        "title": "您的宠物有哪些重要日期？",
+        "description": "庆祝宠物里程碑的时刻",
+        "actions": {
+          "add_birthdate": "添加出生日期",
+          "add_adoption": "添加领养日期"
+        },
+        "calendar": {
+          "title": "添加日期",
+          "menu_options": {
+            "birthdate": "出生日期",
+            "adoption": "领养日期"
+          },
+          "confirm": "确认预订"
+        },
+        "age": {
+          "years_old": "岁",
+          "months_old": "个月"
+        }
+      },
+      "caretakers_page": {
+        "title": "已添加的联系人",
+        "input_search": "按名字、标签、邮箱搜索...",
+        "actions": {
+          "add_caretaker": "添加照料者",
+          "confirm": "确认"
+        }
+      }
+    }
+  },
+  "pet_profile": {
+    "profile_menu": {
+      "title": "宠物档案",
+      "information": {
+        "general": {
+          "title": "外观及显著标记",
+          "gender": "性别",
+          "size": "体型",
+          "weight": "体重"
+        },
+        "important_dates": {
+          "title": "重要日期",
+          "birthday": "出生日期",
+          "adoption_day": "领养日",
+          "age": {
+            "years_old": "岁",
+            "months_old": "个月"
+          }
+        },
+        "caretakers": {
+          "title": "照料者"
+        }
+      }
+    },
+    "menu": {
+      "menu_options": {
+        "health_card": "健康卡",
+        "nutrition": "营养",
+        "activities": "活动",
+        "information": "信息"
+      }
+    },
+    "health_card_section": {
+      "options": {
+        "vaccines": {
+          "title": "疫苗",
+          "details": {
+            "title": "详情",
+            "lot": "批号",
+            "expiry_date": "有效期",
+            "vaccination_date": "接种日期",
+            "validation": "有效至",
+            "veterinarian": "兽医",
+            "notes": {
+              "title": "备注",
+              "not_notes": "没有不良反应"
+            },
+            "actions": {
+              "done": "完成"
+            }
+          },
+          "no_vacines": {
+            "title": "哎呀！看起来您的宠物没有注册任何疫苗！",
+            "actions": {
+              "add": "添加疫苗"
+            }
+          }
+        },
+        "treatments": {
+          "title": "驱虫治疗",
+          "no_treatments": {
+            "title": "哎呀！看起来您的宠物没有注册任何驱虫治疗！",
+            "actions": {
+              "add": "添加治疗"
+            }
+          },
+          "type": {
+            "exam": "检查",
+            "medication": "药物",
+            "consultation": "咨询",
+            "surgery": "手术",
+            "other": "其他"
+          }
+        },
+        "medical_intervetions": {
+          "title": "医疗干预",
+          "no_interventions": {
+            "title": "一切正常... 没有医疗干预",
+            "actions": {
+              "add": "添加医疗干预"
+            }
+          },
+          "type": {
+            "exam": "检查",
+            "medication": "药物",
+            "consultation": "咨询",
+            "surgery": "手术",
+            "other": "其他"
+          }
+        },
+        "other_treatments": {
+          "title": "其他治疗",
+          "no_other_treatments": {
+            "title": "哎呀！看起来您的宠物没有注册其他治疗！",
+            "actions": {
+              "add": "添加治疗"
+            }
+          },
+          "type": {
+            "hygiene": "卫生",
+            "physical": "身体护理",
+            "beauty": "美容",
+            "diet": "饮食",
+            "other": "其他"
+          }
+        }
+      }
+    }
+  },
+  "utils": {
+    "email": "电子邮件",
+    "password": "密码",
+    "actions": {
+      "title": "前往下一步",
+      "skip_step": "暂时跳过",
+      "confirm_step": "确认"
+    },
+    "months": {
+      "jan": "一月",
+      "feb": "二月",
+      "mar": "三月",
+      "apr": "四月",
+      "may": "五月",
+      "jun": "六月",
+      "jul": "七月",
+      "aug": "八月",
+      "sep": "九月",
+      "oct": "十月",
+      "nov": "十一月",
+      "dec": "十二月"
+    }
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "onboarding": {
+    "title": "Profils d'animaux personnalisés",
+    "description": "Créez des profils personnalisés pour chacun de vos animaux de compagnie bien-aimés sur PawBuddy. Partagez leur nom, leur race et leur âge tout en vous connectant avec une communauté dynamique.",
+    "get_started": "Commencer",
+    "sign_up_later": "S'inscrire plus tard"
+  },
+  "input_placeholder": {
+    "email_placeholder": "Votre email",
+    "password_placeholder": "Votre mot de passe"
+  },
+  "sign_up": {
+    "title": "Créer un compte",
+    "description": "Bienvenue ! Veuillez saisir vos informations ci-dessous et commencez.",
+    "accept_terms": "Accepter les termes et conditions",
+    "create_sign_up": "Créer un compte",
+    "has_account": "Vous avez déjà un compte ?",
+    "login_link": "Connectez-vous ici !"
+  },
+  "login": {
+    "title": "Accéder à votre compte",
+    "description": "Content de vous revoir ! Veuillez entrer vos informations ci-dessous et vous connecter.",
+    "login_button": "Se connecter",
+    "havent_account": "Vous n'avez pas de compte ?",
+    "sign_up_link": "Inscrivez-vous ici !"
+  },
+  "dashboard": {
+    "side_menu": {
+      "your_pets": "Vos animaux",
+      "add_pet": "Ajouter un nouveau",
+      "dashboard": "Tableau de bord",
+      "contacts": "Contacts",
+      "calendar": "Calendrier",
+      "account": "Compte",
+      "settings": "Paramètres",
+      "hello": "Bonjour",
+      "not_logged": "Visiteur"
+    },
+    "empty_state": {
+      "title": "Oups !",
+      "description": "Il semble que vous n'ayez pas encore de profil configuré, ajoutez votre animal maintenant.",
+      "add_pet": "Ajouter un animal maintenant"
+    },
+    "homepage": {
+      "title": "Profils d'animaux actifs",
+      "description": "Voir tous vos animaux et informations",
+      "health_card": {
+        "title": "Carte de santé",
+        "description": "Gardez un suivi des rendez-vous et de tout l'historique médical de votre animal au même endroit."
+      },
+      "nutrition_card": {
+        "title": "Nutrition",
+        "description": "Suivez les repas de votre animal et tout son historique alimentaire au même endroit."
+      },
+      "activities_card": {
+        "title": "Activités",
+        "description": "Suivez les activités physiques de votre animal et tout son historique d'activités au même endroit."
+      }
+    },
+    "add_pet": {
+      "menu": {
+        "title": "Ajouter un profil d'animal",
+        "step": "Étape",
+        "type": {
+          "breed": "Race",
+          "name": "Nom",
+          "size": "Taille",
+          "weight": "Poids",
+          "important_dates": "Dates importantes",
+          "caretakers": "Gardiens"
+        }
+      },
+      "breed_page": {
+        "title": "Quelle est la race de votre animal ?",
+        "description": "Faites-nous savoir de quel type d'animal il s'agit.",
+        "search_breed": "Rechercher par espèce animale"
+      },
+      "name_page": {
+        "title": "Quel est le nom de votre animal ?",
+        "input_label": "Le nom de votre animal"
+      },
+      "size_page": {
+        "title": "Quelle est la taille de votre animal ?",
+        "description": "Sélection automatique basée sur la race de votre animal. Ajustez selon la réalité.",
+        "sizes": {
+          "small": {
+            "title": "Petit",
+            "description": "moins de 14kg"
+          },
+          "medium": {
+            "title": "Moyen",
+            "description": "entre 14-25kg"
+          },
+          "large": {
+            "title": "Grand",
+            "description": "plus de 25kg"
+          }
+        }
+      },
+      "weight_page": {
+        "title": "Quel est le poids de votre animal ?",
+        "description": "Sélection automatique basée sur la race de votre animal. Ajustez selon la réalité.",
+        "input_label": "Le poids de votre animal"
+      },
+      "important_dates_page": {
+        "title": "Quelles sont les dates importantes de votre animal ?",
+        "description": "Moments pour célébrer les étapes importantes de votre animal.",
+        "actions": {
+          "add_birthdate": "Ajouter la date de naissance",
+          "add_adoption": "Ajouter la date d'adoption"
+        },
+        "calendar": {
+          "title": "Ajouter des dates",
+          "menu_options": {
+            "birthdate": "Date de naissance",
+            "adoption": "Date d'adoption"
+          },
+          "confirm": "Confirmer la réservation"
+        },
+        "age": {
+          "years_old": "Ans",
+          "months_old": "Mois"
+        }
+      },
+      "caretakers_page": {
+        "title": "Contacts ajoutés",
+        "input_search": "Rechercher par nom, tag, email...",
+        "actions": {
+          "add_caretaker": "Ajouter un gardien",
+          "confirm": "Confirmer"
+        }
+      }
+    }
+  },
+  "pet_profile": {
+    "profile_menu": {
+      "title": "Profil de l'animal",
+      "information": {
+        "general": {
+          "title": "Apparence et signes distinctifs",
+          "gender": "Sexe",
+          "size": "Taille",
+          "weight": "Poids"
+        },
+        "important_dates": {
+          "title": "Dates importantes",
+          "birthday": "Date de naissance",
+          "adoption_day": "Jour d'adoption",
+          "age": {
+            "years_old": "Ans",
+            "months_old": "Mois"
+          }
+        },
+        "caretakers": {
+          "title": "Gardiens"
+        }
+      }
+    },
+    "menu": {
+      "menu_options": {
+        "health_card": "Carte de santé",
+        "nutrition": "Nutrition",
+        "activities": "Activités",
+        "information": "Information"
+      }
+    },
+    "health_card_section": {
+      "options": {
+        "vaccines": {
+          "title": "Vaccins",
+          "details": {
+            "title": "Détails",
+            "lot": "Lot",
+            "expiry_date": "Date d'expiration",
+            "vaccination_date": "Date de vaccination",
+            "validation": "Valide jusqu'à",
+            "veterinarian": "Vétérinaire",
+            "notes": {
+              "title": "Remarques",
+              "not_notes": "Aucune mauvaise réaction"
+            },
+            "actions": {
+              "done": "Terminé"
+            }
+          },
+          "no_vacines": {
+            "title": "Euh oh ! Il semble que votre animal n'ait aucun vaccin enregistré!",
+            "actions": {
+              "add": "Ajouter un vaccin"
+            }
+          }
+        },
+        "treatments": {
+          "title": "Traitements antiparasitaires",
+          "no_treatments": {
+            "title": "Euh oh ! Il semblerait que votre animal ne bénéficie d'aucun traitement antiparasitaire enregistré !",
+            "actions": {
+              "add": "Ajouter un traitement"
+            }
+          }
+        },
+        "medical_intervetions": {
+          "title": "Interventions médicales",
+          "no_interventions": {
+            "title": "Cela me semble bien... Aucune intervention médicale",
+            "actions": {
+              "add": "Ajouter une intervention médicale"
+            }
+          },
+          "type": {
+            "exam": "Examen",
+            "medication": "Médicament",
+            "consultation": "Consultation",
+            "surgery": "Chirurgie",
+            "other": "Autre"
+          }
+        },
+        "other_treatments": {
+          "title": "Autres traitements",
+          "no_other_treatments": {
+            "title": "Euh oh ! Il semble que votre animal ne bénéficie d'aucun autre traitement enregistré!",
+            "actions": {
+              "add": "Ajouter un traitement"
+            }
+          },
+          "type": {
+            "hygiene": "Hygiène",
+            "physical": "Physique",
+            "beauty": "Beauté",
+            "diet": "Régime",
+            "other": "Autre"
+          }
+        }
+      }
+    }
+  },
+  "utils": {
+    "email": "Email",
+    "password": "Mot de passe",
+    "actions": {
+      "title": "Passer à l'étape suivante",
+      "skip_step": "Passer pour l'instant",
+      "confirm_step": "Confirmer"
+    },
+    "months": {
+      "jan": "Janvier",
+      "feb": "Février",
+      "mar": "Mars",
+      "apr": "Avril",
+      "may": "Mai",
+      "jun": "Juin",
+      "jul": "Juillet",
+      "aug": "Août",
+      "sep": "Septembre",
+      "oct": "Octobre",
+      "nov": "Novembre",
+      "dec": "Décembre"
+    }
+  }
+}

@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef } from 'react'
 
 import FemaleGender from '@/assets/icons/female-gender.svg?react'
 import MaleGender from '@/assets/icons/male-gender.svg?react'
+import { router } from '@/router'
 
 import { DotButton, NextButton, PrevButton, useDotButton, usePrevNextButtons } from './EmblaCarouselArrowButtons'
 
@@ -92,13 +93,17 @@ export function EmblaCarousel({ slides, options }: PropType) {
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi)
 
+  function handleGoToPetProfile() {
+    router.navigate('/dashboard/pet-profile')
+  }
+
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
-              <div className={`embla__slide__number ${slide.gender}`}>
+              <div className={`embla__slide__number ${slide.gender}`} onClick={() => handleGoToPetProfile()}>
                 <div className="content-carousel">
                   <div className="content-carousel__side-info">
                     <div className="gender">{slide.gender === 'male' ? <MaleGender /> : <FemaleGender />}</div>

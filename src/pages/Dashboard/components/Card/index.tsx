@@ -6,9 +6,14 @@ import { useTheme } from '@/hooks/ThemeContext'
 
 interface Props {
   children: ReactNode
+  navigateTo?: () => void
 }
 
-export function Card({ children }: Props) {
+export function Card({ children, navigateTo }: Props) {
   const { theme } = useTheme()
-  return <div className={`card-pet card-pet__${theme}`}>{children}</div>
+  return (
+    <div onClick={navigateTo} className={`card-pet card-pet__${theme}`}>
+      {children}
+    </div>
+  )
 }

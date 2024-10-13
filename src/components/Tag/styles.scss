@@ -1,0 +1,11 @@
+@use '../../assets/styles/variables/fonts.scss';
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: fonts.$text-12;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+}

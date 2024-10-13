@@ -1,0 +1,141 @@
+@use '../../../../assets/styles/variables/colors.scss';
+@use '../../../../assets/styles/variables/fonts.scss';
+@use '../../../../assets/styles/variables/breakpoints.scss';
+
+.parisitical {
+  &__empty {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    svg {
+      height: 15rem;
+    }
+  }
+
+  &__list {
+    gap: 1.25rem;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1.25rem;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      border-radius: 0.875rem;
+
+      &__date {
+        gap: 0.5rem;
+        display: flex;
+        align-items: center;
+      }
+
+      &__side {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__date {
+        p {
+          font-family: fonts.$font-family;
+          font-size: fonts.$text-16;
+          font-weight: fonts.$medium-500;
+        }
+
+        &__light {
+          p,
+          svg {
+            color: colors.$grey-600;
+          }
+        }
+
+        &__dark {
+          p,
+          svg {
+            color: colors.$grey-200;
+          }
+        }
+      }
+
+      &__light {
+        border: 0.0625rem solid colors.$grey-150;
+      }
+
+      &__dark {
+        border: 0.0625rem solid colors.$grey-700;
+      }
+    }
+
+    &__add {
+      display: flex;
+      justify-content: end;
+
+      button {
+        border: 0;
+        cursor: pointer;
+        background-color: transparent;
+
+        gap: 0.3rem;
+        display: flex;
+        align-items: center;
+      }
+
+      &__light {
+        button {
+          color: colors.$blue-500;
+          transition: all 0.3s ease;
+
+          svg {
+            color: colors.$blue-500;
+            transition: all 0.3s ease;
+          }
+
+          &:hover {
+            color: colors.$blue-300;
+            svg {
+              color: colors.$blue-300;
+            }
+          }
+        }
+      }
+
+      &__dark {
+        button {
+          color: colors.$blue-300;
+          transition: all 0.3s ease;
+
+          svg {
+            color: colors.$blue-300;
+            transition: all 0.3s ease;
+          }
+
+          &:hover {
+            color: colors.$blue-100;
+            svg {
+              color: colors.$blue-100;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-xsm) and (max-width: breakpoints.$breakpoint-sm) {
+  .parisitical {
+    &__list {
+      &__item {
+        &__date {
+          p,
+          svg {
+            font-size: fonts.$text-14;
+          }
+        }
+      }
+    }
+  }
+}

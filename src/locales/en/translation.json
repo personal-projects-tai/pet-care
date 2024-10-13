@@ -132,6 +132,115 @@
       }
     }
   },
+  "pet_profile": {
+    "profile_menu": {
+      "title": "Pet Profile",
+      "information": {
+        "general": {
+          "title": "Appearance and distinctive signs",
+          "gender": "Gender",
+          "size": "Size",
+          "weight": "Weight"
+        },
+        "important_dates": {
+          "title": "Important Dates",
+          "birthday": "Birthday",
+          "adoption_day": "Adoption Day",
+          "age": {
+            "years_old": "Years old",
+            "months_old": "Months old"
+          }
+        },
+        "caretakers": {
+          "title": "Caretakers"
+        }
+      }
+    },
+    "menu": {
+      "menu_options": {
+        "health_card": "Health Card",
+        "nutrition": "Nutrition",
+        "activities": "Activities",
+        "information": "Information"
+      }
+    },
+    "health_card_section": {
+      "options": {
+        "vaccines": {
+          "title": "Vaccines",
+          "details": {
+            "title": "Details",
+            "lot": "Lot",
+            "expiry_date": "Expiry Date",
+            "vaccination_date": "Vaccination Date",
+            "validation": "Valid until",
+            "veterinarian": "Veterinarian",
+            "notes": {
+              "title": "Notes",
+              "not_notes": "No bad reactions"
+            },
+            "actions": {
+              "done": "Done"
+            }
+          },
+          "no_vacines": {
+            "title": "Uh Oh! Seems your pet doesn't have any registered vaccinations!",
+            "actions": {
+              "add": "Add vaccine"
+            }
+          }
+        },
+        "treatments": {
+          "title": "Anti-parasitical treatments",
+          "no_treatments": {
+            "title": "Uh Oh! Seems your pet doesn't have any registered Anti-parasitical treatments!",
+            "actions": {
+              "add": "Add treatment"
+            }
+          },
+          "type": {
+            "exam": "Exam",
+            "medication": "Medication",
+            "consultation": "Consultation",
+            "surgery": "Surgery",
+            "other": "Other"
+          }
+        },
+        "medical_intervetions": {
+          "title": "Medical interventions",
+          "no_interventions": {
+            "title": "Sounds good to me... No medical intervention",
+            "actions": {
+              "add": "Add medical intervention"
+            }
+          },
+          "type": {
+            "exam": "Exam",
+            "medication": "Medication",
+            "consultation": "Consultation",
+            "surgery": "Surgery",
+            "other": "Other"
+          }
+        },
+        "other_treatments": {
+          "title": "Other treatments",
+          "no_other_treatments": {
+            "title": "Uh Oh! Seems your pet doesn't have any registered other treatments!",
+            "actions": {
+              "add": "Add treatment"
+            }
+          },
+          "type": {
+            "hygiene": "Hygiene",
+            "physical": "Physical",
+            "beauty": "Beauty",
+            "diet": "Diet",
+            "other": "Other"
+          }
+        }
+      }
+    }
+  },
   "utils": {
     "email": "Email",
     "password": "Password",
@@ -139,6 +248,20 @@
       "title": "Go to the next step",
       "skip_step": "Skip for now",
       "confirm_step": "Confirm"
+    },
+    "months": {
+      "jan": "January",
+      "feb": "February",
+      "mar": "March",
+      "apr": "April",
+      "may": "May",
+      "jun": "June",
+      "jul": "July",
+      "aug": "August",
+      "sep": "September",
+      "oct": "October",
+      "nov": "November",
+      "dec": "December"
     }
   },
 	"modal": {
