@@ -1,0 +1,267 @@
+{
+  "onboarding": {
+    "title": "パーソナライズされたペットプロファイル",
+    "description": "PawBuddyであなたの愛するペットごとにパーソナライズされたプロファイルを作成しましょう。名前、品種、年齢を共有し、活気あるコミュニティとつながりましょう。",
+    "get_started": "はじめる",
+    "sign_up_later": "後で登録する"
+  },
+  "input_placeholder": {
+    "email_placeholder": "あなたのメールアドレス",
+    "password_placeholder": "パスワード"
+  },
+  "sign_up": {
+    "title": "アカウント作成",
+    "description": "ようこそ！以下に情報を入力して始めましょう。",
+    "accept_terms": "利用規約に同意する",
+    "create_sign_up": "アカウント作成",
+    "has_account": "すでにアカウントをお持ちですか？",
+    "login_link": "こちらでログイン！"
+  },
+  "login": {
+    "title": "アカウントにアクセス",
+    "description": "おかえりなさい！以下に情報を入力してログインしましょう。",
+    "login_button": "ログイン",
+    "havent_account": "アカウントをお持ちではありませんか？",
+    "sign_up_link": "こちらでサインアップ！"
+  },
+  "dashboard": {
+    "side_menu": {
+      "your_pets": "あなたのペット",
+      "add_pet": "新規追加",
+      "dashboard": "ダッシュボード",
+      "contacts": "連絡先",
+      "calendar": "カレンダー",
+      "account": "アカウント",
+      "settings": "設定",
+      "hello": "こんにちは",
+      "not_logged": "ビジター"
+    },
+    "empty_state": {
+      "title": "おっと！",
+      "description": "現在プロファイルが設定されていないようです。今すぐペットを追加しましょう",
+      "add_pet": "ペットを今すぐ追加"
+    },
+    "homepage": {
+      "title": "アクティブなペットプロファイル",
+      "description": "すべてのペットとその情報を確認",
+      "health_card": {
+        "title": "健康カード",
+        "description": "予約やペットの医療履歴を一元管理"
+      },
+      "nutrition_card": {
+        "title": "栄養",
+        "description": "ペットの食事と食事履歴を一元管理"
+      },
+      "activities_card": {
+        "title": "アクティビティ",
+        "description": "ペットの身体活動と身体履歴を一元管理"
+      }
+    },
+    "add_pet": {
+      "menu": {
+        "title": "ペットプロファイルを追加",
+        "step": "ステップ",
+        "type": {
+          "breed": "品種",
+          "name": "名前",
+          "size": "サイズ",
+          "weight": "体重",
+          "important_dates": "重要な日付",
+          "caretakers": "世話をする人"
+        }
+      },
+      "breed_page": {
+        "title": "あなたのペットの品種は？",
+        "description": "ペットがどんな種類の子犬か教えてください",
+        "search_breed": "動物種で検索"
+      },
+      "name_page": {
+        "title": "ペットの名前は？",
+        "input_label": "ペットの名前"
+      },
+      "size_page": {
+        "title": "ペットのサイズは？",
+        "description": "ペットの品種に基づく自動選択。実際に合わせて調整可能",
+        "sizes": {
+          "small": {
+            "title": "小型",
+            "description": "14kg未満"
+          },
+          "medium": {
+            "title": "中型",
+            "description": "14-25kg"
+          },
+          "large": {
+            "title": "大型",
+            "description": "25kg以上"
+          }
+        }
+      },
+      "weight_page": {
+        "title": "ペットの体重は？",
+        "description": "ペットの品種に基づく自動選択。実際に合わせて調整可能",
+        "input_label": "ペットの体重"
+      },
+      "important_dates_page": {
+        "title": "ペットの重要な日付は？",
+        "description": "ペットのマイルストーンを祝う日",
+        "actions": {
+          "add_birthdate": "誕生日を追加",
+          "add_adoption": "養子縁組日を追加"
+        },
+        "calendar": {
+          "title": "日付を追加",
+          "menu_options": {
+            "birthdate": "誕生日",
+            "adoption": "養子縁組日"
+          },
+          "confirm": "予約を確定"
+        },
+        "age": {
+          "years_old": "歳",
+          "months_old": "ヶ月"
+        }
+      },
+      "caretakers_page": {
+        "title": "追加された連絡先",
+        "input_search": "名前、タグ、メールで検索...",
+        "actions": {
+          "add_caretaker": "世話をする人を追加",
+          "confirm": "確定"
+        }
+      }
+    }
+  },
+  "pet_profile": {
+    "profile_menu": {
+      "title": "ペットプロファイル",
+      "information": {
+        "general": {
+          "title": "外見と特徴的なサイン",
+          "gender": "性別",
+          "size": "サイズ",
+          "weight": "体重"
+        },
+        "important_dates": {
+          "title": "重要な日付",
+          "birthday": "誕生日",
+          "adoption_day": "養子縁組日",
+          "age": {
+            "years_old": "歳",
+            "months_old": "ヶ月"
+          }
+        },
+        "caretakers": {
+          "title": "世話をする人"
+        }
+      }
+    },
+    "menu": {
+      "menu_options": {
+        "health_card": "健康カード",
+        "nutrition": "栄養",
+        "activities": "アクティビティ",
+        "information": "情報"
+      }
+    },
+    "health_card_section": {
+      "options": {
+        "vaccines": {
+          "title": "ワクチン",
+          "details": {
+            "title": "詳細",
+            "lot": "ロット",
+            "expiry_date": "有効期限",
+            "vaccination_date": "接種日",
+            "validation": "有効期限",
+            "veterinarian": "獣医師",
+            "notes": {
+              "title": "メモ",
+              "not_notes": "悪い反応はありません"
+            },
+            "actions": {
+              "done": "完了"
+            }
+          },
+          "no_vacines": {
+            "title": "おっと！ペットに登録されたワクチンがないようです！",
+            "actions": {
+              "add": "ワクチンを追加"
+            }
+          }
+        },
+        "treatments": {
+          "title": "駆虫処置",
+          "no_treatments": {
+            "title": "おっと！ペットに登録された駆虫処置がないようです！",
+            "actions": {
+              "add": "治療を追加"
+            }
+          },
+          "type": {
+            "exam": "検査",
+            "medication": "薬物療法",
+            "consultation": "相談",
+            "surgery": "手術",
+            "other": "その他"
+          }
+        },
+        "medical_intervetions": {
+          "title": "医療処置",
+          "no_interventions": {
+            "title": "良好です... 医療処置はありません",
+            "actions": {
+              "add": "医療処置を追加"
+            }
+          },
+          "type": {
+            "exam": "検査",
+            "medication": "薬物療法",
+            "consultation": "相談",
+            "surgery": "手術",
+            "other": "その他"
+          }
+        },
+        "other_treatments": {
+          "title": "その他の治療",
+          "no_other_treatments": {
+            "title": "おっと！ペットに登録されたその他の治療がないようです！",
+            "actions": {
+              "add": "治療を追加"
+            }
+          },
+          "type": {
+            "hygiene": "衛生",
+            "physical": "身体的",
+            "beauty": "美容",
+            "diet": "ダイエット",
+            "other": "その他"
+          }
+        }
+      }
+    }
+  },
+  "utils": {
+    "email": "メール",
+    "password": "パスワード",
+    "actions": {
+      "title": "次のステップに進む",
+      "skip_step": "今はスキップ",
+      "confirm_step": "確認"
+    },
+    "months": {
+      "jan": "1月",
+      "feb": "2月",
+      "mar": "3月",
+      "apr": "4月",
+      "may": "5月",
+      "jun": "6月",
+      "jul": "7月",
+      "aug": "8月",
+      "sep": "9月",
+      "oct": "10月",
+      "nov": "11月",
+      "dec": "12月"
+    }
+  }
+}

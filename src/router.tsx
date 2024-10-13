@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { AddPetLayout } from './pages/_layouts/AddPetLayout'
 import { AuthLayout } from './pages/_layouts/AuthLayout'
 import { DashboardLayout } from './pages/_layouts/DashboardLayout'
+import { PetProfileLayout } from './pages/_layouts/PetProfileLayout'
 import { Breed } from './pages/AddPet/Breed'
 import { Caretakers } from './pages/AddPet/Caretakers'
 import { ImportantDates } from './pages/AddPet/ImportantDates'
@@ -10,6 +11,7 @@ import { Name } from './pages/AddPet/Name'
 import { Size } from './pages/AddPet/Size'
 import { Weight } from './pages/AddPet/Weight'
 import { Dashboard } from './pages/Dashboard'
+import { Health } from './pages/Health'
 import { LogIn } from './pages/LogIn'
 import { Onboarding } from './pages/Onboarding'
 import { SignUp } from './pages/SignUp'
@@ -68,6 +70,16 @@ export const router = createBrowserRouter([
           {
             path: 'caretakers',
             element: <Caretakers />
+          }
+        ]
+      },
+      {
+        path: 'pet-profile',
+        element: <PetProfileLayout />,
+        children: [
+          {
+            path: '',
+            element: <Health />
           }
         ]
       }
